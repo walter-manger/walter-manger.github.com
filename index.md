@@ -1,4 +1,4 @@
 ---
 layout: page
-title: Hello World!
+title: Welcome! Thank you Jekyll & Git 
 ---
