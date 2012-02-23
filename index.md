@@ -1,14 +1,4 @@
 ---
 layout: page
-title: Home Page
+title: Hello World!
 ---
-{% include JB/setup %}
-
-
-
-
-
-    
-    
-
-
