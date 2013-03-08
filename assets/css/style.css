@@ -1,0 +1,49 @@
+body {
+	font-family: verdana;
+	background-image: url(../images/BG.jpg);
+	background-repeat: no-repeat;
+	background-position: top center;
+	background-color: black;
+}
+
+#wrapper {
+	position: relative;
+}
+
+#content {
+	position: relative;
+	width: 651px;
+	height: 526px;
+	margin: 50px auto 0px auto;
+	background-image: url(../images/CardBG.png);
+	background-repeat: no-repeat;
+}
+
+
+#content-inner-wrapper {
+	position: absolute;
+	margin: 25px 25px 25px 25px;
+
+}
+
+#heading { margin-bottom: 20px;}
+#heading img {float: left; margin-right: 15px;}
+#fullname {padding-top: 15px; font-size: 24px;}
+#title {font-size: 16px;}
+
+#main-content {
+	position: relative;
+	line-height: 20px;
+}
+
+#main-content h2 {
+	font-size: 18px;
+	margin-bottom: 15px;
+}
+
+#main-content p {
+	margin-bottom: 15px;
+}
+
+
+.page { height: 342px; margin-bottom: 20px; }

@@ -1,0 +1,97 @@
+<html>
+<head>
+	<title>Walter Manger - Page Name</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<script type="text/javascript" src="assets/js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="assets/js/cufon-yui.js"></script>
+	<script type="text/javascript" src="assets/js/Merriweather_400-Merriweather_700.font.js"></script>
+	<script type="text/javascript">
+		Cufon.replace('#main-content h2');
+		Cufon.replace('#fullname'); 
+		Cufon.replace('#title'); 
+
+
+		function Scroll(id){
+			var name = "#" + id + "-content"
+		    var aTag = $(name);
+		    $('html,body').animate({scrollTop: aTag.offset().top},'slow');
+		}
+
+
+
+		$(document).ready(function() {
+			$('.scroller').on('click',function(event){
+			    //alert($(this.hash));
+			    event.preventDefault();
+			    
+			    var target_offset = $(this.hash).offset() ? $(this.hash).offset().top : 0;
+			    $('#main-content').animate({scrollTop:target_offset}, 500);
+			});
+		});
+
+	</script>
+</head>
+<body>
+	<div id="wrapper">
+		<!--
+		<ul id="navigation">
+			<li><a class="scroller" id="home" href="#about_content">Home</a></li>
+			<li><a class="scroller" id="skills" href="#skills_content">Skills</a></li>
+			<li>Work</li>
+			<li>Blog</li>
+			<li>Contact</li>
+		</ul>
+		-->
+		<div id="content">
+			<div id="content-inner-wrapper">
+
+				<div id="heading">
+					<img src="http://www.gravatar.com/avatar/289c08bda6657ec2f199b62abed52b43">
+					<div id="fullname">Walter Manger</div>
+					<div id="title">Software Developer</div>
+					<div style="clear: both"></div>
+				</div>
+
+				<hr>
+
+				<div id="main-content">
+
+					<div id="about-content" class="page">
+
+						<h2 id="about-content">About Me</h2>
+						<p>
+							Oh, hello. I am a Software Engineer living in Clearwater, FL. Most of my experience is in developing Web Applications with C# and .NET.
+							I like working on the User Experience of an application as well as the developing Core Functionality. 
+						</p>
+						<p>
+							I am currenly studying Computer Science at the University of South Florida with expected graduation date of May, 4 2013. 
+						</p>
+
+						<h2>My Stack</h2>
+
+						<ul>
+							<li><b>Technologies:</b> C# with .NET, HTML/CSS/JS, Python, C++, C, Matlab</li>
+							<li><b>Software:</b> Photoshop ()</li>
+						</ul>
+
+					</div>
+
+					<div id="skills-content" style="display: none;">
+
+						<h2 id="about-content">Skills</h2>
+						<p>
+							Here is a snapshot of the skills I have.
+						</p>
+						
+
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		<div style="clear: both"></div>
+	</div>
+	<script type="text/javascript"> Cufon.now(); </script>
+</body>
+</html>
