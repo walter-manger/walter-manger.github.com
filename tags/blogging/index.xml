@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on To The Triforce</title>
-    <link>http://wmanger.com/post/</link>
-    <description>Recent content in Posts on To The Triforce</description>
+    <title>Blogging on To The Triforce</title>
+    <link>http://wmanger.com/tags/blogging/</link>
+    <description>Recent content in Blogging on To The Triforce</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 16 Jan 2016 14:57:47 -0700</lastBuildDate>
-    <atom:link href="http://wmanger.com/post/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://wmanger.com/tags/blogging/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Beginning Again, statically</title>
