@@ -6,8 +6,52 @@
     <description>Recent content on To The Triforce</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 16 Jan 2016 14:57:47 -0700</lastBuildDate>
+    <lastBuildDate>Sun, 31 Jan 2016 23:57:47 -0700</lastBuildDate>
     <atom:link href="http://wmanger.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>How I came to Emacs</title>
+      <link>http://wmanger.com/post/2016-01-29/</link>
+      <pubDate>Sun, 31 Jan 2016 23:57:47 -0700</pubDate>
+      
+      <guid>http://wmanger.com/post/2016-01-29/</guid>
+      <description>
+
+&lt;h3 id=&#34;history:381540646272f34d133c512c66d2c6d4&#34;&gt;History&lt;/h3&gt;
+
+&lt;p&gt;I spent a good chunk of my programming career, probably close to 9 years, inside of the Visual Studio IDE. For the first 5 or so, I didn&amp;rsquo;t understand why I would ever need to step outside of that environment. When I got to college is when I was faced with the hard fact that I could not count on my trusty tool for everything. At the university, they ran all the code on a Sun UNIX machine, which was using its version of GCC and that didn&amp;rsquo;t match up with what VS supplied. I believe there were ways to make it work, but after being burned a few times for submitting uncompilable code, I had to find a different solution that was guaranteed to work every time. As you can probably guess, like anyone who had previously been exposed to a MS Operating System, the first tool on a UNIX box that I reached for was Nano. There was a nice menu that I could understand that had some parallels with notepad.&lt;/p&gt;
+
+&lt;p&gt;Nano got me by for a month or so, but I needed something more powerful. One day I was talking with a master&amp;rsquo;s student that was a TA for one of the courses I was taking and he was programming with what looked like a split terminal with Python&amp;rsquo;s documentation in one pane, syntax highlighting of the Python code that he was working on in another, and some form of autocomplete in yet another. When I asked him what it was he answered proudly &amp;ldquo;VIM&amp;rdquo;. I was blown away with the things he showed me next. What he made happen with minimal keystrokes was impressive. I began playing with VIM in my downtime, and I started to grasp the basics, but when I left the university, it was back to working life and VS was the tool that I was most comfortable with in the end. It won.&lt;/p&gt;
+
+&lt;h3 id=&#34;hand-pain-emulators:381540646272f34d133c512c66d2c6d4&#34;&gt;Hand Pain &amp;amp; Emulators&lt;/h3&gt;
+
+&lt;p&gt;Not all people who use VS or GUI apps will have the same experience, but after using VS and GUI apps in general, I started to experience a slight pain in my hands. I attribute this mostly to reaching for the mouse a lot. Since I will probably be working as a programmer for the rest of my life, I thought that I&amp;rsquo;d better address the issue now before it turns into something that disables me for any length of time. I remembered VIM and how the home row was king. I looked for some sort of emulator for Visual Studio and there were a couple. I chose VSVIM. It was great, but there was still something missing. I could then edit modally using VIM bindings, but navigating VS still required some movement away from the keyboard. What I wanted was complete control of the IDE without having to touch my mouse at all. I am sure there are ways to do this, but from what I found, it wasn&amp;rsquo;t really easy to make happen. But, I was developing in VS under MS, so it was better for me at the time to stick with the standard way of doing things. My hands did feel better with using VIM bindings for editing code, in fact, it was like I had almost been completely cured. Almost.&lt;/p&gt;
+
+&lt;h3 id=&#34;new-stack-new-editor-search:381540646272f34d133c512c66d2c6d4&#34;&gt;New Stack, New Editor Search&lt;/h3&gt;
+
+&lt;p&gt;In my latest position, I don&amp;rsquo;t develop under MS, nor do I use VS. Our stack consists of GO, and JS mostly, so when I joined the team, I was back on the hunt for an editor. I had previously played with Sublime Text 2, and I can&amp;rsquo;t say enough good things about it. The community was great, the plugins were great, and it was so light weight. It even had a &amp;lsquo;vintage mode&amp;rsquo;, which, would give you VIM bindings without having to install a plugin. The GO plugins were pretty solid. Everything seemed great about it. I started using it, but I was left wanting more. I noticed when I used an app outside of the terminal, I had to constantly context switch to get to the terminal and back. I knew VIM was available by terminal and there were ways to get better terminal interaction through a tool called TMUX. I started experimenting with VIM + TMUX and I got to the point where my configuration met my needs. I was happy until one day I watched a video about a long time VIM user moving on to Emacs. It is called:  &lt;a href=&#34;https://www.youtube.com/watch?v=JWD1Fpdd4Pc&#34;&gt;Evil Mode: Or, How I Learned to Stop Worrying and Love Emacs&lt;/a&gt;. It was that video, along with my desire to go through the course work for &lt;a href=&#34;http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-001-structure-and-interpretation-of-computer-programs-spring-2005/&#34;&gt;Structure and Interpretation of Computer Programs&lt;/a&gt; that got me curious about Emacs. I started watching more videos and learning more about the power of Emacs.&lt;/p&gt;
+
+&lt;h3 id=&#34;rabbit-hole-of-regret-pride:381540646272f34d133c512c66d2c6d4&#34;&gt;Rabbit Hole of Regret &amp;amp; Pride&lt;/h3&gt;
+
+&lt;p&gt;As an Emacs beginner, there were so many questions and getting the answers were difficult at first. Simply saving a document was completely different from most editors. Changing Emacs defaults to something sane was pretty difficult too. After all, Emacs configuration is done in Elisp, and that alone should drive away anyone wanting to try it. What I wanted Emacs to do was act like editors that I was used to, but give me Emacs power when I needed it. With Emacs, it&amp;rsquo;s pretty easy to do. Everything Emacs does by default can be controlled in any way. I mean Everything. Also, getting Emacs to do something that it doesn&amp;rsquo;t do by default isn&amp;rsquo;t that difficult once you know a little Elisp. Emacs gives you the ability to create an editor that is not Emacs at all. Ask Linus Torvalds.&lt;/p&gt;
+
+&lt;p&gt;I know what you&amp;rsquo;re thinking: &lt;em&gt;If Emacs is so powerful, why do I have the word &amp;lsquo;Regret&amp;rsquo; in the heading above?&lt;/em&gt; Because, Yak Shaving. Sometimes I just want my editor to do what some other editor does well. I don&amp;rsquo;t want to have to search out some configuration to get Emacs to do something that I think should be default. Nor do I want to look at my Emacs configuration and get caught in a loop of cleaning up the configuration because now I&amp;rsquo;ve seen some other well-organized configs or I know how to hack Elisp better. When you are a beginner, Emacs is a double-edged sword. It is both great and horrible at the same time. There are things that literally blow my mind every time I use it, but occasionally, there are quirks in a certain mode that burn me to the core. Actually, even the horrible parts of Emacs are good if you look at them in the right context. Example: nothing is stopping me from fixing a mode myself and get better at Elisp while helping the community.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;What about &amp;lsquo;Pride&amp;rsquo;?&lt;/em&gt; Well, once I do get something configured exactly the way I want it to be, I feel not only proud and accomplished, but also wizardly.&lt;/p&gt;
+
+&lt;h3 id=&#34;wood-working-programming-tools:381540646272f34d133c512c66d2c6d4&#34;&gt;Wood Working &amp;amp; Programming Tools&lt;/h3&gt;
+
+&lt;p&gt;Some time last year I got an itch to start wood working. I still have not been able to fully commit to purchasing all of the tools that I need to really get started, but I have a few. My most complete project was a Shaker style bench, which is complete to the point of finishing. During this project, I got the pleasure of creating one of my own tools. It is called a poor man&amp;rsquo;s router plane. It is basically a piece of 2x4 with a hole drilled in it enough to hold a chisel. It doesn&amp;rsquo;t look like much, but it produces an accurate dado every time. &lt;em&gt;What does this have to do with Emacs?&lt;/em&gt; you say. Well, Emacs provides the same experience. It allows you to tailor your editor to any situation. Any work done in Emacs configuration pays back tenfold. Wood workers have jigs and tools that help their tools be more efficient. Professional Emacs users have configurations that they&amp;rsquo;ve refined over time that make Emacs more efficient for a particular task.&lt;/p&gt;
+
+&lt;h3 id=&#34;but-it-still-doesn-t-make-sense-to-trash-my-current-editor:381540646272f34d133c512c66d2c6d4&#34;&gt;But it still doesn&amp;rsquo;t make sense to trash my current editor&amp;hellip;&lt;/h3&gt;
+
+&lt;p&gt;Don&amp;rsquo;t. The real reason I chose Emacs is: I spend a lot of time in a text editor and I want that time investment to pay off. Emacs allows this completely. If that doesn&amp;rsquo;t sound like something you&amp;rsquo;re interested in doing, you shouldn&amp;rsquo;t.&lt;/p&gt;
+
+&lt;h3 id=&#34;one-more-thing:381540646272f34d133c512c66d2c6d4&#34;&gt;One more thing&lt;/h3&gt;
+
+&lt;p&gt;This whole post I have been referring to Emacs as a text editor. It really is not. It is an Operating System. Some Emacs users never leave Emacs. After all, it does/can have: A web browser, an email client, a twitter client, games, irc, a news reader, a git interface, and much more. Not a lot of editors can say the same thing. I must warn you that when you witness what Emacs can do, you&amp;rsquo;ll want it to do everything. I find myself just wanting to stay in Emacs and get a little annoyed every time I have to leave.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Beginning Again, statically</title>

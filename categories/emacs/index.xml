@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on To The Triforce</title>
-    <link>http://wmanger.com/post/</link>
-    <description>Recent content in Posts on To The Triforce</description>
+    <title>Emacs on To The Triforce</title>
+    <link>http://wmanger.com/categories/emacs/</link>
+    <description>Recent content in Emacs on To The Triforce</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 31 Jan 2016 23:57:47 -0700</lastBuildDate>
-    <atom:link href="http://wmanger.com/post/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://wmanger.com/categories/emacs/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>How I came to Emacs</title>
@@ -50,34 +50,6 @@
 &lt;h3 id=&#34;one-more-thing:381540646272f34d133c512c66d2c6d4&#34;&gt;One more thing&lt;/h3&gt;
 
 &lt;p&gt;This whole post I have been referring to Emacs as a text editor. It really is not. It is an Operating System. Some Emacs users never leave Emacs. After all, it does/can have: A web browser, an email client, a twitter client, games, irc, a news reader, a git interface, and much more. Not a lot of editors can say the same thing. I must warn you that when you witness what Emacs can do, you&amp;rsquo;ll want it to do everything. I find myself just wanting to stay in Emacs and get a little annoyed every time I have to leave.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Beginning Again, statically</title>
-      <link>http://wmanger.com/post/first/</link>
-      <pubDate>Sat, 16 Jan 2016 14:57:47 -0700</pubDate>
-      
-      <guid>http://wmanger.com/post/first/</guid>
-      <description>
-
-&lt;p&gt;I&amp;rsquo;ve decided to start writing blog posts again since I am learning new things and I&amp;rsquo;d like to document the things I am learning in an attempt to measure progress. With this, a few things have changed. My original blog engine was blogger (very neglected), but I have recently started using &lt;a href=&#34;http://emacsformacosx.com/&#34;&gt;Emacs&lt;/a&gt; and, really, I don&amp;rsquo;t want to leave Emacs. I know there are modes for posting to blogger, but since I am starting to hack Golang, I think using a &lt;a href=&#34;https://gohugo.io/&#34;&gt;static blogging engine written in Go&lt;/a&gt; is appropriate. I don&amp;rsquo;t know of any special functions or modes to make using Hugo easier for the Emacs user, so there is room for me to learn how to make these functions/modes myself. Benefits galore.&lt;/p&gt;
-
-&lt;h3 id=&#34;why:e8fb9c67eba912c72729806db31eaa1b&#34;&gt;Why?&lt;/h3&gt;
-
-&lt;p&gt;It&amp;rsquo;s a long story, but I am trying out Sacha C&amp;rsquo;s method of learning things. Along with her &lt;a href=&#34;http://pages.sachachua.com/sharing/blog.html#value-blogging&#34;&gt;articles on blogging for learning&lt;/a&gt;, I&amp;rsquo;ve read others who use the same technique for an efficient learning environment. I have many things that I am learning all at once and I need a way to organize and solidify my learning.&lt;/p&gt;
-
-&lt;h3 id=&#34;what-i-ll-post:e8fb9c67eba912c72729806db31eaa1b&#34;&gt;What I&amp;rsquo;ll Post&lt;/h3&gt;
-
-&lt;p&gt;For now, the posts on this blog will mostly relate to programming &amp;ndash; ranging from slightly technical to overly technical. Overly technical posts will have little commentary and mostly code.&lt;/p&gt;
-
-&lt;h3 id=&#34;when-i-ll-post:e8fb9c67eba912c72729806db31eaa1b&#34;&gt;When I&amp;rsquo;ll Post&lt;/h3&gt;
-
-&lt;p&gt;I have no intended schedule and I cannot promise that posts will happen on a regular basis. I will try one post a week. That seems reasonable.&lt;/p&gt;
-
-&lt;h3 id=&#34;goodbye-for-now:e8fb9c67eba912c72729806db31eaa1b&#34;&gt;Goodbye for now&lt;/h3&gt;
-
-&lt;p&gt;Goodbye, until the next post.&lt;/p&gt;
 </description>
     </item>
     
