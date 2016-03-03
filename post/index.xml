@@ -6,8 +6,43 @@
     <description>Recent content in Posts on To The Triforce</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 01 Mar 2016 04:57:47 -0700</lastBuildDate>
+    <lastBuildDate>Thu, 03 Mar 2016 05:57:47 -0700</lastBuildDate>
     <atom:link href="http://wmanger.com/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Well, that was fast Mr. Deitel(s)</title>
+      <link>http://wmanger.com/post/C_Quickly/</link>
+      <pubDate>Thu, 03 Mar 2016 05:57:47 -0700</pubDate>
+      
+      <guid>http://wmanger.com/post/C_Quickly/</guid>
+      <description>&lt;p&gt;I skimmed through most of the first 4 chapters of &lt;em&gt;C How To Program&lt;/em&gt; and then chapter 5 presents functions. I thought that I would continue skimming through, but then I got to the section on &lt;em&gt;Recursion&lt;/em&gt; and the classic introduction to it through implementing the factorial function.&lt;/p&gt;
+
+&lt;div class=&#34;highlight&#34; style=&#34;background: #111111&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span style=&#34;color: #ff0007; font-weight: bold; font-style: italic; background-color: #0f140f&#34;&gt;#include &amp;lt;stdio.h&amp;gt;&lt;/span&gt;
+
+&lt;span style=&#34;color: #cdcaa9; font-weight: bold&#34;&gt;long&lt;/span&gt; &lt;span style=&#34;color: #ff0086; font-weight: bold&#34;&gt;factorial&lt;/span&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #cdcaa9; font-weight: bold&#34;&gt;long&lt;/span&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;);&lt;/span&gt;
+
+&lt;span style=&#34;color: #ffffff&#34;&gt;main()&lt;/span&gt;
+&lt;span style=&#34;color: #ffffff&#34;&gt;{&lt;/span&gt;
+  &lt;span style=&#34;color: #cdcaa9; font-weight: bold&#34;&gt;int&lt;/span&gt; &lt;span style=&#34;color: #ffffff&#34;&gt;i;&lt;/span&gt;
+  &lt;span style=&#34;color: #fb660a; font-weight: bold&#34;&gt;for&lt;/span&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;(i&lt;/span&gt; &lt;span style=&#34;color: #ffffff&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #0086f7; font-weight: bold&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;;&lt;/span&gt; &lt;span style=&#34;color: #ffffff&#34;&gt;i&lt;/span&gt; &lt;span style=&#34;color: #ffffff&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span style=&#34;color: #0086f7; font-weight: bold&#34;&gt;10&lt;/span&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;;&lt;/span&gt; &lt;span style=&#34;color: #ffffff&#34;&gt;i++)&lt;/span&gt;
+    &lt;span style=&#34;color: #ffffff&#34;&gt;printf(&lt;/span&gt;&lt;span style=&#34;color: #0086d2&#34;&gt;&amp;quot;%2d! = %1d\n&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color: #ffffff&#34;&gt;i,&lt;/span&gt; &lt;span style=&#34;color: #ffffff&#34;&gt;factorial(i));&lt;/span&gt;
+
+  &lt;span style=&#34;color: #fb660a; font-weight: bold&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color: #0086f7; font-weight: bold&#34;&gt;0&lt;/span&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;;&lt;/span&gt;
+&lt;span style=&#34;color: #ffffff&#34;&gt;}&lt;/span&gt;
+
+
+&lt;span style=&#34;color: #cdcaa9; font-weight: bold&#34;&gt;long&lt;/span&gt; &lt;span style=&#34;color: #ffffff&#34;&gt;factorial(&lt;/span&gt;&lt;span style=&#34;color: #cdcaa9; font-weight: bold&#34;&gt;long&lt;/span&gt; &lt;span style=&#34;color: #ffffff&#34;&gt;number)&lt;/span&gt; &lt;span style=&#34;color: #ffffff&#34;&gt;{&lt;/span&gt;
+  &lt;span style=&#34;color: #fb660a; font-weight: bold&#34;&gt;if&lt;/span&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;(number&lt;/span&gt; &lt;span style=&#34;color: #ffffff&#34;&gt;&amp;lt;=&lt;/span&gt; &lt;span style=&#34;color: #0086f7; font-weight: bold&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;)&lt;/span&gt;
+    &lt;span style=&#34;color: #fb660a; font-weight: bold&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color: #0086f7; font-weight: bold&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;;&lt;/span&gt;
+  &lt;span style=&#34;color: #fb660a; font-weight: bold&#34;&gt;else&lt;/span&gt;
+    &lt;span style=&#34;color: #ff0086; font-weight: bold&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color: #ffffff&#34;&gt;(number&lt;/span&gt; &lt;span style=&#34;color: #ffffff&#34;&gt;*&lt;/span&gt; &lt;span style=&#34;color: #ffffff&#34;&gt;factorial(number&lt;/span&gt; &lt;span style=&#34;color: #ffffff&#34;&gt;-&lt;/span&gt; &lt;span style=&#34;color: #0086f7; font-weight: bold&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;));&lt;/span&gt;
+&lt;span style=&#34;color: #ffffff&#34;&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;I have to admit that I feel like I understand Recursion enough to be dangerous. In college, Recursion was hammered into my head pretty quickly and I was able to reason about it with some mathematical techniques, but I can&amp;rsquo;t say that I had full command of the subject. I am glad that the book has promised to discuss recursion in depth for the next few chapters. I am looking forward to attepting some of the exercises in this chapter.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Learning C/C&#43;&#43; Again</title>

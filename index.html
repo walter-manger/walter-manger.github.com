@@ -44,6 +44,8 @@
       
         <li><a href="/post/learning-C-again/"> Learning C/C&#43;&#43; Again </a></li>
       
+        <li><a href="/post/C_Quickly/"> Well, that was fast Mr. Deitel(s) </a></li>
+      
     </ul>
 
     <p>&copy; 2016. All rights reserved. </p>
@@ -55,6 +57,44 @@
 <div class="posts">
 
       
+  <div class="post">
+    <h1 class="post-title">
+      <a href="http://wmanger.com/post/C_Quickly/">
+        Well, that was fast Mr. Deitel(s)
+      </a>
+    </h1>
+
+    <span class="post-date">Thu, Mar 3, 2016</span>
+
+    <p>I skimmed through most of the first 4 chapters of <em>C How To Program</em> and then chapter 5 presents functions. I thought that I would continue skimming through, but then I got to the section on <em>Recursion</em> and the classic introduction to it through implementing the factorial function.</p>
+
+<div class="highlight" style="background: #111111"><pre style="line-height: 125%"><span style="color: #ff0007; font-weight: bold; font-style: italic; background-color: #0f140f">#include &lt;stdio.h&gt;</span>
+
+<span style="color: #cdcaa9; font-weight: bold">long</span> <span style="color: #ff0086; font-weight: bold">factorial</span><span style="color: #ffffff">(</span><span style="color: #cdcaa9; font-weight: bold">long</span><span style="color: #ffffff">);</span>
+
+<span style="color: #ffffff">main()</span>
+<span style="color: #ffffff">{</span>
+  <span style="color: #cdcaa9; font-weight: bold">int</span> <span style="color: #ffffff">i;</span>
+  <span style="color: #fb660a; font-weight: bold">for</span><span style="color: #ffffff">(i</span> <span style="color: #ffffff">=</span> <span style="color: #0086f7; font-weight: bold">1</span><span style="color: #ffffff">;</span> <span style="color: #ffffff">i</span> <span style="color: #ffffff">&lt;</span> <span style="color: #0086f7; font-weight: bold">10</span><span style="color: #ffffff">;</span> <span style="color: #ffffff">i++)</span>
+    <span style="color: #ffffff">printf(</span><span style="color: #0086d2">&quot;%2d! = %1d\n&quot;</span><span style="color: #ffffff">,</span> <span style="color: #ffffff">i,</span> <span style="color: #ffffff">factorial(i));</span>
+
+  <span style="color: #fb660a; font-weight: bold">return</span> <span style="color: #0086f7; font-weight: bold">0</span><span style="color: #ffffff">;</span>
+<span style="color: #ffffff">}</span>
+
+
+<span style="color: #cdcaa9; font-weight: bold">long</span> <span style="color: #ffffff">factorial(</span><span style="color: #cdcaa9; font-weight: bold">long</span> <span style="color: #ffffff">number)</span> <span style="color: #ffffff">{</span>
+  <span style="color: #fb660a; font-weight: bold">if</span><span style="color: #ffffff">(number</span> <span style="color: #ffffff">&lt;=</span> <span style="color: #0086f7; font-weight: bold">1</span><span style="color: #ffffff">)</span>
+    <span style="color: #fb660a; font-weight: bold">return</span> <span style="color: #0086f7; font-weight: bold">1</span><span style="color: #ffffff">;</span>
+  <span style="color: #fb660a; font-weight: bold">else</span>
+    <span style="color: #ff0086; font-weight: bold">return</span> <span style="color: #ffffff">(number</span> <span style="color: #ffffff">*</span> <span style="color: #ffffff">factorial(number</span> <span style="color: #ffffff">-</span> <span style="color: #0086f7; font-weight: bold">1</span><span style="color: #ffffff">));</span>
+<span style="color: #ffffff">}</span>
+</pre></div>
+
+
+<p>I have to admit that I feel like I understand Recursion enough to be dangerous. In college, Recursion was hammered into my head pretty quickly and I was able to reason about it with some mathematical techniques, but I can&rsquo;t say that I had full command of the subject. I am glad that the book has promised to discuss recursion in depth for the next few chapters. I am looking forward to attepting some of the exercises in this chapter.</p>
+
+  </div>
+  
   <div class="post">
     <h1 class="post-title">
       <a href="http://wmanger.com/post/learning-C-again/">
