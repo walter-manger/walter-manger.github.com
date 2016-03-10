@@ -17,15 +17,15 @@
       <guid>http://wmanger.com/post/2016-03-10/</guid>
       <description>
 
-&lt;p&gt;I&amp;rsquo;ve recently starting getting up earlier to work on side projects. When I say earlier, I mean, at about 4:15AM. This should give me a good 1.5 hours to work on something and get to a point that I can commit something meaningful. The goal is to get that number down to something like 40-45 minutes so I can spend the other half doing something else like reading or researching new technologies. What I am finding is for that 1.5 hours to be effective, planning the night before is pretty important. I&amp;rsquo;ve spent a few mornings getting up to speed for a half hour. It&amp;rsquo;s really important to eliminate that discovery time.&lt;/p&gt;
+&lt;p&gt;I&amp;rsquo;ve recently starting getting up earlier to work on side projects. When I say earlier, I mean, at about 4:15AM. This should give me a good 1.5 hours to work on something and get to a point that I can commit something meaningful before I have to start getting ready for my day. The goal is to get that number down to something like 40-45 minutes so I can spend the other half doing something else like reading or researching new technologies. What I am finding is for that 1.5 hours to be effective, planning the night before is pretty important. I&amp;rsquo;ve spent a few mornings getting up to speed for a half hour. It&amp;rsquo;s really important to eliminate that discovery time.&lt;/p&gt;
 
 &lt;h3 id=&#34;what-am-i-working-on:6bb46f5cad8d6c0d6d2277975909ea07&#34;&gt;What am I working on?&lt;/h3&gt;
 
-&lt;p&gt;When I first wanted to learn Go, I started making a game that could be played in Slack in the form of a integration. It is called &lt;a href=&#34;Slack Battle&#34;&gt;https://github.com/walter-manger/slack-battle&lt;/a&gt;. What I thought would be easy to slap together in a night or so is turning out to be a little more difficult that I&amp;rsquo;d planned. Creating games is difficult. Add the requirement for playing games over HTTP and the need for some sort of persistence, and the difficulty increases.&lt;/p&gt;
+&lt;p&gt;When I first wanted to learn Go, I started making a game that could be played in Slack in the form of a integration. It is called &lt;a href=&#34;https://github.com/walter-manger/slack-battle&#34;&gt;Slack Battle&lt;/a&gt;. What I thought would be easy to slap together in a night or so is turning out to be a little more difficult than I&amp;rsquo;d planned. Creating games is difficult &amp;ndash; even really simple ones. Add the requirement for playing games over HTTP and the need for some sort of persistence, and the difficulty increases.&lt;/p&gt;
 
 &lt;h3 id=&#34;the-new-plan:6bb46f5cad8d6c0d6d2277975909ea07&#34;&gt;The &lt;em&gt;New&lt;/em&gt; Plan&lt;/h3&gt;
 
-&lt;p&gt;The project was first created with Google App Engine, but coming back to the project after it had aged a bit, I thought that it would be so much simpler not being boxed into what GAE offers. Really, the only thing GAE was providing me was a datastore. I decided to use Mongolab instead. Why? Because it doesn&amp;rsquo;t really box me in. It works the same as if I had an instance of Mongo running locally.&lt;/p&gt;
+&lt;p&gt;The project was first created with Google App Engine, but coming back to the project after it had aged a bit, I thought that it would be so much simpler not being boxed into what GAE offers. Really, the only thing GAE was providing me was a datastore. I decided to use Mongolab instead. Why? Because it doesn&amp;rsquo;t really box me in. It feels as if I had an instance of Mongo running locally.&lt;/p&gt;
 
 &lt;ol&gt;
 &lt;li&gt;Rip Out GAE&lt;/li&gt;
