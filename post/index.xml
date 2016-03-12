@@ -6,8 +6,68 @@
     <description>Recent content in Posts on To The Triforce</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 10 Mar 2016 05:48:27 -0700</lastBuildDate>
+    <lastBuildDate>Fri, 11 Mar 2016 20:53:12 -0700</lastBuildDate>
     <atom:link href="http://wmanger.com/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>JavaScript is Lovely/Horrible</title>
+      <link>http://wmanger.com/post/2016-03-11/</link>
+      <pubDate>Fri, 11 Mar 2016 20:53:12 -0700</pubDate>
+      
+      <guid>http://wmanger.com/post/2016-03-11/</guid>
+      <description>&lt;p&gt;I ran into a little issue today that set me back about 4 hours trying to figure out. Luckily, never again will I spend that amount of time trying to slay this issue. The story goes something like this: I had a normalized object, meaning that each item in an object array was given a unique key and made into an object instead of an array. This is a desired behavior. Unfortunately, it makes it a little more difficult to loop through results if they are simply properties of some object. Not very difficult, but more difficult than a simple loop over an array. Here&amp;rsquo;s an example structure.&lt;/p&gt;
+
+&lt;div class=&#34;highlight&#34; style=&#34;background: #111111&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span style=&#34;color: #fb660a; font-weight: bold&#34;&gt;let&lt;/span&gt; &lt;span style=&#34;color: #ffffff&#34;&gt;entities&lt;/span&gt; &lt;span style=&#34;color: #ffffff&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #ffffff&#34;&gt;{&lt;/span&gt;
+
+    &lt;span style=&#34;color: #ffffff&#34;&gt;users:&lt;/span&gt; &lt;span style=&#34;color: #ffffff&#34;&gt;{&lt;/span&gt;
+        &lt;span style=&#34;color: #ffffff&#34;&gt;user1:&lt;/span&gt; &lt;span style=&#34;color: #ffffff&#34;&gt;{&lt;/span&gt;
+            &lt;span style=&#34;color: #ffffff&#34;&gt;name:&lt;/span&gt; &lt;span style=&#34;color: #0086d2&#34;&gt;&amp;quot;William Shatner&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;,&lt;/span&gt;
+            &lt;span style=&#34;color: #ffffff&#34;&gt;age:&lt;/span&gt; &lt;span style=&#34;color: #0086f7; font-weight: bold&#34;&gt;22&lt;/span&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;,&lt;/span&gt;
+            &lt;span style=&#34;color: #ffffff&#34;&gt;weapons:&lt;/span&gt; &lt;span style=&#34;color: #ffffff&#34;&gt;[{id:&lt;/span&gt; &lt;span style=&#34;color: #0086f7; font-weight: bold&#34;&gt;1&lt;/span&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color: #ffffff&#34;&gt;name:&lt;/span&gt; &lt;span style=&#34;color: #0086d2&#34;&gt;&amp;quot;sword&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;}]&lt;/span&gt;
+        &lt;span style=&#34;color: #ffffff&#34;&gt;},&lt;/span&gt;
+        &lt;span style=&#34;color: #ffffff&#34;&gt;user2:&lt;/span&gt; &lt;span style=&#34;color: #ffffff&#34;&gt;{&lt;/span&gt;
+            &lt;span style=&#34;color: #ffffff&#34;&gt;name:&lt;/span&gt; &lt;span style=&#34;color: #0086d2&#34;&gt;&amp;quot;William Shakespere&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;,&lt;/span&gt;
+            &lt;span style=&#34;color: #ffffff&#34;&gt;age:&lt;/span&gt; &lt;span style=&#34;color: #0086f7; font-weight: bold&#34;&gt;2001&lt;/span&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;,&lt;/span&gt;
+            &lt;span style=&#34;color: #ffffff&#34;&gt;weapons:&lt;/span&gt; &lt;span style=&#34;color: #ffffff&#34;&gt;[{id:&lt;/span&gt; &lt;span style=&#34;color: #0086f7; font-weight: bold&#34;&gt;2&lt;/span&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color: #ffffff&#34;&gt;name:&lt;/span&gt; &lt;span style=&#34;color: #0086d2&#34;&gt;&amp;quot;pen&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;}]&lt;/span&gt;
+        &lt;span style=&#34;color: #ffffff&#34;&gt;},&lt;/span&gt;
+    &lt;span style=&#34;color: #ffffff&#34;&gt;}&lt;/span&gt;
+&lt;span style=&#34;color: #ffffff&#34;&gt;};&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;I was trying to update the weapons property of one of the user with a payload that came back from a server. So, naturally, what I thought I wanted to do was &lt;em&gt;merge&lt;/em&gt; the results from the server with the results in this structure. A quick look at my favorite JS library &lt;em&gt;lodash&lt;/em&gt; and I came up with the following.&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;highlight&#34; style=&#34;background: #111111&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span style=&#34;color: #fb660a; font-weight: bold&#34;&gt;let&lt;/span&gt; &lt;span style=&#34;color: #ffffff&#34;&gt;serverEntities&lt;/span&gt; &lt;span style=&#34;color: #ffffff&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #ffffff&#34;&gt;{&lt;/span&gt;
+  &lt;span style=&#34;color: #ffffff&#34;&gt;users:&lt;/span&gt; &lt;span style=&#34;color: #ffffff&#34;&gt;{&lt;/span&gt;
+    &lt;span style=&#34;color: #ffffff&#34;&gt;user1:&lt;/span&gt; &lt;span style=&#34;color: #ffffff&#34;&gt;{&lt;/span&gt;
+        &lt;span style=&#34;color: #ffffff&#34;&gt;name:&lt;/span&gt; &lt;span style=&#34;color: #0086d2&#34;&gt;&amp;quot;William Shatner&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;,&lt;/span&gt;
+        &lt;span style=&#34;color: #ffffff&#34;&gt;age:&lt;/span&gt; &lt;span style=&#34;color: #0086f7; font-weight: bold&#34;&gt;22&lt;/span&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;,&lt;/span&gt;
+        &lt;span style=&#34;color: #ffffff&#34;&gt;weapons:&lt;/span&gt; &lt;span style=&#34;color: #ffffff&#34;&gt;[{id:&lt;/span&gt; &lt;span style=&#34;color: #0086f7; font-weight: bold&#34;&gt;3&lt;/span&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color: #ffffff&#34;&gt;name:&lt;/span&gt; &lt;span style=&#34;color: #0086d2&#34;&gt;&amp;quot;taser&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;}]&lt;/span&gt;
+    &lt;span style=&#34;color: #ffffff&#34;&gt;}&lt;/span&gt;
+  &lt;span style=&#34;color: #ffffff&#34;&gt;}&lt;/span&gt;
+&lt;span style=&#34;color: #ffffff&#34;&gt;};&lt;/span&gt;
+
+&lt;span style=&#34;color: #fb660a; font-weight: bold&#34;&gt;let&lt;/span&gt; &lt;span style=&#34;color: #ffffff&#34;&gt;newUsers&lt;/span&gt; &lt;span style=&#34;color: #ffffff&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #ffffff&#34;&gt;merge({},&lt;/span&gt; &lt;span style=&#34;color: #ffffff&#34;&gt;users,&lt;/span&gt; &lt;span style=&#34;color: #ffffff&#34;&gt;serverUsers);&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/p&gt;
+
+&lt;p&gt;The big issue was: merge was basically ignoring the array because merge isn&amp;rsquo;t a &lt;em&gt;deep&lt;/em&gt; merge.&lt;/p&gt;
+
+&lt;p&gt;I settled on just performing a &lt;em&gt;Deep Copy&lt;/em&gt; of what was coming back from the server and placing it where it needed to be in memory.&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;highlight&#34; style=&#34;background: #111111&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span style=&#34;color: #fb660a; font-weight: bold&#34;&gt;let&lt;/span&gt; &lt;span style=&#34;color: #ffffff&#34;&gt;merged&lt;/span&gt; &lt;span style=&#34;color: #ffffff&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #ffffff&#34;&gt;merge({},&lt;/span&gt; &lt;span style=&#34;color: #ffffff&#34;&gt;entities,&lt;/span&gt; &lt;span style=&#34;color: #ffffff&#34;&gt;serverEntities)&lt;/span&gt;
+
+&lt;span style=&#34;color: #fb660a; font-weight: bold&#34;&gt;for&lt;/span&gt; &lt;span style=&#34;color: #ffffff&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #fb660a; font-weight: bold&#34;&gt;let&lt;/span&gt; &lt;span style=&#34;color: #ffffff&#34;&gt;key&lt;/span&gt; &lt;span style=&#34;color: #ffffff&#34;&gt;of&lt;/span&gt; &lt;span style=&#34;color: #ffffff&#34;&gt;Object.keys(serverEntities))&lt;/span&gt; &lt;span style=&#34;color: #ffffff&#34;&gt;{&lt;/span&gt;
+    &lt;span style=&#34;color: #fb660a; font-weight: bold&#34;&gt;for&lt;/span&gt; &lt;span style=&#34;color: #ffffff&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #fb660a; font-weight: bold&#34;&gt;let&lt;/span&gt; &lt;span style=&#34;color: #ffffff&#34;&gt;innerKey&lt;/span&gt; &lt;span style=&#34;color: #ffffff&#34;&gt;of&lt;/span&gt; &lt;span style=&#34;color: #ffffff&#34;&gt;Object.keys(serverEntities[key]))&lt;/span&gt; &lt;span style=&#34;color: #ffffff&#34;&gt;{&lt;/span&gt;
+        &lt;span style=&#34;color: #ffffff&#34;&gt;merged[key][innerKey]&lt;/span&gt; &lt;span style=&#34;color: #ffffff&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #ffffff&#34;&gt;_.cloneDeep(serverEntitiesntities[key][innerKey])&lt;/span&gt;
+    &lt;span style=&#34;color: #ffffff&#34;&gt;}&lt;/span&gt;
+&lt;span style=&#34;color: #ffffff&#34;&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/p&gt;
+
+&lt;p&gt;It&amp;rsquo;s not really flexable because it only allows for the deep copying of the props 2 levels down, but it gets the job done for the moment.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Side Project Scheduling</title>
