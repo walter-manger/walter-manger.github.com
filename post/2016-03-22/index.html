@@ -1,0 +1,143 @@
+	<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="generator" content="Hugo 0.15" />
+
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title> Easing Into Hugo Automation with Emacs: Part 1 &middot; To The Triforce </title>
+
+  
+  <link rel="stylesheet" href="http://wmanger.com/css/poole.css">
+  <link rel="stylesheet" href="http://wmanger.com/css/syntax.css">
+  <link rel="stylesheet" href="http://wmanger.com/css/hyde.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+  
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+  <link rel="shortcut icon" href="/favicon.png">
+
+  
+  <link href="" rel="alternate" type="application/rss+xml" title="To The Triforce" />
+</head>
+
+	<body class="">
+		<div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <a href="http://wmanger.com/"><h1>To The Triforce</h1></a>
+      <p class="lead">
+       Quests for Knowledge 
+      </p>
+    </div>
+
+    <ul class="sidebar-nav">
+      <li><a href="/">Home</a> </li>
+      
+        <li><a href="/post/first/"> Beginning Again, statically </a></li>
+      
+        <li><a href="/post/2016-03-22/"> Easing Into Hugo Automation with Emacs: Part 1 </a></li>
+      
+        <li><a href="/post/2016-01-29/"> How I came to Emacs </a></li>
+      
+        <li><a href="/post/2016-03-11/"> JavaScript is Lovely/Horrible </a></li>
+      
+        <li><a href="/post/learning-C-again/"> Learning C/C&#43;&#43; Again </a></li>
+      
+        <li><a href="/post/2016-03-10/"> Side Project Scheduling </a></li>
+      
+        <li><a href="/post/C_Quickly/"> Well, that was fast Mr. Deitel(s) </a></li>
+      
+    </ul>
+
+    <p>&copy; 2016. All rights reserved. </p>
+  </div>
+</div>
+
+
+		<div class="content container">
+			<div class="post">
+			 	<h1>Easing Into Hugo Automation with Emacs: Part 1</h1>
+			  <span class="post-date">Tue, Mar 22, 2016</span>
+			      <p>After reading a post on  <a href="http://endlessparentheses.com/how-i-blog-one-year-of-posts-in-a-single-org-file.html">Endless Parentheses</a> about the author&rsquo;s blogging workflow I instantly felt compelled to do something similar. Being an Emacs user, the thought of living inside of Emacs for as long as possible is always attractive. Of course, I <em>could</em> have simply used his configuration as he&rsquo;s pointed to some of his configuration on GitHub&rsquo;s, but his flow involves Jekyll, and I am using Hugo. Moreover, coming up with my own flow and possibly porting a package would be a good way for an elisp beginner to gain some knowledge.</p>
+
+<p>So, here&rsquo;s my first step at making Hugo play well with Emacs.</p>
+
+<p>First, I wanted to be able to <em>capture</em> a post quickly. By using Org-Mode&rsquo;s capture templates, this was pretty easy.</p>
+
+<p>(Somewhere in my <em>init.el</em>)</p>
+
+<div class="highlight" style="background: #111111"><pre style="line-height: 125%"><span style="color: #ffffff">(</span><span style="color: #fb660a; font-weight: bold">setq</span> <span style="color: #fb660a">org-capture-templates</span>
+      <span style="color: #ffffff">&#39;(</span><span style="color: #0086d2">&quot;p&quot;</span> <span style="color: #0086d2">&quot;Post&quot;</span> <span style="color: #fb660a">plain</span> <span style="color: #ffffff">(</span><span style="color: #fb660a">file</span> <span style="color: #ffffff">(</span><span style="color: #fb660a">wm/hugo-new</span><span style="color: #ffffff">))</span>
+        <span style="color: #ffffff">(</span><span style="color: #fb660a">file</span> <span style="color: #0086d2">&quot;~/path-to-template-file&quot;</span><span style="color: #ffffff">)))</span>
+</pre></div>
+
+
+<p>The <code>wm/hugo-new</code> function here just creates a file name with today&rsquo;s date. This is what that function looks like:</p>
+
+<div class="highlight" style="background: #111111"><pre style="line-height: 125%"><span style="color: #ffffff">(defun</span> <span style="color: #fb660a">today-is</span> <span style="color: #ffffff">()</span>
+  <span style="color: #ffffff">(</span><span style="color: #fb660a">format-time-string</span> <span style="color: #0086d2">&quot;%Y-%m-%d&quot;</span><span style="color: #ffffff">))</span>
+
+<span style="color: #ffffff">(defun</span> <span style="color: #fb660a">wm/hugo-new</span> <span style="color: #ffffff">()</span>
+  <span style="color: #ffffff">(</span><span style="color: #fb660a">concat</span> <span style="color: #ffffff">(</span><span style="color: #fb660a">file-name-as-directory</span> <span style="color: #0086d2">&quot;~/path-to-hugo-posts&quot;</span><span style="color: #ffffff">)</span>
+            <span style="color: #ffffff">(</span><span style="color: #fb660a">today-is</span><span style="color: #ffffff">)</span> <span style="color: #0086d2">&quot;.md&quot;</span><span style="color: #ffffff">))</span>
+</pre></div>
+
+
+<p>And the template that I am using is just the basic hugo template, with a custom function for formatting the date the way that Hugo likes it.</p>
+
+<p><div class="highlight" style="background: #111111"><pre style="line-height: 125%">+++
+Categories = []
+Description = &quot;&quot;
+Tags = []
+date = &quot;%(wm/insert-date-time)&quot;
+menu = &quot;main&quot;
+title = &quot;&quot;
++++
+
+%?
+</pre></div>
+</p>
+
+<p>The <code>wm/insert-date-time</code> function:</p>
+
+<p><div class="highlight" style="background: #111111"><pre style="line-height: 125%"><span style="color: #ffffff">(defun</span> <span style="color: #fb660a">wm/insert-date-time</span> <span style="color: #ffffff">()</span>
+  <span style="color: #0086d2">&quot;Insert current date-time string in full ISO 8601 format.</span>
+<span style="color: #0086d2">Example: 2010-11-29T23:23:35-08:00&quot;</span>
+   <span style="color: #ffffff">(</span><span style="color: #fb660a">concat</span>
+    <span style="color: #ffffff">(</span><span style="color: #fb660a">format-time-string</span> <span style="color: #0086d2">&quot;%Y-%m-%dT%T&quot;</span><span style="color: #ffffff">)</span>
+    <span style="color: #ffffff">((</span><span style="color: #fb660a; font-weight: bold">lambda</span> <span style="color: #ffffff">(</span><span style="color: #fb660a">x</span><span style="color: #ffffff">)</span> <span style="color: #ffffff">(</span><span style="color: #fb660a">concat</span> <span style="color: #ffffff">(</span><span style="color: #fb660a">substring</span> <span style="color: #fb660a">x</span> <span style="color: #0086f7; font-weight: bold">0</span> <span style="color: #0086f7; font-weight: bold">3</span><span style="color: #ffffff">)</span> <span style="color: #0086d2">&quot;:&quot;</span> <span style="color: #ffffff">(</span><span style="color: #fb660a">substring</span> <span style="color: #fb660a">x</span> <span style="color: #0086f7; font-weight: bold">3</span> <span style="color: #0086f7; font-weight: bold">5</span><span style="color: #ffffff">)))</span>
+     <span style="color: #ffffff">(</span><span style="color: #fb660a">format-time-string</span> <span style="color: #0086d2">&quot;%z&quot;</span><span style="color: #ffffff">))))</span>
+</pre></div>
+</p>
+
+<p>At this point, I can hit <code>C-c c p</code> and the screen splits vertically with a new markdown file created with the template ready to go. I just need to fill out the title, categories, and main content and hit <code>C-c C-c</code> to save the post and get back to any work that I was doing before I started the post.</p>
+
+<p>Now that I have the file saved, I would like to be able to call the Hugo CLI to serve up the post I just created as well as build the posts to get them ready for publishing/pushing.</p>
+
+<p>The base solution is eshell aliases.</p>
+
+<p>In my <code>eshell/alias</code> file, I have 3 entries that help with Hugo.</p>
+
+<p><div class="highlight" style="background: #111111"><pre style="line-height: 125%"><span style="color: #fb660a">alias</span> <span style="color: #fb660a">blog-serve</span> <span style="color: #fb660a">hugo</span> <span style="color: #fb660a">-s=</span><span style="color: #0086d2">&quot;~/path-to-blog-src&quot;</span> <span style="color: #fb660a">server</span>
+<span style="color: #fb660a">alias</span> <span style="color: #fb660a">blog-browse</span> <span style="color: #ffffff">(</span><span style="color: #fb660a">browse-url</span> <span style="color: #0086d2">&quot;http://localhost:1313&quot;</span><span style="color: #ffffff">)</span>
+<span style="color: #fb660a">alias</span> <span style="color: #fb660a">blog-publish</span> <span style="color: #fb660a">hugo</span> <span style="color: #fb660a">-s=</span><span style="color: #0086d2">&quot;~/path-to-blog-src&quot;</span>
+</pre></div>
+</p>
+
+<p><code>blog-serve</code> starts the server and makes the site available for browsing via the <code>blog-browse</code> alias. <code>blog-publish</code> is self-explanatory.</p>
+
+<p>The capture, along with the functions and these aliases make it pretty easy for me to just whip up a post at the speed of thought, but there is still a little too much manual work here. The next part of this series I will experiment with porting one of the Jekyll packages for use with Hugo. It would be really cool to have an all in one solution for Hugo like there is for Jekyll.</p>
+
+<p>Until next time&hellip;</p>
+
+			</div>
+
+			
+		</div>
+
+  </body>
+</html>

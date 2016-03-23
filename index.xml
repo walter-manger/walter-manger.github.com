@@ -6,8 +6,88 @@
     <description>Recent content on To The Triforce</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 11 Mar 2016 20:53:12 -0700</lastBuildDate>
+    <lastBuildDate>Tue, 22 Mar 2016 21:53:53 -0600</lastBuildDate>
     <atom:link href="http://wmanger.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Easing Into Hugo Automation with Emacs: Part 1</title>
+      <link>http://wmanger.com/post/2016-03-22/</link>
+      <pubDate>Tue, 22 Mar 2016 21:53:53 -0600</pubDate>
+      
+      <guid>http://wmanger.com/post/2016-03-22/</guid>
+      <description>&lt;p&gt;After reading a post on  &lt;a href=&#34;http://endlessparentheses.com/how-i-blog-one-year-of-posts-in-a-single-org-file.html&#34;&gt;Endless Parentheses&lt;/a&gt; about the author&amp;rsquo;s blogging workflow I instantly felt compelled to do something similar. Being an Emacs user, the thought of living inside of Emacs for as long as possible is always attractive. Of course, I &lt;em&gt;could&lt;/em&gt; have simply used his configuration as he&amp;rsquo;s pointed to some of his configuration on GitHub&amp;rsquo;s, but his flow involves Jekyll, and I am using Hugo. Moreover, coming up with my own flow and possibly porting a package would be a good way for an elisp beginner to gain some knowledge.&lt;/p&gt;
+
+&lt;p&gt;So, here&amp;rsquo;s my first step at making Hugo play well with Emacs.&lt;/p&gt;
+
+&lt;p&gt;First, I wanted to be able to &lt;em&gt;capture&lt;/em&gt; a post quickly. By using Org-Mode&amp;rsquo;s capture templates, this was pretty easy.&lt;/p&gt;
+
+&lt;p&gt;(Somewhere in my &lt;em&gt;init.el&lt;/em&gt;)&lt;/p&gt;
+
+&lt;div class=&#34;highlight&#34; style=&#34;background: #111111&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #fb660a; font-weight: bold&#34;&gt;setq&lt;/span&gt; &lt;span style=&#34;color: #fb660a&#34;&gt;org-capture-templates&lt;/span&gt;
+      &lt;span style=&#34;color: #ffffff&#34;&gt;&amp;#39;(&lt;/span&gt;&lt;span style=&#34;color: #0086d2&#34;&gt;&amp;quot;p&amp;quot;&lt;/span&gt; &lt;span style=&#34;color: #0086d2&#34;&gt;&amp;quot;Post&amp;quot;&lt;/span&gt; &lt;span style=&#34;color: #fb660a&#34;&gt;plain&lt;/span&gt; &lt;span style=&#34;color: #ffffff&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #fb660a&#34;&gt;file&lt;/span&gt; &lt;span style=&#34;color: #ffffff&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #fb660a&#34;&gt;wm/hugo-new&lt;/span&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;))&lt;/span&gt;
+        &lt;span style=&#34;color: #ffffff&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #fb660a&#34;&gt;file&lt;/span&gt; &lt;span style=&#34;color: #0086d2&#34;&gt;&amp;quot;~/path-to-template-file&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;)))&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;The &lt;code&gt;wm/hugo-new&lt;/code&gt; function here just creates a file name with today&amp;rsquo;s date. This is what that function looks like:&lt;/p&gt;
+
+&lt;div class=&#34;highlight&#34; style=&#34;background: #111111&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;(defun&lt;/span&gt; &lt;span style=&#34;color: #fb660a&#34;&gt;today-is&lt;/span&gt; &lt;span style=&#34;color: #ffffff&#34;&gt;()&lt;/span&gt;
+  &lt;span style=&#34;color: #ffffff&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #fb660a&#34;&gt;format-time-string&lt;/span&gt; &lt;span style=&#34;color: #0086d2&#34;&gt;&amp;quot;%Y-%m-%d&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;))&lt;/span&gt;
+
+&lt;span style=&#34;color: #ffffff&#34;&gt;(defun&lt;/span&gt; &lt;span style=&#34;color: #fb660a&#34;&gt;wm/hugo-new&lt;/span&gt; &lt;span style=&#34;color: #ffffff&#34;&gt;()&lt;/span&gt;
+  &lt;span style=&#34;color: #ffffff&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #fb660a&#34;&gt;concat&lt;/span&gt; &lt;span style=&#34;color: #ffffff&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #fb660a&#34;&gt;file-name-as-directory&lt;/span&gt; &lt;span style=&#34;color: #0086d2&#34;&gt;&amp;quot;~/path-to-hugo-posts&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;)&lt;/span&gt;
+            &lt;span style=&#34;color: #ffffff&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #fb660a&#34;&gt;today-is&lt;/span&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color: #0086d2&#34;&gt;&amp;quot;.md&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;))&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;And the template that I am using is just the basic hugo template, with a custom function for formatting the date the way that Hugo likes it.&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;highlight&#34; style=&#34;background: #111111&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;+++
+Categories = []
+Description = &amp;quot;&amp;quot;
+Tags = []
+date = &amp;quot;%(wm/insert-date-time)&amp;quot;
+menu = &amp;quot;main&amp;quot;
+title = &amp;quot;&amp;quot;
++++
+
+%?
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/p&gt;
+
+&lt;p&gt;The &lt;code&gt;wm/insert-date-time&lt;/code&gt; function:&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;highlight&#34; style=&#34;background: #111111&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;(defun&lt;/span&gt; &lt;span style=&#34;color: #fb660a&#34;&gt;wm/insert-date-time&lt;/span&gt; &lt;span style=&#34;color: #ffffff&#34;&gt;()&lt;/span&gt;
+  &lt;span style=&#34;color: #0086d2&#34;&gt;&amp;quot;Insert current date-time string in full ISO 8601 format.&lt;/span&gt;
+&lt;span style=&#34;color: #0086d2&#34;&gt;Example: 2010-11-29T23:23:35-08:00&amp;quot;&lt;/span&gt;
+   &lt;span style=&#34;color: #ffffff&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #fb660a&#34;&gt;concat&lt;/span&gt;
+    &lt;span style=&#34;color: #ffffff&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #fb660a&#34;&gt;format-time-string&lt;/span&gt; &lt;span style=&#34;color: #0086d2&#34;&gt;&amp;quot;%Y-%m-%dT%T&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;)&lt;/span&gt;
+    &lt;span style=&#34;color: #ffffff&#34;&gt;((&lt;/span&gt;&lt;span style=&#34;color: #fb660a; font-weight: bold&#34;&gt;lambda&lt;/span&gt; &lt;span style=&#34;color: #ffffff&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #fb660a&#34;&gt;x&lt;/span&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color: #ffffff&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #fb660a&#34;&gt;concat&lt;/span&gt; &lt;span style=&#34;color: #ffffff&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #fb660a&#34;&gt;substring&lt;/span&gt; &lt;span style=&#34;color: #fb660a&#34;&gt;x&lt;/span&gt; &lt;span style=&#34;color: #0086f7; font-weight: bold&#34;&gt;0&lt;/span&gt; &lt;span style=&#34;color: #0086f7; font-weight: bold&#34;&gt;3&lt;/span&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color: #0086d2&#34;&gt;&amp;quot;:&amp;quot;&lt;/span&gt; &lt;span style=&#34;color: #ffffff&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #fb660a&#34;&gt;substring&lt;/span&gt; &lt;span style=&#34;color: #fb660a&#34;&gt;x&lt;/span&gt; &lt;span style=&#34;color: #0086f7; font-weight: bold&#34;&gt;3&lt;/span&gt; &lt;span style=&#34;color: #0086f7; font-weight: bold&#34;&gt;5&lt;/span&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;)))&lt;/span&gt;
+     &lt;span style=&#34;color: #ffffff&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #fb660a&#34;&gt;format-time-string&lt;/span&gt; &lt;span style=&#34;color: #0086d2&#34;&gt;&amp;quot;%z&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;))))&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/p&gt;
+
+&lt;p&gt;At this point, I can hit &lt;code&gt;C-c c p&lt;/code&gt; and the screen splits vertically with a new markdown file created with the template ready to go. I just need to fill out the title, categories, and main content and hit &lt;code&gt;C-c C-c&lt;/code&gt; to save the post and get back to any work that I was doing before I started the post.&lt;/p&gt;
+
+&lt;p&gt;Now that I have the file saved, I would like to be able to call the Hugo CLI to serve up the post I just created as well as build the posts to get them ready for publishing/pushing.&lt;/p&gt;
+
+&lt;p&gt;The base solution is eshell aliases.&lt;/p&gt;
+
+&lt;p&gt;In my &lt;code&gt;eshell/alias&lt;/code&gt; file, I have 3 entries that help with Hugo.&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;highlight&#34; style=&#34;background: #111111&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span style=&#34;color: #fb660a&#34;&gt;alias&lt;/span&gt; &lt;span style=&#34;color: #fb660a&#34;&gt;blog-serve&lt;/span&gt; &lt;span style=&#34;color: #fb660a&#34;&gt;hugo&lt;/span&gt; &lt;span style=&#34;color: #fb660a&#34;&gt;-s=&lt;/span&gt;&lt;span style=&#34;color: #0086d2&#34;&gt;&amp;quot;~/path-to-blog-src&amp;quot;&lt;/span&gt; &lt;span style=&#34;color: #fb660a&#34;&gt;server&lt;/span&gt;
+&lt;span style=&#34;color: #fb660a&#34;&gt;alias&lt;/span&gt; &lt;span style=&#34;color: #fb660a&#34;&gt;blog-browse&lt;/span&gt; &lt;span style=&#34;color: #ffffff&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #fb660a&#34;&gt;browse-url&lt;/span&gt; &lt;span style=&#34;color: #0086d2&#34;&gt;&amp;quot;http://localhost:1313&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;)&lt;/span&gt;
+&lt;span style=&#34;color: #fb660a&#34;&gt;alias&lt;/span&gt; &lt;span style=&#34;color: #fb660a&#34;&gt;blog-publish&lt;/span&gt; &lt;span style=&#34;color: #fb660a&#34;&gt;hugo&lt;/span&gt; &lt;span style=&#34;color: #fb660a&#34;&gt;-s=&lt;/span&gt;&lt;span style=&#34;color: #0086d2&#34;&gt;&amp;quot;~/path-to-blog-src&amp;quot;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;blog-serve&lt;/code&gt; starts the server and makes the site available for browsing via the &lt;code&gt;blog-browse&lt;/code&gt; alias. &lt;code&gt;blog-publish&lt;/code&gt; is self-explanatory.&lt;/p&gt;
+
+&lt;p&gt;The capture, along with the functions and these aliases make it pretty easy for me to just whip up a post at the speed of thought, but there is still a little too much manual work here. The next part of this series I will experiment with porting one of the Jekyll packages for use with Hugo. It would be really cool to have an all in one solution for Hugo like there is for Jekyll.&lt;/p&gt;
+
+&lt;p&gt;Until next time&amp;hellip;&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>JavaScript is Lovely/Horrible</title>
