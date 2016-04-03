@@ -6,8 +6,46 @@
     <description>Recent content in Posts on To The Triforce</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 22 Mar 2016 21:53:53 -0600</lastBuildDate>
+    <lastBuildDate>Sun, 03 Apr 2016 14:21:14 -0600</lastBuildDate>
     <atom:link href="http://wmanger.com/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>My first contribution to an Emacs package</title>
+      <link>http://wmanger.com/post/2016-04-03/</link>
+      <pubDate>Sun, 03 Apr 2016 14:21:14 -0600</pubDate>
+      
+      <guid>http://wmanger.com/post/2016-04-03/</guid>
+      <description>
+
+&lt;p&gt;This week I was experimenting with tracking time for work. The goal was to not leave Emacs (as it always is) and be able to adhere to the time tracking software that the company that I work for uses, &lt;a href=&#34;https://www.getharvest.com/&#34;&gt;Harvest&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;A quick search produced &lt;a href=&#34;https://github.com/kostajh/harvest.el&#34;&gt;harvest.el&lt;/a&gt;, which was exactly what I needed. After experimenting by tracking a few tasks I noticed that the &lt;em&gt;clock out&lt;/em&gt; function was not working properly. What the function was documented to do was clock out of any running clocked entry. Luckily, I had a little bit of downtime at work and I, forked the repo, opened up the source and began to debug Elisp the only way I know how:&lt;/p&gt;
+
+&lt;div class=&#34;highlight&#34; style=&#34;background: #111111&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #fb660a&#34;&gt;message&lt;/span&gt; &lt;span style=&#34;color: #0086d2&#34;&gt;&amp;quot;What is this doing? %s&amp;quot;&lt;/span&gt; &lt;span style=&#34;color: #fb660a&#34;&gt;something&lt;/span&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Surprisingly, I was able to figure out the issue pretty quickly (about 15 minutes of hacking). There was what looked like a new variable to keep cached task entries that was not properly being referenced. Basically, there is an operator in Elisp that creates a list, it looks something like this:&lt;/p&gt;
+
+&lt;div class=&#34;highlight&#34; style=&#34;background: #111111&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&amp;#39;(&lt;/span&gt;&lt;span style=&#34;color: #0086f7; font-weight: bold&#34;&gt;1&lt;/span&gt; &lt;span style=&#34;color: #0086f7; font-weight: bold&#34;&gt;2&lt;/span&gt; &lt;span style=&#34;color: #0086f7; font-weight: bold&#34;&gt;3&lt;/span&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color: #008800; font-style: italic; background-color: #0f140f&#34;&gt;;; produces a list with elements 1 2 3&lt;/span&gt;
+&lt;span style=&#34;color: #008800; font-style: italic; background-color: #0f140f&#34;&gt;;; =&amp;gt; (1 2 3)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;The function that was causing the problem in my case was taking a variable, that had previously been set to a list of elements and using the &lt;em&gt;&amp;lsquo;&lt;/em&gt; operator on that list. Which produces entirely different results. Using my example above:&lt;/p&gt;
+
+&lt;p&gt;&lt;div class=&#34;highlight&#34; style=&#34;background: #111111&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;&amp;#39;(&amp;#39;(&lt;/span&gt;&lt;span style=&#34;color: #0086f7; font-weight: bold&#34;&gt;1&lt;/span&gt; &lt;span style=&#34;color: #0086f7; font-weight: bold&#34;&gt;2&lt;/span&gt; &lt;span style=&#34;color: #0086f7; font-weight: bold&#34;&gt;3&lt;/span&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;))&lt;/span&gt; 
+&lt;span style=&#34;color: #008800; font-style: italic; background-color: #0f140f&#34;&gt;;; =&amp;gt; (quote (1 2 3))&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;/p&gt;
+
+&lt;p&gt;This produced entirely different results and in the context of the function, was unusable. All that needed to be done here was removing the list operator wrapping &lt;em&gt;&amp;rsquo;()&lt;/em&gt;. Here&amp;rsquo;s a peek at my pull request: &lt;a href=&#34;https://github.com/kostajh/harvest.el/pull/15&#34;&gt;PR #15&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&#34;the-moral-of-this-story-contribute-when-you-can:93bf0e0c1aa53e7b4c0297c4e30c3f29&#34;&gt;The moral of this story: Contribute when you can&lt;/h3&gt;
+
+&lt;p&gt;This fix took me about 30 minutes of total time. That included getting the Pull Request ready for the author. The author appreciated the help and perhaps many of the package users will appreciate it too. We should all help when we can. I learned a little more about Elisp along the way, so it wasn&amp;rsquo;t all giving and not receiving.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Easing Into Hugo Automation with Emacs: Part 1</title>
