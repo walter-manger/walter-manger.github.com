@@ -42,6 +42,8 @@
       
         <li><a href="/post/2016-03-22/"> Easing Into Hugo Automation with Emacs: Part 1 </a></li>
       
+        <li><a href="/post/2016-04-08/"> Go Basics - Pointers </a></li>
+      
         <li><a href="/post/2016-01-29/"> How I came to Emacs </a></li>
       
         <li><a href="/post/2016-03-11/"> JavaScript is Lovely/Horrible </a></li>
@@ -65,6 +67,68 @@
 <div class="posts">
 
       
+  <div class="post">
+    <h1 class="post-title">
+      <a href="http://wmanger.com/post/2016-04-08/">
+        Go Basics - Pointers
+      </a>
+    </h1>
+
+    <span class="post-date">Fri, Apr 8, 2016</span>
+
+    
+
+<p>Pointers in Go are much more simpler to deal with than their C/C++ counterparts. For one, Go does not allow pointer arithmetic, which is a good thing. Pointer arithmetic can be really confusing at times, no matter how maticulous you write the code.</p>
+
+<p>A simple example of a pointer in Go:</p>
+
+<div class="highlight" style="background: #111111"><pre style="line-height: 125%"><span style="color: #ffffff">i</span> <span style="color: #ffffff">:=</span> <span style="color: #0086f7; font-weight: bold">99</span>
+<span style="color: #ffffff">p</span> <span style="color: #ffffff">:=</span> <span style="color: #ffffff">&amp;i</span>
+</pre></div>
+
+
+<p>In this example, we are taking the <em>address</em> of <code>i</code> and assigning it to a variable <code>p</code>. If we were to print the result of <code>p</code>, we&rsquo;d see something like <code>0x10434114</code>. If you can imagine memory as a block of cells, <code>i</code> would be the name of one of the cells, <code>p</code> would be the cells&rsquo; identifier, and <code>99</code> would be the cells&rsquo; data.</p>
+
+<p>The main advantage of using pointers is memory efficiency. Instead of copying values from one variable to another, the address is referenced. Work can still be done on the data that lives at that address through the <em>dereferencing</em> operator.</p>
+
+<div class="highlight" style="background: #111111"><pre style="line-height: 125%"><span style="color: #ffffff">p</span> <span style="color: #ffffff">=</span> <span style="color: #0086f7; font-weight: bold">100</span>   <span style="color: #008800; font-style: italic; background-color: #0f140f">// ERROR!</span>
+<span style="color: #ffffff">*p</span> <span style="color: #ffffff">=</span> <span style="color: #0086f7; font-weight: bold">100</span>  <span style="color: #008800; font-style: italic; background-color: #0f140f">// Dereference :)</span>
+</pre></div>
+
+
+<p>You can think of <code>*p</code> as <code>i</code> in this case. Consequently, the value of <code>i</code> is now <code>100</code>.</p>
+
+<h3 id="why-would-you-use-pointers:4e55f66e458c44c75aa7f611c693d40c">Why would you use Pointers?</h3>
+
+<p>I think the more important question is <em>where would you use pointers?</em> I&rsquo;ll dive into this more in later posts, but for now, know that Go makes use of a concept called <em>Method Receivers</em>, which define the way methods are attached to <code>struct</code>. If the <code>struct</code> needs to be modified by a method, a pointer for that struct is used.</p>
+
+<p>Example:</p>
+
+<p><div class="highlight" style="background: #111111"><pre style="line-height: 125%"><span style="color: #fb660a; font-weight: bold">type</span> <span style="color: #ffffff">Blah</span> <span style="color: #fb660a; font-weight: bold">struct</span> <span style="color: #ffffff">{</span>
+  <span style="color: #ffffff">count</span> <span style="color: #cdcaa9; font-weight: bold">int</span>
+<span style="color: #ffffff">}</span>
+
+<span style="color: #fb660a; font-weight: bold">func</span> <span style="color: #ffffff">(b</span> <span style="color: #ffffff">Blah)</span> <span style="color: #ffffff">Hello()</span> <span style="color: #ffffff">{</span>
+  <span style="color: #008800; font-style: italic; background-color: #0f140f">// Not modifying the state of the struct</span>
+  <span style="color: #008800; font-style: italic; background-color: #0f140f">// Blah is not a pointer</span>
+  <span style="color: #ffffff">fmt.Println(</span><span style="color: #0086d2">&quot;Hello&quot;</span><span style="color: #ffffff">)</span>
+  <span style="color: #ffffff">fmt.Println(</span><span style="color: #0086d2">&quot;Count: &quot;</span> <span style="color: #ffffff">+</span> <span style="color: #ffffff">b.count)</span>
+<span style="color: #ffffff">}</span>
+
+<span style="color: #fb660a; font-weight: bold">func</span> <span style="color: #ffffff">(b</span> <span style="color: #ffffff">*Blah)</span> <span style="color: #ffffff">Inc()</span> <span style="color: #ffffff">{</span>
+  <span style="color: #008800; font-style: italic; background-color: #0f140f">// Modifying state here</span>
+  <span style="color: #008800; font-style: italic; background-color: #0f140f">// *Blah is a pointer, but no need to dereference</span>
+  <span style="color: #ffffff">b.count</span> <span style="color: #ffffff">=</span> <span style="color: #ffffff">b.count</span> <span style="color: #ffffff">+</span> <span style="color: #0086f7; font-weight: bold">1</span>
+<span style="color: #ffffff">}</span>
+</pre></div>
+</p>
+
+<p>Don&rsquo;t worry if this is confusing. I will be posting more about Structs, Pointers, and Methods. This is just a bite-sized introduction to pointers in Go.</p>
+
+<p>Until we meet again.</p>
+
+  </div>
+  
   <div class="post">
     <h1 class="post-title">
       <a href="http://wmanger.com/post/2016-04-03/">
