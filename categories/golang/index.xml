@@ -17,7 +17,7 @@
       <guid>http://wmanger.com/post/2016-04-08/</guid>
       <description>
 
-&lt;p&gt;Pointers in Go are much more simpler to deal with than their C/C++ counterparts. For one, Go does not allow pointer arithmetic, which is a good thing. Pointer arithmetic can be really confusing at times, no matter how maticulous you write the code.&lt;/p&gt;
+&lt;p&gt;Pointers in Go are much more simpler to deal with than their C/C++ counterparts. For one, Go does not allow pointer arithmetic, which is a good thing. Pointer arithmetic can be really confusing at times, no matter how meticulous you write the code.&lt;/p&gt;
 
 &lt;p&gt;A simple example of a pointer in Go:&lt;/p&gt;
 

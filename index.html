@@ -52,6 +52,8 @@
       
         <li><a href="/post/2016-04-03/"> My first contribution to an Emacs package </a></li>
       
+        <li><a href="/post/2016-04-17/"> My week in Emacs - Week 18 </a></li>
+      
         <li><a href="/post/2016-03-10/"> Side Project Scheduling </a></li>
       
         <li><a href="/post/C_Quickly/"> Well, that was fast Mr. Deitel(s) </a></li>
@@ -69,6 +71,105 @@
 <div class="posts">
 
       
+  <div class="post">
+    <h1 class="post-title">
+      <a href="http://wmanger.com/post/2016-04-17/">
+        My week in Emacs - Week 18
+      </a>
+    </h1>
+
+    <span class="post-date">Mon, May 2, 2016</span>
+
+    
+
+<p>I&rsquo;ve decided that I am going to write about the things that I&rsquo;ve done to make my life easier with Emacs. I will attempt to write weekly, if, of course, there is enough content to warrant a post.</p>
+
+<p>Here&rsquo;s what I&rsquo;ve got so far: (this is slightly cheating since I have not posted in a couple of weeks)</p>
+
+<h3 id="1-started-easing-into-using-org-mode-for-planning-and-tracking:ca117100f93e1263fed81a06fa5cab2c">1. Started easing into using Org-Mode for planning And tracking</h3>
+
+<p>I am starting to use org-mode&rsquo;s todos and agenda pretty heavily. There&rsquo;s still a way to go as I don&rsquo;t have a great workflow yet. Basically, my flow consists of this:</p>
+
+<ol>
+<li><p>Attend a stand-up at work</p></li>
+
+<li><p>Decide on what I may work on that day, then create and schedule those items</p></li>
+
+<li><p>Track time against those items and mark them done when they are</p></li>
+</ol>
+
+<h4 id="i-think-an-improved-workflow-would-be:ca117100f93e1263fed81a06fa5cab2c">I think an improved workflow would be</h4>
+
+<ol>
+<li><p>Get all of the work items into my org file immediately when I know about them</p></li>
+
+<li><p>Write any notes that I may think of for each of the tasks</p></li>
+
+<li><p>Create checkbox items to break down the tasks</p></li>
+
+<li><p>In the beginning of each day, select the items that I think I could get done that day, reviewing the notes as needed</p></li>
+
+<li><p>At the end of the day, move any tasks that need to be moved on to the next day</p></li>
+</ol>
+
+<h3 id="2-added-the-ability-to-track-time-to-harvest-with-harvest-el:ca117100f93e1263fed81a06fa5cab2c">2. Added the ability to track time to Harvest with Harvest.el</h3>
+
+<p>I&rsquo;ve switched my Agenda time tracking to also track to harvest. I also learned more about elisp as a result of fixing a bug in Harvest.el. Elisp is pretty awesome :)</p>
+
+<h3 id="3-started-using-go-mode:ca117100f93e1263fed81a06fa5cab2c">3. Started using Go-Mode</h3>
+
+<p>This last sprint I took on some significant Go work, which prompted me learning more about the Go-Mode package that I&rsquo;ve had installed for a while now. I started taking advantage of things like <code>C-c C-j</code> (jump to definition) and <code>M-*</code> (pop-mark to get back to the place I jumped from). I am not completely happy with the bindings here, but it isn&rsquo;t killing me. I liked using <code>C-c C-d</code> for Godoc in the minibuffer. For some reason, my hook to <code>gofmt</code> upon saving stopped working one day&hellip; not sure why. I used <code>(ff-get-other-file)</code> to find the corresponding <code>*_test.go</code> file. Sometimes it didn&rsquo;t work as there were some mismatched file names &ndash; it&rsquo;s not Go-Mode&rsquo;s fault.</p>
+
+<h3 id="4-relied-more-on-eshell-for-clis-that-were-not-so-chatty:ca117100f93e1263fed81a06fa5cab2c">4. Relied more on eshell for CLIs that were not so <em>chatty</em></h3>
+
+<p>Eshell has been great for most everything I do, however. When using CLI&rsquo;s that produce large amounts of output, eshell seems to get bogged down. I have not looked into why this is happening. I suspect that it has something to do with the amount of history that I keep in the buffer. I&rsquo;ll investigate some other time. For now, anything that I know is going to barf out thousands of lines is going to have to be performed in my iTerm 2. Along these lines, when I am executing unit tests, eshell does not get bogged down, but the output isn&rsquo;t really that pretty. I&rsquo;ll need to investigate this too.</p>
+
+<h3 id="5-stayed-in-magit-90-of-the-time-when-using-git:ca117100f93e1263fed81a06fa5cab2c">5. Stayed in Magit 90% of the time when using Git</h3>
+
+<p>I am really starting to love Magit. There are just a few things that I need to get better at that really have nothing to do with Magit per se. One area that bit me last week was dealing with a bad merge. I was unable to get myself out of the mess without going back to Tower and Beyond Compare for diffs. Beyond Compare&rsquo;s interface for performing merges is pretty hard to move away from. All in due time. I&rsquo;ve achieved the goal of not having to use my mouse at all when dealing with Git 90% of the time &ndash; that&rsquo;s good enough for now.</p>
+
+<h2 id="what-still-needs-work:ca117100f93e1263fed81a06fa5cab2c">What still needs work?</h2>
+
+<ol>
+<li><p>General Editing Efficiency</p>
+
+<ul>
+<li>There are times where I find my self pressing <code>jjjjjjjkkkk</code> (I use evil) to move around the document, when I could be either using search or something like avy (which I have not installed yet).</li>
+</ul></li>
+
+<li><p>Better eshell Configuration</p>
+
+<ul>
+<li>I don&rsquo;t have any of my Zsh settings available. I know that there is a way to make this happen, I just have not had the time. Eshell colors are not awesome at this point. I am not sure if I can fix this completely, but I&rsquo;ll research it.</li>
+</ul></li>
+
+<li><p>Org-Mode / Planning Improvements</p>
+
+<ul>
+<li>Work on getting better at planning in general. Allocate time for managing tasks. Planning make for a better overall experience.</li>
+</ul></li>
+
+<li><p>Start Estimating Effort in Org-Mode Tasks</p>
+
+<ul>
+<li>Learn more about estimating time and developing weekly reports &ndash; like Sacha Chua does.</li>
+</ul></li>
+
+<li><p>Daily Reflection</p>
+
+<ul>
+<li>Start spending 10 minutes at the end of the day to reflect on the things that I did that day and keep it in a Work Journal (I&rsquo;ll need a capture for that).</li>
+</ul></li>
+
+<li><p>Harness Org-Mode&rsquo;s Habits</p>
+
+<ul>
+<li>Repetitive tasks, such as the Daily Reflection above, should be defined as a repetitive task in my Org file so I can track how often I do reflect.</li>
+</ul></li>
+</ol>
+
+  </div>
+  
   <div class="post">
     <h1 class="post-title">
       <a href="http://wmanger.com/post/2016-04-16/">
@@ -119,7 +220,7 @@
 
     
 
-<p>Pointers in Go are much more simpler to deal with than their C/C++ counterparts. For one, Go does not allow pointer arithmetic, which is a good thing. Pointer arithmetic can be really confusing at times, no matter how maticulous you write the code.</p>
+<p>Pointers in Go are much more simpler to deal with than their C/C++ counterparts. For one, Go does not allow pointer arithmetic, which is a good thing. Pointer arithmetic can be really confusing at times, no matter how meticulous you write the code.</p>
 
 <p>A simple example of a pointer in Go:</p>
 

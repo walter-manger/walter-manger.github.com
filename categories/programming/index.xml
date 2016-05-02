@@ -6,8 +6,104 @@
     <description>Recent content in Programming on To The Triforce</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 16 Apr 2016 14:31:11 -0600</lastBuildDate>
+    <lastBuildDate>Mon, 02 May 2016 22:52:32 -0600</lastBuildDate>
     <atom:link href="http://wmanger.com/categories/programming/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>My week in Emacs - Week 18</title>
+      <link>http://wmanger.com/post/2016-04-17/</link>
+      <pubDate>Mon, 02 May 2016 22:52:32 -0600</pubDate>
+      
+      <guid>http://wmanger.com/post/2016-04-17/</guid>
+      <description>
+
+&lt;p&gt;I&amp;rsquo;ve decided that I am going to write about the things that I&amp;rsquo;ve done to make my life easier with Emacs. I will attempt to write weekly, if, of course, there is enough content to warrant a post.&lt;/p&gt;
+
+&lt;p&gt;Here&amp;rsquo;s what I&amp;rsquo;ve got so far: (this is slightly cheating since I have not posted in a couple of weeks)&lt;/p&gt;
+
+&lt;h3 id=&#34;1-started-easing-into-using-org-mode-for-planning-and-tracking:ca117100f93e1263fed81a06fa5cab2c&#34;&gt;1. Started easing into using Org-Mode for planning And tracking&lt;/h3&gt;
+
+&lt;p&gt;I am starting to use org-mode&amp;rsquo;s todos and agenda pretty heavily. There&amp;rsquo;s still a way to go as I don&amp;rsquo;t have a great workflow yet. Basically, my flow consists of this:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Attend a stand-up at work&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Decide on what I may work on that day, then create and schedule those items&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Track time against those items and mark them done when they are&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&#34;i-think-an-improved-workflow-would-be:ca117100f93e1263fed81a06fa5cab2c&#34;&gt;I think an improved workflow would be&lt;/h4&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;Get all of the work items into my org file immediately when I know about them&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Write any notes that I may think of for each of the tasks&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Create checkbox items to break down the tasks&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;In the beginning of each day, select the items that I think I could get done that day, reviewing the notes as needed&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;At the end of the day, move any tasks that need to be moved on to the next day&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&#34;2-added-the-ability-to-track-time-to-harvest-with-harvest-el:ca117100f93e1263fed81a06fa5cab2c&#34;&gt;2. Added the ability to track time to Harvest with Harvest.el&lt;/h3&gt;
+
+&lt;p&gt;I&amp;rsquo;ve switched my Agenda time tracking to also track to harvest. I also learned more about elisp as a result of fixing a bug in Harvest.el. Elisp is pretty awesome :)&lt;/p&gt;
+
+&lt;h3 id=&#34;3-started-using-go-mode:ca117100f93e1263fed81a06fa5cab2c&#34;&gt;3. Started using Go-Mode&lt;/h3&gt;
+
+&lt;p&gt;This last sprint I took on some significant Go work, which prompted me learning more about the Go-Mode package that I&amp;rsquo;ve had installed for a while now. I started taking advantage of things like &lt;code&gt;C-c C-j&lt;/code&gt; (jump to definition) and &lt;code&gt;M-*&lt;/code&gt; (pop-mark to get back to the place I jumped from). I am not completely happy with the bindings here, but it isn&amp;rsquo;t killing me. I liked using &lt;code&gt;C-c C-d&lt;/code&gt; for Godoc in the minibuffer. For some reason, my hook to &lt;code&gt;gofmt&lt;/code&gt; upon saving stopped working one day&amp;hellip; not sure why. I used &lt;code&gt;(ff-get-other-file)&lt;/code&gt; to find the corresponding &lt;code&gt;*_test.go&lt;/code&gt; file. Sometimes it didn&amp;rsquo;t work as there were some mismatched file names &amp;ndash; it&amp;rsquo;s not Go-Mode&amp;rsquo;s fault.&lt;/p&gt;
+
+&lt;h3 id=&#34;4-relied-more-on-eshell-for-clis-that-were-not-so-chatty:ca117100f93e1263fed81a06fa5cab2c&#34;&gt;4. Relied more on eshell for CLIs that were not so &lt;em&gt;chatty&lt;/em&gt;&lt;/h3&gt;
+
+&lt;p&gt;Eshell has been great for most everything I do, however. When using CLI&amp;rsquo;s that produce large amounts of output, eshell seems to get bogged down. I have not looked into why this is happening. I suspect that it has something to do with the amount of history that I keep in the buffer. I&amp;rsquo;ll investigate some other time. For now, anything that I know is going to barf out thousands of lines is going to have to be performed in my iTerm 2. Along these lines, when I am executing unit tests, eshell does not get bogged down, but the output isn&amp;rsquo;t really that pretty. I&amp;rsquo;ll need to investigate this too.&lt;/p&gt;
+
+&lt;h3 id=&#34;5-stayed-in-magit-90-of-the-time-when-using-git:ca117100f93e1263fed81a06fa5cab2c&#34;&gt;5. Stayed in Magit 90% of the time when using Git&lt;/h3&gt;
+
+&lt;p&gt;I am really starting to love Magit. There are just a few things that I need to get better at that really have nothing to do with Magit per se. One area that bit me last week was dealing with a bad merge. I was unable to get myself out of the mess without going back to Tower and Beyond Compare for diffs. Beyond Compare&amp;rsquo;s interface for performing merges is pretty hard to move away from. All in due time. I&amp;rsquo;ve achieved the goal of not having to use my mouse at all when dealing with Git 90% of the time &amp;ndash; that&amp;rsquo;s good enough for now.&lt;/p&gt;
+
+&lt;h2 id=&#34;what-still-needs-work:ca117100f93e1263fed81a06fa5cab2c&#34;&gt;What still needs work?&lt;/h2&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;General Editing Efficiency&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;There are times where I find my self pressing &lt;code&gt;jjjjjjjkkkk&lt;/code&gt; (I use evil) to move around the document, when I could be either using search or something like avy (which I have not installed yet).&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Better eshell Configuration&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;I don&amp;rsquo;t have any of my Zsh settings available. I know that there is a way to make this happen, I just have not had the time. Eshell colors are not awesome at this point. I am not sure if I can fix this completely, but I&amp;rsquo;ll research it.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Org-Mode / Planning Improvements&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Work on getting better at planning in general. Allocate time for managing tasks. Planning make for a better overall experience.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Start Estimating Effort in Org-Mode Tasks&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Learn more about estimating time and developing weekly reports &amp;ndash; like Sacha Chua does.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Daily Reflection&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Start spending 10 minutes at the end of the day to reflect on the things that I did that day and keep it in a Work Journal (I&amp;rsquo;ll need a capture for that).&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Harness Org-Mode&amp;rsquo;s Habits&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Repetitive tasks, such as the Daily Reflection above, should be defined as a repetitive task in my Org file so I can track how often I do reflect.&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+    </item>
     
     <item>
       <title>Your Software Developer Career Needs Attention</title>
@@ -53,7 +149,7 @@
       <guid>http://wmanger.com/post/2016-04-08/</guid>
       <description>
 
-&lt;p&gt;Pointers in Go are much more simpler to deal with than their C/C++ counterparts. For one, Go does not allow pointer arithmetic, which is a good thing. Pointer arithmetic can be really confusing at times, no matter how maticulous you write the code.&lt;/p&gt;
+&lt;p&gt;Pointers in Go are much more simpler to deal with than their C/C++ counterparts. For one, Go does not allow pointer arithmetic, which is a good thing. Pointer arithmetic can be really confusing at times, no matter how meticulous you write the code.&lt;/p&gt;
 
 &lt;p&gt;A simple example of a pointer in Go:&lt;/p&gt;
 
