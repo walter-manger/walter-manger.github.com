@@ -3,8 +3,13 @@
   
   <url>
     <loc>http://wmanger.com/</loc>
-    <lastmod>2016-05-02T22:52:32-06:00</lastmod>
+    <lastmod>2016-06-01T11:45:25-06:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://wmanger.com/post/2016-07-13/</loc>
+    <lastmod>2016-06-01T11:45:25-06:00</lastmod>
   </url>
   
   <url>
@@ -60,6 +65,10 @@
   <url>
     <loc>http://wmanger.com/post/first/</loc>
     <lastmod>2016-01-16T14:57:47-07:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://wmanger.com/post/2016-07-07/</loc>
   </url>
   
 </urlset>

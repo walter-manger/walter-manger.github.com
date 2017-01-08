@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
-  <title> Side Project Scheduling &middot; To The Triforce </title>
+  <title> My Week In Emacs - Week 23 &middot; To The Triforce </title>
 
   
   <link rel="stylesheet" href="http://wmanger.com/css/poole.css">
@@ -63,36 +63,42 @@
       
     </ul>
 
-    <p>&copy; 2017. All rights reserved. </p>
+    <p>&copy; 2016. All rights reserved. </p>
   </div>
 </div>
 
 
 		<div class="content container">
 			<div class="post">
-			 	<h1>Side Project Scheduling</h1>
-			  <span class="post-date">Thu, Mar 10, 2016</span>
+			 	<h1>My Week In Emacs - Week 23</h1>
+			  <span class="post-date">Wed, Jun 1, 2016</span>
 			      
 
-<p>I&rsquo;ve recently starting getting up earlier to work on side projects. When I say earlier, I mean, at about 4:15AM. This should give me a good 1.5 hours to work on something and get to a point that I can commit something meaningful before I have to start getting ready for my day. The goal is to get that number down to something like 40-45 minutes so I can spend the other half doing something else like reading or researching new technologies. What I am finding is for that 1.5 hours to be effective, planning the night before is pretty important. I&rsquo;ve spent a few mornings getting up to speed for a half hour. It&rsquo;s really important to eliminate that discovery time.</p>
+<p>Not a whole lot to report but I want to bring up something about <em>Magit</em> and source control in general.</p>
 
-<h3 id="what-am-i-working-on:6bb46f5cad8d6c0d6d2277975909ea07">What am I working on?</h3>
+<p>My usage of <em>Magit</em> hasn&rsquo;t really changed over the past weeks, but I have been slowly trying to use it and <em>ediff</em> for merging. I have to say that I really appreciate the merging experience when using a graphical tool like <a href="http://www.git-tower.com">Tower</a> and performing diff merging in another graphical tool such as <a href="http://www.scootersoftware">Beyond Compare</a>. Breaking away from that experience has proven to be quite the job. Especially when the merges that I am dealing with are not simple merges. So, on that subject&hellip;</p>
 
-<p>When I first wanted to learn Go, I started making a game that could be played in Slack in the form of an integration. It is called <a href="https://github.com/walter-manger/slack-battle">Slack Battle</a>. What I thought would be easy to slap together in a night or so is turning out to be a little more difficult than I&rsquo;d planned. Creating games is difficult &ndash; even really simple ones. Add the requirement for playing games over HTTP and the need for some sort of persistence, and the difficulty increases.</p>
-
-<h3 id="the-new-plan:6bb46f5cad8d6c0d6d2277975909ea07">The <em>New</em> Plan</h3>
-
-<p>The project was first created with Google App Engine, but coming back to the project after it had aged a bit, I thought that it would be so much simpler not being boxed into what GAE offers. Really, the only thing GAE was providing me was a datastore. I decided to use Mongolab instead. Why? Because it doesn&rsquo;t really box me in. It feels as if I had an instance of Mongo running locally.</p>
+<h2 id="how-to-avoid-complex-merges:a26538c7c049e8f5ff1eef5aba16f4be">How To Avoid Complex Merges</h2>
 
 <ol>
-<li>Rip Out GAE</li>
-<li>Integrate Mongo &amp; Mongolab</li>
-<li>Refactor for better readability and prepare for testing</li>
-<li>Add tracking &amp; logging</li>
-<li>Actually write tests</li>
-<li>Create a front-end for testing (React / Angular)</li>
-<li>Deploy to (Digital Ocean, Heroku, &hellip;)</li>
+<li>Merge and commit frequently</li>
 </ol>
+
+<p>That&rsquo;s really the only rule. If your commits are small, the resulting merge should also be small.</p>
+
+<p>It&rsquo;s all easily written than done though. No one likes to commit non-functional changes, but I think if commits were made at the block level as a loose rule, things would work out better in the end.</p>
+
+<p>So that&rsquo;s what I am committing to. The plan is to decompose things down to the block level and slowly start using Emacs for my merges.</p>
+
+<h2 id="one-more-thing:a26538c7c049e8f5ff1eef5aba16f4be">One More Thing</h2>
+
+<p>For all of you that don&rsquo;t know about <em>Magit</em>, here&rsquo;s a fantastic presentation by the great <a href="http://www.howardism.org">Howard Abrams</a>.</p>
+
+
+<div style="position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;">
+  <iframe src="//www.youtube.com/embed/vQO7F2Q9DwA" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" allowfullscreen frameborder="0"></iframe>
+ </div>
+
 
 			</div>
 

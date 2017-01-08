@@ -6,8 +6,44 @@
     <description>Recent content in Emacs on To The Triforce</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 02 May 2016 22:52:32 -0600</lastBuildDate>
+    <lastBuildDate>Wed, 01 Jun 2016 11:45:25 -0600</lastBuildDate>
     <atom:link href="http://wmanger.com/categories/emacs/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>My Week In Emacs - Week 23</title>
+      <link>http://wmanger.com/post/2016-07-13/</link>
+      <pubDate>Wed, 01 Jun 2016 11:45:25 -0600</pubDate>
+      
+      <guid>http://wmanger.com/post/2016-07-13/</guid>
+      <description>
+
+&lt;p&gt;Not a whole lot to report but I want to bring up something about &lt;em&gt;Magit&lt;/em&gt; and source control in general.&lt;/p&gt;
+
+&lt;p&gt;My usage of &lt;em&gt;Magit&lt;/em&gt; hasn&amp;rsquo;t really changed over the past weeks, but I have been slowly trying to use it and &lt;em&gt;ediff&lt;/em&gt; for merging. I have to say that I really appreciate the merging experience when using a graphical tool like &lt;a href=&#34;http://www.git-tower.com&#34;&gt;Tower&lt;/a&gt; and performing diff merging in another graphical tool such as &lt;a href=&#34;http://www.scootersoftware&#34;&gt;Beyond Compare&lt;/a&gt;. Breaking away from that experience has proven to be quite the job. Especially when the merges that I am dealing with are not simple merges. So, on that subject&amp;hellip;&lt;/p&gt;
+
+&lt;h2 id=&#34;how-to-avoid-complex-merges:a26538c7c049e8f5ff1eef5aba16f4be&#34;&gt;How To Avoid Complex Merges&lt;/h2&gt;
+
+&lt;ol&gt;
+&lt;li&gt;Merge and commit frequently&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;That&amp;rsquo;s really the only rule. If your commits are small, the resulting merge should also be small.&lt;/p&gt;
+
+&lt;p&gt;It&amp;rsquo;s all easily written than done though. No one likes to commit non-functional changes, but I think if commits were made at the block level as a loose rule, things would work out better in the end.&lt;/p&gt;
+
+&lt;p&gt;So that&amp;rsquo;s what I am committing to. The plan is to decompose things down to the block level and slowly start using Emacs for my merges.&lt;/p&gt;
+
+&lt;h2 id=&#34;one-more-thing:a26538c7c049e8f5ff1eef5aba16f4be&#34;&gt;One More Thing&lt;/h2&gt;
+
+&lt;p&gt;For all of you that don&amp;rsquo;t know about &lt;em&gt;Magit&lt;/em&gt;, here&amp;rsquo;s a fantastic presentation by the great &lt;a href=&#34;http://www.howardism.org&#34;&gt;Howard Abrams&lt;/a&gt;.&lt;/p&gt;
+
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;//www.youtube.com/embed/vQO7F2Q9DwA&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%;&#34; allowfullscreen frameborder=&#34;0&#34;&gt;&lt;/iframe&gt;
+ &lt;/div&gt;
+
+</description>
+    </item>
     
     <item>
       <title>My week in Emacs - Week 18</title>
