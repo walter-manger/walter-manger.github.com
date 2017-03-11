@@ -3,7 +3,7 @@
 <head>
   <link href="http://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.15" />
+  <meta name="generator" content="Hugo 0.20-DEV" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
@@ -37,6 +37,7 @@
     <ul class="sidebar-nav">
       <li><a href="/">Home</a> </li>
       
+      <li><a href="/post/">Archive</a> </li>
     </ul>
 
     <p>&copy; 2017. All rights reserved. </p>
@@ -56,26 +57,30 @@
 
 <p>(Somewhere in my <em>init.el</em>)</p>
 
-<div class="highlight" style="background: #111111"><pre style="line-height: 125%"><span style="color: #ffffff">(</span><span style="color: #fb660a; font-weight: bold">setq</span> <span style="color: #fb660a">org-capture-templates</span>
-      <span style="color: #ffffff">&#39;(</span><span style="color: #0086d2">&quot;p&quot;</span> <span style="color: #0086d2">&quot;Post&quot;</span> <span style="color: #fb660a">plain</span> <span style="color: #ffffff">(</span><span style="color: #fb660a">file</span> <span style="color: #ffffff">(</span><span style="color: #fb660a">wm/hugo-new</span><span style="color: #ffffff">))</span>
-        <span style="color: #ffffff">(</span><span style="color: #fb660a">file</span> <span style="color: #0086d2">&quot;~/path-to-template-file&quot;</span><span style="color: #ffffff">)))</span>
-</pre></div>
+
+
+(setq org-capture-templates
+      '("p" "Post" plain (file (wm/hugo-new))
+        (file "~/path-to-template-file")))
+
 
 
 <p>The <code>wm/hugo-new</code> function here just creates a file name with today&rsquo;s date. This is what that function looks like:</p>
 
-<div class="highlight" style="background: #111111"><pre style="line-height: 125%"><span style="color: #ffffff">(defun</span> <span style="color: #fb660a">today-is</span> <span style="color: #ffffff">()</span>
-  <span style="color: #ffffff">(</span><span style="color: #fb660a">format-time-string</span> <span style="color: #0086d2">&quot;%Y-%m-%d&quot;</span><span style="color: #ffffff">))</span>
 
-<span style="color: #ffffff">(defun</span> <span style="color: #fb660a">wm/hugo-new</span> <span style="color: #ffffff">()</span>
-  <span style="color: #ffffff">(</span><span style="color: #fb660a">concat</span> <span style="color: #ffffff">(</span><span style="color: #fb660a">file-name-as-directory</span> <span style="color: #0086d2">&quot;~/path-to-hugo-posts&quot;</span><span style="color: #ffffff">)</span>
-            <span style="color: #ffffff">(</span><span style="color: #fb660a">today-is</span><span style="color: #ffffff">)</span> <span style="color: #0086d2">&quot;.md&quot;</span><span style="color: #ffffff">))</span>
-</pre></div>
+
+(defun today-is ()
+  (format-time-string "%Y-%m-%d"))
+
+(defun wm/hugo-new ()
+  (concat (file-name-as-directory "~/path-to-hugo-posts")
+            (today-is) ".md"))
+
 
 
 <p>And the template that I am using is just the basic hugo template, with a custom function for formatting the date the way that Hugo likes it.</p>
 
-<p><div class="highlight" style="background: #111111"><pre style="line-height: 125%">+++
+<div class="highlight" style="background: #111111"><pre style="line-height: 125%">+++
 Categories = []
 Description = &quot;&quot;
 Tags = []
@@ -86,19 +91,21 @@ title = &quot;&quot;
 
 %?
 </pre></div>
-</p>
+
 
 <p>The <code>wm/insert-date-time</code> function:</p>
 
-<p><div class="highlight" style="background: #111111"><pre style="line-height: 125%"><span style="color: #ffffff">(defun</span> <span style="color: #fb660a">wm/insert-date-time</span> <span style="color: #ffffff">()</span>
-  <span style="color: #0086d2">&quot;Insert current date-time string in full ISO 8601 format.</span>
-<span style="color: #0086d2">Example: 2010-11-29T23:23:35-08:00&quot;</span>
-   <span style="color: #ffffff">(</span><span style="color: #fb660a">concat</span>
-    <span style="color: #ffffff">(</span><span style="color: #fb660a">format-time-string</span> <span style="color: #0086d2">&quot;%Y-%m-%dT%T&quot;</span><span style="color: #ffffff">)</span>
-    <span style="color: #ffffff">((</span><span style="color: #fb660a; font-weight: bold">lambda</span> <span style="color: #ffffff">(</span><span style="color: #fb660a">x</span><span style="color: #ffffff">)</span> <span style="color: #ffffff">(</span><span style="color: #fb660a">concat</span> <span style="color: #ffffff">(</span><span style="color: #fb660a">substring</span> <span style="color: #fb660a">x</span> <span style="color: #0086f7; font-weight: bold">0</span> <span style="color: #0086f7; font-weight: bold">3</span><span style="color: #ffffff">)</span> <span style="color: #0086d2">&quot;:&quot;</span> <span style="color: #ffffff">(</span><span style="color: #fb660a">substring</span> <span style="color: #fb660a">x</span> <span style="color: #0086f7; font-weight: bold">3</span> <span style="color: #0086f7; font-weight: bold">5</span><span style="color: #ffffff">)))</span>
-     <span style="color: #ffffff">(</span><span style="color: #fb660a">format-time-string</span> <span style="color: #0086d2">&quot;%z&quot;</span><span style="color: #ffffff">))))</span>
-</pre></div>
-</p>
+
+
+(defun wm/insert-date-time ()
+  "Insert current date-time string in full ISO 8601 format.
+Example: 2010-11-29T23:23:35-08:00"
+   (concat
+    (format-time-string "%Y-%m-%dT%T")
+    ((lambda (x) (concat (substring x 0 3) ":" (substring x 3 5)))
+     (format-time-string "%z"))))
+
+
 
 <p>At this point, I can hit <code>C-c c p</code> and the screen splits vertically with a new markdown file created with the template ready to go. I just need to fill out the title, categories, and main content and hit <code>C-c C-c</code> to save the post and get back to any work that I was doing before I started the post.</p>
 
@@ -108,11 +115,13 @@ title = &quot;&quot;
 
 <p>In my <code>eshell/alias</code> file, I have 3 entries that help with Hugo.</p>
 
-<p><div class="highlight" style="background: #111111"><pre style="line-height: 125%"><span style="color: #fb660a">alias</span> <span style="color: #fb660a">blog-serve</span> <span style="color: #fb660a">hugo</span> <span style="color: #fb660a">-s=</span><span style="color: #0086d2">&quot;~/path-to-blog-src&quot;</span> <span style="color: #fb660a">server</span>
-<span style="color: #fb660a">alias</span> <span style="color: #fb660a">blog-browse</span> <span style="color: #ffffff">(</span><span style="color: #fb660a">browse-url</span> <span style="color: #0086d2">&quot;http://localhost:1313&quot;</span><span style="color: #ffffff">)</span>
-<span style="color: #fb660a">alias</span> <span style="color: #fb660a">blog-publish</span> <span style="color: #fb660a">hugo</span> <span style="color: #fb660a">-s=</span><span style="color: #0086d2">&quot;~/path-to-blog-src&quot;</span>
-</pre></div>
-</p>
+
+
+alias blog-serve hugo -s="~/path-to-blog-src" server
+alias blog-browse (browse-url "http://localhost:1313")
+alias blog-publish hugo -s="~/path-to-blog-src"
+
+
 
 <p><code>blog-serve</code> starts the server and makes the site available for browsing via the <code>blog-browse</code> alias. <code>blog-publish</code> is self-explanatory.</p>
 

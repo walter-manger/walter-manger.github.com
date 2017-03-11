@@ -2,11 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Magit on To The Triforce</title>
-    <link>http://wmanger.com/categories/magit/</link>
+    <link>http://wmanger.com/categories/magit/index.xml</link>
     <description>Recent content in Magit on To The Triforce</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 01 Jun 2016 11:45:25 -0600</lastBuildDate>
     <atom:link href="http://wmanger.com/categories/magit/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
@@ -21,7 +20,7 @@
 
 &lt;p&gt;My usage of &lt;em&gt;Magit&lt;/em&gt; hasn&amp;rsquo;t really changed over the past weeks, but I have been slowly trying to use it and &lt;em&gt;ediff&lt;/em&gt; for merging. I have to say that I really appreciate the merging experience when using a graphical tool like &lt;a href=&#34;http://www.git-tower.com&#34;&gt;Tower&lt;/a&gt; and performing diff merging in another graphical tool such as &lt;a href=&#34;http://www.scootersoftware&#34;&gt;Beyond Compare&lt;/a&gt;. Breaking away from that experience has proven to be quite the job. Especially when the merges that I am dealing with are not simple merges. So, on that subject&amp;hellip;&lt;/p&gt;
 
-&lt;h2 id=&#34;how-to-avoid-complex-merges:a26538c7c049e8f5ff1eef5aba16f4be&#34;&gt;How To Avoid Complex Merges&lt;/h2&gt;
+&lt;h2 id=&#34;how-to-avoid-complex-merges&#34;&gt;How To Avoid Complex Merges&lt;/h2&gt;
 
 &lt;ol&gt;
 &lt;li&gt;Merge and commit frequently&lt;/li&gt;
@@ -33,7 +32,7 @@
 
 &lt;p&gt;So that&amp;rsquo;s what I am committing to. The plan is to decompose things down to the block level and slowly start using Emacs for my merges.&lt;/p&gt;
 
-&lt;h2 id=&#34;one-more-thing:a26538c7c049e8f5ff1eef5aba16f4be&#34;&gt;One More Thing&lt;/h2&gt;
+&lt;h2 id=&#34;one-more-thing&#34;&gt;One More Thing&lt;/h2&gt;
 
 &lt;p&gt;For all of you that don&amp;rsquo;t know about &lt;em&gt;Magit&lt;/em&gt;, here&amp;rsquo;s a fantastic presentation by the great &lt;a href=&#34;http://www.howardism.org&#34;&gt;Howard Abrams&lt;/a&gt;.&lt;/p&gt;
 

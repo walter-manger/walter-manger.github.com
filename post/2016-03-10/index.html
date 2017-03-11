@@ -3,7 +3,7 @@
 <head>
   <link href="http://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.15" />
+  <meta name="generator" content="Hugo 0.20-DEV" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
@@ -37,6 +37,7 @@
     <ul class="sidebar-nav">
       <li><a href="/">Home</a> </li>
       
+      <li><a href="/post/">Archive</a> </li>
     </ul>
 
     <p>&copy; 2017. All rights reserved. </p>
@@ -52,11 +53,11 @@
 
 <p>I&rsquo;ve recently starting getting up earlier to work on side projects. When I say earlier, I mean, at about 4:15AM. This should give me a good 1.5 hours to work on something and get to a point that I can commit something meaningful before I have to start getting ready for my day. The goal is to get that number down to something like 40-45 minutes so I can spend the other half doing something else like reading or researching new technologies. What I am finding is for that 1.5 hours to be effective, planning the night before is pretty important. I&rsquo;ve spent a few mornings getting up to speed for a half hour. It&rsquo;s really important to eliminate that discovery time.</p>
 
-<h3 id="what-am-i-working-on:6bb46f5cad8d6c0d6d2277975909ea07">What am I working on?</h3>
+<h3 id="what-am-i-working-on">What am I working on?</h3>
 
 <p>When I first wanted to learn Go, I started making a game that could be played in Slack in the form of an integration. It is called <a href="https://github.com/walter-manger/slack-battle">Slack Battle</a>. What I thought would be easy to slap together in a night or so is turning out to be a little more difficult than I&rsquo;d planned. Creating games is difficult &ndash; even really simple ones. Add the requirement for playing games over HTTP and the need for some sort of persistence, and the difficulty increases.</p>
 
-<h3 id="the-new-plan:6bb46f5cad8d6c0d6d2277975909ea07">The <em>New</em> Plan</h3>
+<h3 id="the-new-plan">The <em>New</em> Plan</h3>
 
 <p>The project was first created with Google App Engine, but coming back to the project after it had aged a bit, I thought that it would be so much simpler not being boxed into what GAE offers. Really, the only thing GAE was providing me was a datastore. I decided to use Mongolab instead. Why? Because it doesn&rsquo;t really box me in. It feels as if I had an instance of Mongo running locally.</p>
 

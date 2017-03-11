@@ -2,11 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hugo on To The Triforce</title>
-    <link>http://wmanger.com/categories/hugo/</link>
+    <link>http://wmanger.com/categories/hugo/index.xml</link>
     <description>Recent content in Hugo on To The Triforce</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 22 Mar 2016 21:53:53 -0600</lastBuildDate>
     <atom:link href="http://wmanger.com/categories/hugo/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
@@ -23,26 +22,30 @@
 
 &lt;p&gt;(Somewhere in my &lt;em&gt;init.el&lt;/em&gt;)&lt;/p&gt;
 
-&lt;div class=&#34;highlight&#34; style=&#34;background: #111111&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #fb660a; font-weight: bold&#34;&gt;setq&lt;/span&gt; &lt;span style=&#34;color: #fb660a&#34;&gt;org-capture-templates&lt;/span&gt;
-      &lt;span style=&#34;color: #ffffff&#34;&gt;&amp;#39;(&lt;/span&gt;&lt;span style=&#34;color: #0086d2&#34;&gt;&amp;quot;p&amp;quot;&lt;/span&gt; &lt;span style=&#34;color: #0086d2&#34;&gt;&amp;quot;Post&amp;quot;&lt;/span&gt; &lt;span style=&#34;color: #fb660a&#34;&gt;plain&lt;/span&gt; &lt;span style=&#34;color: #ffffff&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #fb660a&#34;&gt;file&lt;/span&gt; &lt;span style=&#34;color: #ffffff&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #fb660a&#34;&gt;wm/hugo-new&lt;/span&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;))&lt;/span&gt;
-        &lt;span style=&#34;color: #ffffff&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #fb660a&#34;&gt;file&lt;/span&gt; &lt;span style=&#34;color: #0086d2&#34;&gt;&amp;quot;~/path-to-template-file&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;)))&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
+
+
+(setq org-capture-templates
+      &#39;(&#34;p&#34; &#34;Post&#34; plain (file (wm/hugo-new))
+        (file &#34;~/path-to-template-file&#34;)))
+
 
 
 &lt;p&gt;The &lt;code&gt;wm/hugo-new&lt;/code&gt; function here just creates a file name with today&amp;rsquo;s date. This is what that function looks like:&lt;/p&gt;
 
-&lt;div class=&#34;highlight&#34; style=&#34;background: #111111&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;(defun&lt;/span&gt; &lt;span style=&#34;color: #fb660a&#34;&gt;today-is&lt;/span&gt; &lt;span style=&#34;color: #ffffff&#34;&gt;()&lt;/span&gt;
-  &lt;span style=&#34;color: #ffffff&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #fb660a&#34;&gt;format-time-string&lt;/span&gt; &lt;span style=&#34;color: #0086d2&#34;&gt;&amp;quot;%Y-%m-%d&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;))&lt;/span&gt;
 
-&lt;span style=&#34;color: #ffffff&#34;&gt;(defun&lt;/span&gt; &lt;span style=&#34;color: #fb660a&#34;&gt;wm/hugo-new&lt;/span&gt; &lt;span style=&#34;color: #ffffff&#34;&gt;()&lt;/span&gt;
-  &lt;span style=&#34;color: #ffffff&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #fb660a&#34;&gt;concat&lt;/span&gt; &lt;span style=&#34;color: #ffffff&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #fb660a&#34;&gt;file-name-as-directory&lt;/span&gt; &lt;span style=&#34;color: #0086d2&#34;&gt;&amp;quot;~/path-to-hugo-posts&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;)&lt;/span&gt;
-            &lt;span style=&#34;color: #ffffff&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #fb660a&#34;&gt;today-is&lt;/span&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color: #0086d2&#34;&gt;&amp;quot;.md&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;))&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
+
+(defun today-is ()
+  (format-time-string &#34;%Y-%m-%d&#34;))
+
+(defun wm/hugo-new ()
+  (concat (file-name-as-directory &#34;~/path-to-hugo-posts&#34;)
+            (today-is) &#34;.md&#34;))
+
 
 
 &lt;p&gt;And the template that I am using is just the basic hugo template, with a custom function for formatting the date the way that Hugo likes it.&lt;/p&gt;
 
-&lt;p&gt;&lt;div class=&#34;highlight&#34; style=&#34;background: #111111&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;+++
+&lt;div class=&#34;highlight&#34; style=&#34;background: #111111&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;+++
 Categories = []
 Description = &amp;quot;&amp;quot;
 Tags = []
@@ -53,19 +56,21 @@ title = &amp;quot;&amp;quot;
 
 %?
 &lt;/pre&gt;&lt;/div&gt;
-&lt;/p&gt;
+
 
 &lt;p&gt;The &lt;code&gt;wm/insert-date-time&lt;/code&gt; function:&lt;/p&gt;
 
-&lt;p&gt;&lt;div class=&#34;highlight&#34; style=&#34;background: #111111&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;(defun&lt;/span&gt; &lt;span style=&#34;color: #fb660a&#34;&gt;wm/insert-date-time&lt;/span&gt; &lt;span style=&#34;color: #ffffff&#34;&gt;()&lt;/span&gt;
-  &lt;span style=&#34;color: #0086d2&#34;&gt;&amp;quot;Insert current date-time string in full ISO 8601 format.&lt;/span&gt;
-&lt;span style=&#34;color: #0086d2&#34;&gt;Example: 2010-11-29T23:23:35-08:00&amp;quot;&lt;/span&gt;
-   &lt;span style=&#34;color: #ffffff&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #fb660a&#34;&gt;concat&lt;/span&gt;
-    &lt;span style=&#34;color: #ffffff&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #fb660a&#34;&gt;format-time-string&lt;/span&gt; &lt;span style=&#34;color: #0086d2&#34;&gt;&amp;quot;%Y-%m-%dT%T&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;)&lt;/span&gt;
-    &lt;span style=&#34;color: #ffffff&#34;&gt;((&lt;/span&gt;&lt;span style=&#34;color: #fb660a; font-weight: bold&#34;&gt;lambda&lt;/span&gt; &lt;span style=&#34;color: #ffffff&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #fb660a&#34;&gt;x&lt;/span&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color: #ffffff&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #fb660a&#34;&gt;concat&lt;/span&gt; &lt;span style=&#34;color: #ffffff&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #fb660a&#34;&gt;substring&lt;/span&gt; &lt;span style=&#34;color: #fb660a&#34;&gt;x&lt;/span&gt; &lt;span style=&#34;color: #0086f7; font-weight: bold&#34;&gt;0&lt;/span&gt; &lt;span style=&#34;color: #0086f7; font-weight: bold&#34;&gt;3&lt;/span&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color: #0086d2&#34;&gt;&amp;quot;:&amp;quot;&lt;/span&gt; &lt;span style=&#34;color: #ffffff&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #fb660a&#34;&gt;substring&lt;/span&gt; &lt;span style=&#34;color: #fb660a&#34;&gt;x&lt;/span&gt; &lt;span style=&#34;color: #0086f7; font-weight: bold&#34;&gt;3&lt;/span&gt; &lt;span style=&#34;color: #0086f7; font-weight: bold&#34;&gt;5&lt;/span&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;)))&lt;/span&gt;
-     &lt;span style=&#34;color: #ffffff&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #fb660a&#34;&gt;format-time-string&lt;/span&gt; &lt;span style=&#34;color: #0086d2&#34;&gt;&amp;quot;%z&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;))))&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/p&gt;
+
+
+(defun wm/insert-date-time ()
+  &#34;Insert current date-time string in full ISO 8601 format.
+Example: 2010-11-29T23:23:35-08:00&#34;
+   (concat
+    (format-time-string &#34;%Y-%m-%dT%T&#34;)
+    ((lambda (x) (concat (substring x 0 3) &#34;:&#34; (substring x 3 5)))
+     (format-time-string &#34;%z&#34;))))
+
+
 
 &lt;p&gt;At this point, I can hit &lt;code&gt;C-c c p&lt;/code&gt; and the screen splits vertically with a new markdown file created with the template ready to go. I just need to fill out the title, categories, and main content and hit &lt;code&gt;C-c C-c&lt;/code&gt; to save the post and get back to any work that I was doing before I started the post.&lt;/p&gt;
 
@@ -75,11 +80,13 @@ title = &amp;quot;&amp;quot;
 
 &lt;p&gt;In my &lt;code&gt;eshell/alias&lt;/code&gt; file, I have 3 entries that help with Hugo.&lt;/p&gt;
 
-&lt;p&gt;&lt;div class=&#34;highlight&#34; style=&#34;background: #111111&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span style=&#34;color: #fb660a&#34;&gt;alias&lt;/span&gt; &lt;span style=&#34;color: #fb660a&#34;&gt;blog-serve&lt;/span&gt; &lt;span style=&#34;color: #fb660a&#34;&gt;hugo&lt;/span&gt; &lt;span style=&#34;color: #fb660a&#34;&gt;-s=&lt;/span&gt;&lt;span style=&#34;color: #0086d2&#34;&gt;&amp;quot;~/path-to-blog-src&amp;quot;&lt;/span&gt; &lt;span style=&#34;color: #fb660a&#34;&gt;server&lt;/span&gt;
-&lt;span style=&#34;color: #fb660a&#34;&gt;alias&lt;/span&gt; &lt;span style=&#34;color: #fb660a&#34;&gt;blog-browse&lt;/span&gt; &lt;span style=&#34;color: #ffffff&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #fb660a&#34;&gt;browse-url&lt;/span&gt; &lt;span style=&#34;color: #0086d2&#34;&gt;&amp;quot;http://localhost:1313&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;)&lt;/span&gt;
-&lt;span style=&#34;color: #fb660a&#34;&gt;alias&lt;/span&gt; &lt;span style=&#34;color: #fb660a&#34;&gt;blog-publish&lt;/span&gt; &lt;span style=&#34;color: #fb660a&#34;&gt;hugo&lt;/span&gt; &lt;span style=&#34;color: #fb660a&#34;&gt;-s=&lt;/span&gt;&lt;span style=&#34;color: #0086d2&#34;&gt;&amp;quot;~/path-to-blog-src&amp;quot;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/p&gt;
+
+
+alias blog-serve hugo -s=&#34;~/path-to-blog-src&#34; server
+alias blog-browse (browse-url &#34;http://localhost:1313&#34;)
+alias blog-publish hugo -s=&#34;~/path-to-blog-src&#34;
+
+
 
 &lt;p&gt;&lt;code&gt;blog-serve&lt;/code&gt; starts the server and makes the site available for browsing via the &lt;code&gt;blog-browse&lt;/code&gt; alias. &lt;code&gt;blog-publish&lt;/code&gt; is self-explanatory.&lt;/p&gt;
 

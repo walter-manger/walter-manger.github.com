@@ -3,7 +3,7 @@
 <head>
   <link href="http://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.15" />
+  <meta name="generator" content="Hugo 0.20-DEV" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
@@ -37,6 +37,7 @@
     <ul class="sidebar-nav">
       <li><a href="/">Home</a> </li>
       
+      <li><a href="/post/">Archive</a> </li>
     </ul>
 
     <p>&copy; 2017. All rights reserved. </p>
@@ -67,14 +68,14 @@
 
 <p>The function that was causing the problem in my case was taking a variable, that had previously been set to a list of elements and using the <em>&lsquo;</em> operator on that list. Which produces entirely different results. Using my example above:</p>
 
-<p><div class="highlight" style="background: #111111"><pre style="line-height: 125%"><span style="color: #ffffff">&#39;(&#39;(</span><span style="color: #0086f7; font-weight: bold">1</span> <span style="color: #0086f7; font-weight: bold">2</span> <span style="color: #0086f7; font-weight: bold">3</span><span style="color: #ffffff">))</span> 
+<div class="highlight" style="background: #111111"><pre style="line-height: 125%"><span style="color: #ffffff">&#39;(&#39;(</span><span style="color: #0086f7; font-weight: bold">1</span> <span style="color: #0086f7; font-weight: bold">2</span> <span style="color: #0086f7; font-weight: bold">3</span><span style="color: #ffffff">))</span> 
 <span style="color: #008800; font-style: italic; background-color: #0f140f">;; =&gt; (quote (1 2 3))</span>
 </pre></div>
-</p>
+
 
 <p>This produced entirely different results and in the context of the function, was unusable. All that needed to be done here was removing the list operator wrapping <em>&rsquo;()</em>. Here&rsquo;s a peek at my pull request: <a href="https://github.com/kostajh/harvest.el/pull/15">PR #15</a></p>
 
-<h3 id="the-moral-of-this-story-contribute-when-you-can:93bf0e0c1aa53e7b4c0297c4e30c3f29">The moral of this story: Contribute when you can</h3>
+<h3 id="the-moral-of-this-story-contribute-when-you-can">The moral of this story: Contribute when you can</h3>
 
 <p>This fix took me about 30 minutes of total time. That included getting the Pull Request ready for the author. The author appreciated the help and perhaps many of the package users will appreciate it too. We should all help when we can. I learned a little more about Elisp along the way, so it wasn&rsquo;t all giving and not receiving.</p>
 

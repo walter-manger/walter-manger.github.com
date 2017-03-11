@@ -2,11 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Golang on To The Triforce</title>
-    <link>http://wmanger.com/categories/golang/</link>
+    <link>http://wmanger.com/categories/golang/index.xml</link>
     <description>Recent content in Golang on To The Triforce</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 08 Apr 2016 23:06:08 -0600</lastBuildDate>
     <atom:link href="http://wmanger.com/categories/golang/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
@@ -37,13 +36,13 @@
 
 &lt;p&gt;You can think of &lt;code&gt;*p&lt;/code&gt; as &lt;code&gt;i&lt;/code&gt; in this case. Consequently, the value of &lt;code&gt;i&lt;/code&gt; is now &lt;code&gt;100&lt;/code&gt;.&lt;/p&gt;
 
-&lt;h3 id=&#34;why-would-you-use-pointers:4e55f66e458c44c75aa7f611c693d40c&#34;&gt;Why would you use Pointers?&lt;/h3&gt;
+&lt;h3 id=&#34;why-would-you-use-pointers&#34;&gt;Why would you use Pointers?&lt;/h3&gt;
 
 &lt;p&gt;I think the more important question is &lt;em&gt;where would you use pointers?&lt;/em&gt; I&amp;rsquo;ll dive into this more in later posts, but for now, know that Go makes use of a concept called &lt;em&gt;Method Receivers&lt;/em&gt;, which define the way methods are attached to &lt;code&gt;struct&lt;/code&gt;. If the &lt;code&gt;struct&lt;/code&gt; needs to be modified by a method, a pointer for that struct is used.&lt;/p&gt;
 
 &lt;p&gt;Example:&lt;/p&gt;
 
-&lt;p&gt;&lt;div class=&#34;highlight&#34; style=&#34;background: #111111&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span style=&#34;color: #fb660a; font-weight: bold&#34;&gt;type&lt;/span&gt; &lt;span style=&#34;color: #ffffff&#34;&gt;Blah&lt;/span&gt; &lt;span style=&#34;color: #fb660a; font-weight: bold&#34;&gt;struct&lt;/span&gt; &lt;span style=&#34;color: #ffffff&#34;&gt;{&lt;/span&gt;
+&lt;div class=&#34;highlight&#34; style=&#34;background: #111111&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span style=&#34;color: #fb660a; font-weight: bold&#34;&gt;type&lt;/span&gt; &lt;span style=&#34;color: #ffffff&#34;&gt;Blah&lt;/span&gt; &lt;span style=&#34;color: #fb660a; font-weight: bold&#34;&gt;struct&lt;/span&gt; &lt;span style=&#34;color: #ffffff&#34;&gt;{&lt;/span&gt;
   &lt;span style=&#34;color: #ffffff&#34;&gt;count&lt;/span&gt; &lt;span style=&#34;color: #cdcaa9; font-weight: bold&#34;&gt;int&lt;/span&gt;
 &lt;span style=&#34;color: #ffffff&#34;&gt;}&lt;/span&gt;
 
@@ -60,7 +59,7 @@
   &lt;span style=&#34;color: #ffffff&#34;&gt;b.count&lt;/span&gt; &lt;span style=&#34;color: #ffffff&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #ffffff&#34;&gt;b.count&lt;/span&gt; &lt;span style=&#34;color: #ffffff&#34;&gt;+&lt;/span&gt; &lt;span style=&#34;color: #0086f7; font-weight: bold&#34;&gt;1&lt;/span&gt;
 &lt;span style=&#34;color: #ffffff&#34;&gt;}&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
-&lt;/p&gt;
+
 
 &lt;p&gt;Don&amp;rsquo;t worry if this is confusing. I will be posting more about Structs, Pointers, and Methods. This is just a bite-sized introduction to pointers in Go.&lt;/p&gt;
 

@@ -2,11 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Quick Code Post on To The Triforce</title>
-    <link>http://wmanger.com/categories/quick-code-post/</link>
+    <link>http://wmanger.com/categories/quick-code-post/index.xml</link>
     <description>Recent content in Quick Code Post on To The Triforce</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 11 Mar 2016 20:53:12 -0700</lastBuildDate>
     <atom:link href="http://wmanger.com/categories/quick-code-post/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
@@ -57,8 +56,8 @@
 
 &lt;p&gt;&lt;div class=&#34;highlight&#34; style=&#34;background: #111111&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span style=&#34;color: #fb660a; font-weight: bold&#34;&gt;let&lt;/span&gt; &lt;span style=&#34;color: #ffffff&#34;&gt;merged&lt;/span&gt; &lt;span style=&#34;color: #ffffff&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #ffffff&#34;&gt;merge({},&lt;/span&gt; &lt;span style=&#34;color: #ffffff&#34;&gt;entities,&lt;/span&gt; &lt;span style=&#34;color: #ffffff&#34;&gt;serverEntities)&lt;/span&gt;
 
-&lt;span style=&#34;color: #fb660a; font-weight: bold&#34;&gt;for&lt;/span&gt; &lt;span style=&#34;color: #ffffff&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #fb660a; font-weight: bold&#34;&gt;let&lt;/span&gt; &lt;span style=&#34;color: #ffffff&#34;&gt;key&lt;/span&gt; &lt;span style=&#34;color: #ffffff&#34;&gt;of&lt;/span&gt; &lt;span style=&#34;color: #ffffff&#34;&gt;Object.keys(serverEntities))&lt;/span&gt; &lt;span style=&#34;color: #ffffff&#34;&gt;{&lt;/span&gt;
-    &lt;span style=&#34;color: #fb660a; font-weight: bold&#34;&gt;for&lt;/span&gt; &lt;span style=&#34;color: #ffffff&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #fb660a; font-weight: bold&#34;&gt;let&lt;/span&gt; &lt;span style=&#34;color: #ffffff&#34;&gt;innerKey&lt;/span&gt; &lt;span style=&#34;color: #ffffff&#34;&gt;of&lt;/span&gt; &lt;span style=&#34;color: #ffffff&#34;&gt;Object.keys(serverEntities[key]))&lt;/span&gt; &lt;span style=&#34;color: #ffffff&#34;&gt;{&lt;/span&gt;
+&lt;span style=&#34;color: #fb660a; font-weight: bold&#34;&gt;for&lt;/span&gt; &lt;span style=&#34;color: #ffffff&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #fb660a; font-weight: bold&#34;&gt;let&lt;/span&gt; &lt;span style=&#34;color: #ffffff&#34;&gt;key&lt;/span&gt; &lt;span style=&#34;color: #fb660a; font-weight: bold&#34;&gt;of&lt;/span&gt; &lt;span style=&#34;color: #ffffff&#34;&gt;Object.keys(serverEntities))&lt;/span&gt; &lt;span style=&#34;color: #ffffff&#34;&gt;{&lt;/span&gt;
+    &lt;span style=&#34;color: #fb660a; font-weight: bold&#34;&gt;for&lt;/span&gt; &lt;span style=&#34;color: #ffffff&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #fb660a; font-weight: bold&#34;&gt;let&lt;/span&gt; &lt;span style=&#34;color: #ffffff&#34;&gt;innerKey&lt;/span&gt; &lt;span style=&#34;color: #fb660a; font-weight: bold&#34;&gt;of&lt;/span&gt; &lt;span style=&#34;color: #ffffff&#34;&gt;Object.keys(serverEntities[key]))&lt;/span&gt; &lt;span style=&#34;color: #ffffff&#34;&gt;{&lt;/span&gt;
         &lt;span style=&#34;color: #ffffff&#34;&gt;merged[key][innerKey]&lt;/span&gt; &lt;span style=&#34;color: #ffffff&#34;&gt;=&lt;/span&gt; &lt;span style=&#34;color: #ffffff&#34;&gt;_.cloneDeep(serverEntitiesntities[key][innerKey])&lt;/span&gt;
     &lt;span style=&#34;color: #ffffff&#34;&gt;}&lt;/span&gt;
 &lt;span style=&#34;color: #ffffff&#34;&gt;}&lt;/span&gt;

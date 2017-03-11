@@ -3,7 +3,7 @@
 <head>
   <link href="http://gmpg.org/xfn/11" rel="profile">
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="generator" content="Hugo 0.15" />
+  <meta name="generator" content="Hugo 0.20-DEV" />
 
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
@@ -37,6 +37,7 @@
     <ul class="sidebar-nav">
       <li><a href="/">Home</a> </li>
       
+      <li><a href="/post/">Archive</a> </li>
     </ul>
 
     <p>&copy; 2017. All rights reserved. </p>
@@ -70,13 +71,13 @@
 
 <p>You can think of <code>*p</code> as <code>i</code> in this case. Consequently, the value of <code>i</code> is now <code>100</code>.</p>
 
-<h3 id="why-would-you-use-pointers:4e55f66e458c44c75aa7f611c693d40c">Why would you use Pointers?</h3>
+<h3 id="why-would-you-use-pointers">Why would you use Pointers?</h3>
 
 <p>I think the more important question is <em>where would you use pointers?</em> I&rsquo;ll dive into this more in later posts, but for now, know that Go makes use of a concept called <em>Method Receivers</em>, which define the way methods are attached to <code>struct</code>. If the <code>struct</code> needs to be modified by a method, a pointer for that struct is used.</p>
 
 <p>Example:</p>
 
-<p><div class="highlight" style="background: #111111"><pre style="line-height: 125%"><span style="color: #fb660a; font-weight: bold">type</span> <span style="color: #ffffff">Blah</span> <span style="color: #fb660a; font-weight: bold">struct</span> <span style="color: #ffffff">{</span>
+<div class="highlight" style="background: #111111"><pre style="line-height: 125%"><span style="color: #fb660a; font-weight: bold">type</span> <span style="color: #ffffff">Blah</span> <span style="color: #fb660a; font-weight: bold">struct</span> <span style="color: #ffffff">{</span>
   <span style="color: #ffffff">count</span> <span style="color: #cdcaa9; font-weight: bold">int</span>
 <span style="color: #ffffff">}</span>
 
@@ -93,7 +94,7 @@
   <span style="color: #ffffff">b.count</span> <span style="color: #ffffff">=</span> <span style="color: #ffffff">b.count</span> <span style="color: #ffffff">+</span> <span style="color: #0086f7; font-weight: bold">1</span>
 <span style="color: #ffffff">}</span>
 </pre></div>
-</p>
+
 
 <p>Don&rsquo;t worry if this is confusing. I will be posting more about Structs, Pointers, and Methods. This is just a bite-sized introduction to pointers in Go.</p>
 

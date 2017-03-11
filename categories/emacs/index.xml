@@ -2,11 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Emacs on To The Triforce</title>
-    <link>http://wmanger.com/categories/emacs/</link>
+    <link>http://wmanger.com/categories/emacs/index.xml</link>
     <description>Recent content in Emacs on To The Triforce</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 01 Jun 2016 11:45:25 -0600</lastBuildDate>
     <atom:link href="http://wmanger.com/categories/emacs/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
@@ -21,7 +20,7 @@
 
 &lt;p&gt;My usage of &lt;em&gt;Magit&lt;/em&gt; hasn&amp;rsquo;t really changed over the past weeks, but I have been slowly trying to use it and &lt;em&gt;ediff&lt;/em&gt; for merging. I have to say that I really appreciate the merging experience when using a graphical tool like &lt;a href=&#34;http://www.git-tower.com&#34;&gt;Tower&lt;/a&gt; and performing diff merging in another graphical tool such as &lt;a href=&#34;http://www.scootersoftware&#34;&gt;Beyond Compare&lt;/a&gt;. Breaking away from that experience has proven to be quite the job. Especially when the merges that I am dealing with are not simple merges. So, on that subject&amp;hellip;&lt;/p&gt;
 
-&lt;h2 id=&#34;how-to-avoid-complex-merges:a26538c7c049e8f5ff1eef5aba16f4be&#34;&gt;How To Avoid Complex Merges&lt;/h2&gt;
+&lt;h2 id=&#34;how-to-avoid-complex-merges&#34;&gt;How To Avoid Complex Merges&lt;/h2&gt;
 
 &lt;ol&gt;
 &lt;li&gt;Merge and commit frequently&lt;/li&gt;
@@ -33,7 +32,7 @@
 
 &lt;p&gt;So that&amp;rsquo;s what I am committing to. The plan is to decompose things down to the block level and slowly start using Emacs for my merges.&lt;/p&gt;
 
-&lt;h2 id=&#34;one-more-thing:a26538c7c049e8f5ff1eef5aba16f4be&#34;&gt;One More Thing&lt;/h2&gt;
+&lt;h2 id=&#34;one-more-thing&#34;&gt;One More Thing&lt;/h2&gt;
 
 &lt;p&gt;For all of you that don&amp;rsquo;t know about &lt;em&gt;Magit&lt;/em&gt;, here&amp;rsquo;s a fantastic presentation by the great &lt;a href=&#34;http://www.howardism.org&#34;&gt;Howard Abrams&lt;/a&gt;.&lt;/p&gt;
 
@@ -57,7 +56,7 @@
 
 &lt;p&gt;Here&amp;rsquo;s what I&amp;rsquo;ve got so far: (this is slightly cheating since I have not posted in a couple of weeks)&lt;/p&gt;
 
-&lt;h3 id=&#34;1-started-easing-into-using-org-mode-for-planning-and-tracking:ca117100f93e1263fed81a06fa5cab2c&#34;&gt;1. Started easing into using Org-Mode for planning And tracking&lt;/h3&gt;
+&lt;h3 id=&#34;1-started-easing-into-using-org-mode-for-planning-and-tracking&#34;&gt;1. Started easing into using Org-Mode for planning And tracking&lt;/h3&gt;
 
 &lt;p&gt;I am starting to use org-mode&amp;rsquo;s todos and agenda pretty heavily. There&amp;rsquo;s still a way to go as I don&amp;rsquo;t have a great workflow yet. Basically, my flow consists of this:&lt;/p&gt;
 
@@ -69,7 +68,7 @@
 &lt;li&gt;&lt;p&gt;Track time against those items and mark them done when they are&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h4 id=&#34;i-think-an-improved-workflow-would-be:ca117100f93e1263fed81a06fa5cab2c&#34;&gt;I think an improved workflow would be&lt;/h4&gt;
+&lt;h4 id=&#34;i-think-an-improved-workflow-would-be&#34;&gt;I think an improved workflow would be&lt;/h4&gt;
 
 &lt;ol&gt;
 &lt;li&gt;&lt;p&gt;Get all of the work items into my org file immediately when I know about them&lt;/p&gt;&lt;/li&gt;
@@ -83,23 +82,23 @@
 &lt;li&gt;&lt;p&gt;At the end of the day, move any tasks that need to be moved on to the next day&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 
-&lt;h3 id=&#34;2-added-the-ability-to-track-time-to-harvest-with-harvest-el:ca117100f93e1263fed81a06fa5cab2c&#34;&gt;2. Added the ability to track time to Harvest with Harvest.el&lt;/h3&gt;
+&lt;h3 id=&#34;2-added-the-ability-to-track-time-to-harvest-with-harvest-el&#34;&gt;2. Added the ability to track time to Harvest with Harvest.el&lt;/h3&gt;
 
 &lt;p&gt;I&amp;rsquo;ve switched my Agenda time tracking to also track to harvest. I also learned more about elisp as a result of fixing a bug in Harvest.el. Elisp is pretty awesome :)&lt;/p&gt;
 
-&lt;h3 id=&#34;3-started-using-go-mode:ca117100f93e1263fed81a06fa5cab2c&#34;&gt;3. Started using Go-Mode&lt;/h3&gt;
+&lt;h3 id=&#34;3-started-using-go-mode&#34;&gt;3. Started using Go-Mode&lt;/h3&gt;
 
 &lt;p&gt;This last sprint I took on some significant Go work, which prompted me learning more about the Go-Mode package that I&amp;rsquo;ve had installed for a while now. I started taking advantage of things like &lt;code&gt;C-c C-j&lt;/code&gt; (jump to definition) and &lt;code&gt;M-*&lt;/code&gt; (pop-mark to get back to the place I jumped from). I am not completely happy with the bindings here, but it isn&amp;rsquo;t killing me. I liked using &lt;code&gt;C-c C-d&lt;/code&gt; for Godoc in the minibuffer. For some reason, my hook to &lt;code&gt;gofmt&lt;/code&gt; upon saving stopped working one day&amp;hellip; not sure why. I used &lt;code&gt;(ff-get-other-file)&lt;/code&gt; to find the corresponding &lt;code&gt;*_test.go&lt;/code&gt; file. Sometimes it didn&amp;rsquo;t work as there were some mismatched file names &amp;ndash; it&amp;rsquo;s not Go-Mode&amp;rsquo;s fault.&lt;/p&gt;
 
-&lt;h3 id=&#34;4-relied-more-on-eshell-for-clis-that-were-not-so-chatty:ca117100f93e1263fed81a06fa5cab2c&#34;&gt;4. Relied more on eshell for CLIs that were not so &lt;em&gt;chatty&lt;/em&gt;&lt;/h3&gt;
+&lt;h3 id=&#34;4-relied-more-on-eshell-for-clis-that-were-not-so-chatty&#34;&gt;4. Relied more on eshell for CLIs that were not so &lt;em&gt;chatty&lt;/em&gt;&lt;/h3&gt;
 
 &lt;p&gt;Eshell has been great for most everything I do, however. When using CLI&amp;rsquo;s that produce large amounts of output, eshell seems to get bogged down. I have not looked into why this is happening. I suspect that it has something to do with the amount of history that I keep in the buffer. I&amp;rsquo;ll investigate some other time. For now, anything that I know is going to barf out thousands of lines is going to have to be performed in my iTerm 2. Along these lines, when I am executing unit tests, eshell does not get bogged down, but the output isn&amp;rsquo;t really that pretty. I&amp;rsquo;ll need to investigate this too.&lt;/p&gt;
 
-&lt;h3 id=&#34;5-stayed-in-magit-90-of-the-time-when-using-git:ca117100f93e1263fed81a06fa5cab2c&#34;&gt;5. Stayed in Magit 90% of the time when using Git&lt;/h3&gt;
+&lt;h3 id=&#34;5-stayed-in-magit-90-of-the-time-when-using-git&#34;&gt;5. Stayed in Magit 90% of the time when using Git&lt;/h3&gt;
 
 &lt;p&gt;I am really starting to love Magit. There are just a few things that I need to get better at that really have nothing to do with Magit per se. One area that bit me last week was dealing with a bad merge. I was unable to get myself out of the mess without going back to Tower and Beyond Compare for diffs. Beyond Compare&amp;rsquo;s interface for performing merges is pretty hard to move away from. All in due time. I&amp;rsquo;ve achieved the goal of not having to use my mouse at all when dealing with Git 90% of the time &amp;ndash; that&amp;rsquo;s good enough for now.&lt;/p&gt;
 
-&lt;h2 id=&#34;what-still-needs-work:ca117100f93e1263fed81a06fa5cab2c&#34;&gt;What still needs work?&lt;/h2&gt;
+&lt;h2 id=&#34;what-still-needs-work&#34;&gt;What still needs work?&lt;/h2&gt;
 
 &lt;ol&gt;
 &lt;li&gt;&lt;p&gt;General Editing Efficiency&lt;/p&gt;
@@ -149,21 +148,21 @@
       <guid>http://wmanger.com/post/2016-01-29/</guid>
       <description>
 
-&lt;h3 id=&#34;history:381540646272f34d133c512c66d2c6d4&#34;&gt;History&lt;/h3&gt;
+&lt;h3 id=&#34;history&#34;&gt;History&lt;/h3&gt;
 
 &lt;p&gt;I spent a good chunk of my programming career, probably close to 9 years, inside of the Visual Studio IDE. For the first 5 or so, I didn&amp;rsquo;t understand why I would ever need to step outside of that environment. When I got to college is when I was faced with the hard fact that I could not count on my trusty tool for everything. At the university, they ran all the code on a Sun UNIX machine, which was using its version of GCC and that didn&amp;rsquo;t match up with what VS supplied. I believe there were ways to make it work, but after being burned a few times for submitting uncompilable code, I had to find a different solution that was guaranteed to work every time. As you can probably guess, like anyone who had previously been exposed to a MS Operating System, the first tool on a UNIX box that I reached for was Nano. There was a nice menu that I could understand that had some parallels with notepad.&lt;/p&gt;
 
 &lt;p&gt;Nano got me by for a month or so, but I needed something more powerful. One day I was talking with a master&amp;rsquo;s student that was a TA for one of the courses I was taking and he was programming with what looked like a split terminal with Python&amp;rsquo;s documentation in one pane, syntax highlighting of the Python code that he was working on in another, and some form of autocomplete in yet another. When I asked him what it was he answered proudly &amp;ldquo;VIM&amp;rdquo;. I was blown away with the things he showed me next. What he made happen with minimal keystrokes was impressive. I began playing with VIM in my downtime, and I started to grasp the basics, but when I left the university, it was back to working life and VS was the tool that I was most comfortable with in the end. It won.&lt;/p&gt;
 
-&lt;h3 id=&#34;hand-pain-emulators:381540646272f34d133c512c66d2c6d4&#34;&gt;Hand Pain &amp;amp; Emulators&lt;/h3&gt;
+&lt;h3 id=&#34;hand-pain-emulators&#34;&gt;Hand Pain &amp;amp; Emulators&lt;/h3&gt;
 
 &lt;p&gt;Not all people who use VS or GUI apps will have the same experience, but after using VS and GUI apps in general, I started to experience a slight pain in my hands. I attribute this mostly to reaching for the mouse a lot. Since I will probably be working as a programmer for the rest of my life, I thought that I&amp;rsquo;d better address the issue now before it turns into something that disables me for any length of time. I remembered VIM and how the home row was king. I looked for some sort of emulator for Visual Studio and there were a couple. I chose VSVIM. It was great, but there was still something missing. I could then edit modally using VIM bindings, but navigating VS still required some movement away from the keyboard. What I wanted was complete control of the IDE without having to touch my mouse at all. I am sure there are ways to do this, but from what I found, it wasn&amp;rsquo;t really easy to make happen. But, I was developing in VS under MS, so it was better for me at the time to stick with the standard way of doing things. My hands did feel better with using VIM bindings for editing code, in fact, it was like I had almost been completely cured. Almost.&lt;/p&gt;
 
-&lt;h3 id=&#34;new-stack-new-editor-search:381540646272f34d133c512c66d2c6d4&#34;&gt;New Stack, New Editor Search&lt;/h3&gt;
+&lt;h3 id=&#34;new-stack-new-editor-search&#34;&gt;New Stack, New Editor Search&lt;/h3&gt;
 
 &lt;p&gt;In my latest position, I don&amp;rsquo;t develop under MS, nor do I use VS. Our stack consists of GO, and JS mostly, so when I joined the team, I was back on the hunt for an editor. I had previously played with Sublime Text 2, and I can&amp;rsquo;t say enough good things about it. The community was great, the plugins were great, and it was so light weight. It even had a &amp;lsquo;vintage mode&amp;rsquo;, which, would give you VIM bindings without having to install a plugin. The GO plugins were pretty solid. Everything seemed great about it. I started using it, but I was left wanting more. I noticed when I used an app outside of the terminal, I had to constantly context switch to get to the terminal and back. I knew VIM was available by terminal and there were ways to get better terminal interaction through a tool called TMUX. I started experimenting with VIM + TMUX and I got to the point where my configuration met my needs. I was happy until one day I watched a video about a long time VIM user moving on to Emacs. It is called:  &lt;a href=&#34;https://www.youtube.com/watch?v=JWD1Fpdd4Pc&#34;&gt;Evil Mode: Or, How I Learned to Stop Worrying and Love Emacs&lt;/a&gt;. It was that video, along with my desire to go through the course work for &lt;a href=&#34;http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-001-structure-and-interpretation-of-computer-programs-spring-2005/&#34;&gt;Structure and Interpretation of Computer Programs&lt;/a&gt; that got me curious about Emacs. I started watching more videos and learning more about the power of Emacs.&lt;/p&gt;
 
-&lt;h3 id=&#34;rabbit-hole-of-regret-pride:381540646272f34d133c512c66d2c6d4&#34;&gt;Rabbit Hole of Regret &amp;amp; Pride&lt;/h3&gt;
+&lt;h3 id=&#34;rabbit-hole-of-regret-pride&#34;&gt;Rabbit Hole of Regret &amp;amp; Pride&lt;/h3&gt;
 
 &lt;p&gt;As an Emacs beginner, there were so many questions and getting the answers were difficult at first. Simply saving a document was completely different from most editors. Changing Emacs defaults to something sane was pretty difficult too. After all, Emacs configuration is done in Elisp, and that alone should drive away anyone wanting to try it. What I wanted Emacs to do was act like editors that I was used to, but give me Emacs power when I needed it. With Emacs, it&amp;rsquo;s pretty easy to do. Everything Emacs does by default can be controlled in any way. I mean Everything. Also, getting Emacs to do something that it doesn&amp;rsquo;t do by default isn&amp;rsquo;t that difficult once you know a little Elisp. Emacs gives you the ability to create an editor that is not Emacs at all. Ask Linus Torvalds.&lt;/p&gt;
 
@@ -171,15 +170,15 @@
 
 &lt;p&gt;&lt;em&gt;What about &amp;lsquo;Pride&amp;rsquo;?&lt;/em&gt; Well, once I do get something configured exactly the way I want it to be, I feel not only proud and accomplished, but also wizardly.&lt;/p&gt;
 
-&lt;h3 id=&#34;wood-working-programming-tools:381540646272f34d133c512c66d2c6d4&#34;&gt;Wood Working &amp;amp; Programming Tools&lt;/h3&gt;
+&lt;h3 id=&#34;wood-working-programming-tools&#34;&gt;Wood Working &amp;amp; Programming Tools&lt;/h3&gt;
 
 &lt;p&gt;Some time last year I got an itch to start wood working. I still have not been able to fully commit to purchasing all of the tools that I need to really get started, but I have a few. My most complete project was a Shaker style bench, which is complete to the point of finishing. During this project, I got the pleasure of creating one of my own tools. It is called a poor man&amp;rsquo;s router plane. It is basically a piece of 2x4 with a hole drilled in it enough to hold a chisel. It doesn&amp;rsquo;t look like much, but it produces an accurate dado every time. &lt;em&gt;What does this have to do with Emacs?&lt;/em&gt; you say. Well, Emacs provides the same experience. It allows you to tailor your editor to any situation. Any work done in Emacs configuration pays back tenfold. Wood workers have jigs and tools that help their tools be more efficient. Professional Emacs users have configurations that they&amp;rsquo;ve refined over time that make Emacs more efficient for a particular task.&lt;/p&gt;
 
-&lt;h3 id=&#34;but-it-still-doesn-t-make-sense-to-trash-my-current-editor:381540646272f34d133c512c66d2c6d4&#34;&gt;But it still doesn&amp;rsquo;t make sense to trash my current editor&amp;hellip;&lt;/h3&gt;
+&lt;h3 id=&#34;but-it-still-doesn-t-make-sense-to-trash-my-current-editor&#34;&gt;But it still doesn&amp;rsquo;t make sense to trash my current editor&amp;hellip;&lt;/h3&gt;
 
 &lt;p&gt;Don&amp;rsquo;t. The real reason I chose Emacs is: I spend a lot of time in a text editor and I want that time investment to pay off. Emacs allows this completely. If that doesn&amp;rsquo;t sound like something you&amp;rsquo;re interested in doing, you shouldn&amp;rsquo;t.&lt;/p&gt;
 
-&lt;h3 id=&#34;one-more-thing:381540646272f34d133c512c66d2c6d4&#34;&gt;One more thing&lt;/h3&gt;
+&lt;h3 id=&#34;one-more-thing&#34;&gt;One more thing&lt;/h3&gt;
 
 &lt;p&gt;This whole post I have been referring to Emacs as a text editor. It really is not. It is an Operating System. Some Emacs users never leave Emacs. After all, it does/can have: A web browser, an email client, a twitter client, games, irc, a news reader, a git interface, and much more. Not a lot of editors can say the same thing. I must warn you that when you witness what Emacs can do, you&amp;rsquo;ll want it to do everything. I find myself just wanting to stay in Emacs and get a little annoyed every time I have to leave.&lt;/p&gt;
 </description>

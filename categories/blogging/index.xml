@@ -2,11 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blogging on To The Triforce</title>
-    <link>http://wmanger.com/categories/blogging/</link>
+    <link>http://wmanger.com/categories/blogging/index.xml</link>
     <description>Recent content in Blogging on To The Triforce</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 08 Jan 2017 15:17:40 -0700</lastBuildDate>
     <atom:link href="http://wmanger.com/categories/blogging/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
@@ -29,13 +28,13 @@ will try this year to be &lt;em&gt;(more*)&lt;/em&gt; successful.&lt;/p&gt;
 &lt;p&gt;*Remember, goals are just that.&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&#34;failure-1-high-expectations:993dd9162a0399cd1d0092a76a58abee&#34;&gt;Failure #1: High Expectations&lt;/h3&gt;
+&lt;h3 id=&#34;failure-1-high-expectations&#34;&gt;Failure #1: High Expectations&lt;/h3&gt;
 
 &lt;p&gt;I had set some pretty high expectations that required almost no flexibility in
 other commitments. One of my high expectations was too many goals for the year. I tend to be
 more optimistic in planning goals, and well, with most things. The thing here is to be optimistic, but get a nice slap of realism in the face when deciding which goals you should be able to achieve. And on that subject&amp;hellip;&lt;/p&gt;
 
-&lt;h3 id=&#34;failure-2-not-defining-well-enough-what-success-is:993dd9162a0399cd1d0092a76a58abee&#34;&gt;Failure #2: Not Defining (well enough) What Success Is&lt;/h3&gt;
+&lt;h3 id=&#34;failure-2-not-defining-well-enough-what-success-is&#34;&gt;Failure #2: Not Defining (well enough) What Success Is&lt;/h3&gt;
 
 &lt;p&gt;There were many goals that were in the following format:&lt;/p&gt;
 
@@ -62,7 +61,7 @@ progress can be measured over time.&lt;/p&gt;
 
 &lt;p&gt;And so on for each of the modes in the parent goal.&lt;/p&gt;
 
-&lt;h3 id=&#34;failure-3-not-taking-advantage-of-habit:993dd9162a0399cd1d0092a76a58abee&#34;&gt;Failure #3: Not Taking Advantage Of Habit&lt;/h3&gt;
+&lt;h3 id=&#34;failure-3-not-taking-advantage-of-habit&#34;&gt;Failure #3: Not Taking Advantage Of Habit&lt;/h3&gt;
 
 &lt;p&gt;Habit is a powerful thing. It can be used for good and bad. The key here is to
 use your natural tendency to succumb to habit and use it to get what you want in
@@ -71,7 +70,7 @@ getting through procrastination and producing through habit. I have felt the
 power of habit directly with my fitness routine that I&amp;rsquo;ve been following for 18
 weeks and counting.&lt;/p&gt;
 
-&lt;h3 id=&#34;failure-4-not-addressing-procrastination:993dd9162a0399cd1d0092a76a58abee&#34;&gt;Failure #4: Not Addressing Procrastination&lt;/h3&gt;
+&lt;h3 id=&#34;failure-4-not-addressing-procrastination&#34;&gt;Failure #4: Not Addressing Procrastination&lt;/h3&gt;
 
 &lt;p&gt;There are many techniques for battling procrastination. The Pomodoro Technique,
 which I started taking a pretty serious look at in 2016, is a pretty popular
@@ -80,7 +79,7 @@ actually get done in 25 minutes with complete focus. I didn&amp;rsquo;t start re
 power of allocating that little portion of time to larger goals daily until very
 late in the year (like at the very end of the year). This was a huge mistake.&lt;/p&gt;
 
-&lt;h3 id=&#34;failure-5-consuming-and-not-producing:993dd9162a0399cd1d0092a76a58abee&#34;&gt;Failure #5: Consuming And Not Producing&lt;/h3&gt;
+&lt;h3 id=&#34;failure-5-consuming-and-not-producing&#34;&gt;Failure #5: Consuming And Not Producing&lt;/h3&gt;
 
 &lt;p&gt;I found myself consuming what other people produced too much. I mean, I don&amp;rsquo;t
 really watch TV, but I did find myself reading Facebook posts and Reddit when I
@@ -88,7 +87,7 @@ was bored. That time could have been spent in better ways. What if I had spent
 that time thinking about how to organize a new blog post or presentation for a
 meetup? The possibilities are endless.&lt;/p&gt;
 
-&lt;h3 id=&#34;failure-6-allowing-shallow-over-deep:993dd9162a0399cd1d0092a76a58abee&#34;&gt;Failure #6: Allowing Shallow Over Deep&lt;/h3&gt;
+&lt;h3 id=&#34;failure-6-allowing-shallow-over-deep&#34;&gt;Failure #6: Allowing Shallow Over Deep&lt;/h3&gt;
 
 &lt;p&gt;I let myself take on tasks at work that may have been more visible for
 customers, but in the grand scheme, they didn&amp;rsquo;t help my programming ability or
@@ -96,7 +95,7 @@ my architectural chops. I am, after all, considered a &lt;em&gt;Senior Programme
 should be contributing to larger portions of the codebase and collaborating on
 the architecture of the system primarily.&lt;/p&gt;
 
-&lt;h3 id=&#34;failure-7-not-reviewing-until-it-didn-t-matter:993dd9162a0399cd1d0092a76a58abee&#34;&gt;Failure #7: Not Reviewing (Until It Didn&amp;rsquo;t Matter)&lt;/h3&gt;
+&lt;h3 id=&#34;failure-7-not-reviewing-until-it-didn-t-matter&#34;&gt;Failure #7: Not Reviewing (Until It Didn&amp;rsquo;t Matter)&lt;/h3&gt;
 
 &lt;p&gt;I think the only time that I&amp;rsquo;d actually reviewed my goals for 2016 was in
 November, which was too late to really complete most of them. So I never knew
@@ -106,7 +105,7 @@ frustration grew. If I had reviewed regularly, I would have known well in
 advance whether something was going to happen or not and adjust goals
 accordingly.&lt;/p&gt;
 
-&lt;h3 id=&#34;conclusion:993dd9162a0399cd1d0092a76a58abee&#34;&gt;Conclusion&lt;/h3&gt;
+&lt;h3 id=&#34;conclusion&#34;&gt;Conclusion&lt;/h3&gt;
 
 &lt;p&gt;This year, I wanted to blog 52 times, I only got 13 in. I wanted to learn 2
 programming languages, I only learned 1. I wanted to learn more about music
@@ -144,26 +143,30 @@ to learn from.&lt;/p&gt;
 
 &lt;p&gt;(Somewhere in my &lt;em&gt;init.el&lt;/em&gt;)&lt;/p&gt;
 
-&lt;div class=&#34;highlight&#34; style=&#34;background: #111111&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #fb660a; font-weight: bold&#34;&gt;setq&lt;/span&gt; &lt;span style=&#34;color: #fb660a&#34;&gt;org-capture-templates&lt;/span&gt;
-      &lt;span style=&#34;color: #ffffff&#34;&gt;&amp;#39;(&lt;/span&gt;&lt;span style=&#34;color: #0086d2&#34;&gt;&amp;quot;p&amp;quot;&lt;/span&gt; &lt;span style=&#34;color: #0086d2&#34;&gt;&amp;quot;Post&amp;quot;&lt;/span&gt; &lt;span style=&#34;color: #fb660a&#34;&gt;plain&lt;/span&gt; &lt;span style=&#34;color: #ffffff&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #fb660a&#34;&gt;file&lt;/span&gt; &lt;span style=&#34;color: #ffffff&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #fb660a&#34;&gt;wm/hugo-new&lt;/span&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;))&lt;/span&gt;
-        &lt;span style=&#34;color: #ffffff&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #fb660a&#34;&gt;file&lt;/span&gt; &lt;span style=&#34;color: #0086d2&#34;&gt;&amp;quot;~/path-to-template-file&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;)))&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
+
+
+(setq org-capture-templates
+      &#39;(&#34;p&#34; &#34;Post&#34; plain (file (wm/hugo-new))
+        (file &#34;~/path-to-template-file&#34;)))
+
 
 
 &lt;p&gt;The &lt;code&gt;wm/hugo-new&lt;/code&gt; function here just creates a file name with today&amp;rsquo;s date. This is what that function looks like:&lt;/p&gt;
 
-&lt;div class=&#34;highlight&#34; style=&#34;background: #111111&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;(defun&lt;/span&gt; &lt;span style=&#34;color: #fb660a&#34;&gt;today-is&lt;/span&gt; &lt;span style=&#34;color: #ffffff&#34;&gt;()&lt;/span&gt;
-  &lt;span style=&#34;color: #ffffff&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #fb660a&#34;&gt;format-time-string&lt;/span&gt; &lt;span style=&#34;color: #0086d2&#34;&gt;&amp;quot;%Y-%m-%d&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;))&lt;/span&gt;
 
-&lt;span style=&#34;color: #ffffff&#34;&gt;(defun&lt;/span&gt; &lt;span style=&#34;color: #fb660a&#34;&gt;wm/hugo-new&lt;/span&gt; &lt;span style=&#34;color: #ffffff&#34;&gt;()&lt;/span&gt;
-  &lt;span style=&#34;color: #ffffff&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #fb660a&#34;&gt;concat&lt;/span&gt; &lt;span style=&#34;color: #ffffff&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #fb660a&#34;&gt;file-name-as-directory&lt;/span&gt; &lt;span style=&#34;color: #0086d2&#34;&gt;&amp;quot;~/path-to-hugo-posts&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;)&lt;/span&gt;
-            &lt;span style=&#34;color: #ffffff&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #fb660a&#34;&gt;today-is&lt;/span&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color: #0086d2&#34;&gt;&amp;quot;.md&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;))&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
+
+(defun today-is ()
+  (format-time-string &#34;%Y-%m-%d&#34;))
+
+(defun wm/hugo-new ()
+  (concat (file-name-as-directory &#34;~/path-to-hugo-posts&#34;)
+            (today-is) &#34;.md&#34;))
+
 
 
 &lt;p&gt;And the template that I am using is just the basic hugo template, with a custom function for formatting the date the way that Hugo likes it.&lt;/p&gt;
 
-&lt;p&gt;&lt;div class=&#34;highlight&#34; style=&#34;background: #111111&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;+++
+&lt;div class=&#34;highlight&#34; style=&#34;background: #111111&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;+++
 Categories = []
 Description = &amp;quot;&amp;quot;
 Tags = []
@@ -174,19 +177,21 @@ title = &amp;quot;&amp;quot;
 
 %?
 &lt;/pre&gt;&lt;/div&gt;
-&lt;/p&gt;
+
 
 &lt;p&gt;The &lt;code&gt;wm/insert-date-time&lt;/code&gt; function:&lt;/p&gt;
 
-&lt;p&gt;&lt;div class=&#34;highlight&#34; style=&#34;background: #111111&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;(defun&lt;/span&gt; &lt;span style=&#34;color: #fb660a&#34;&gt;wm/insert-date-time&lt;/span&gt; &lt;span style=&#34;color: #ffffff&#34;&gt;()&lt;/span&gt;
-  &lt;span style=&#34;color: #0086d2&#34;&gt;&amp;quot;Insert current date-time string in full ISO 8601 format.&lt;/span&gt;
-&lt;span style=&#34;color: #0086d2&#34;&gt;Example: 2010-11-29T23:23:35-08:00&amp;quot;&lt;/span&gt;
-   &lt;span style=&#34;color: #ffffff&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #fb660a&#34;&gt;concat&lt;/span&gt;
-    &lt;span style=&#34;color: #ffffff&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #fb660a&#34;&gt;format-time-string&lt;/span&gt; &lt;span style=&#34;color: #0086d2&#34;&gt;&amp;quot;%Y-%m-%dT%T&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;)&lt;/span&gt;
-    &lt;span style=&#34;color: #ffffff&#34;&gt;((&lt;/span&gt;&lt;span style=&#34;color: #fb660a; font-weight: bold&#34;&gt;lambda&lt;/span&gt; &lt;span style=&#34;color: #ffffff&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #fb660a&#34;&gt;x&lt;/span&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color: #ffffff&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #fb660a&#34;&gt;concat&lt;/span&gt; &lt;span style=&#34;color: #ffffff&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #fb660a&#34;&gt;substring&lt;/span&gt; &lt;span style=&#34;color: #fb660a&#34;&gt;x&lt;/span&gt; &lt;span style=&#34;color: #0086f7; font-weight: bold&#34;&gt;0&lt;/span&gt; &lt;span style=&#34;color: #0086f7; font-weight: bold&#34;&gt;3&lt;/span&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color: #0086d2&#34;&gt;&amp;quot;:&amp;quot;&lt;/span&gt; &lt;span style=&#34;color: #ffffff&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #fb660a&#34;&gt;substring&lt;/span&gt; &lt;span style=&#34;color: #fb660a&#34;&gt;x&lt;/span&gt; &lt;span style=&#34;color: #0086f7; font-weight: bold&#34;&gt;3&lt;/span&gt; &lt;span style=&#34;color: #0086f7; font-weight: bold&#34;&gt;5&lt;/span&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;)))&lt;/span&gt;
-     &lt;span style=&#34;color: #ffffff&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #fb660a&#34;&gt;format-time-string&lt;/span&gt; &lt;span style=&#34;color: #0086d2&#34;&gt;&amp;quot;%z&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;))))&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/p&gt;
+
+
+(defun wm/insert-date-time ()
+  &#34;Insert current date-time string in full ISO 8601 format.
+Example: 2010-11-29T23:23:35-08:00&#34;
+   (concat
+    (format-time-string &#34;%Y-%m-%dT%T&#34;)
+    ((lambda (x) (concat (substring x 0 3) &#34;:&#34; (substring x 3 5)))
+     (format-time-string &#34;%z&#34;))))
+
+
 
 &lt;p&gt;At this point, I can hit &lt;code&gt;C-c c p&lt;/code&gt; and the screen splits vertically with a new markdown file created with the template ready to go. I just need to fill out the title, categories, and main content and hit &lt;code&gt;C-c C-c&lt;/code&gt; to save the post and get back to any work that I was doing before I started the post.&lt;/p&gt;
 
@@ -196,11 +201,13 @@ title = &amp;quot;&amp;quot;
 
 &lt;p&gt;In my &lt;code&gt;eshell/alias&lt;/code&gt; file, I have 3 entries that help with Hugo.&lt;/p&gt;
 
-&lt;p&gt;&lt;div class=&#34;highlight&#34; style=&#34;background: #111111&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span style=&#34;color: #fb660a&#34;&gt;alias&lt;/span&gt; &lt;span style=&#34;color: #fb660a&#34;&gt;blog-serve&lt;/span&gt; &lt;span style=&#34;color: #fb660a&#34;&gt;hugo&lt;/span&gt; &lt;span style=&#34;color: #fb660a&#34;&gt;-s=&lt;/span&gt;&lt;span style=&#34;color: #0086d2&#34;&gt;&amp;quot;~/path-to-blog-src&amp;quot;&lt;/span&gt; &lt;span style=&#34;color: #fb660a&#34;&gt;server&lt;/span&gt;
-&lt;span style=&#34;color: #fb660a&#34;&gt;alias&lt;/span&gt; &lt;span style=&#34;color: #fb660a&#34;&gt;blog-browse&lt;/span&gt; &lt;span style=&#34;color: #ffffff&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #fb660a&#34;&gt;browse-url&lt;/span&gt; &lt;span style=&#34;color: #0086d2&#34;&gt;&amp;quot;http://localhost:1313&amp;quot;&lt;/span&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;)&lt;/span&gt;
-&lt;span style=&#34;color: #fb660a&#34;&gt;alias&lt;/span&gt; &lt;span style=&#34;color: #fb660a&#34;&gt;blog-publish&lt;/span&gt; &lt;span style=&#34;color: #fb660a&#34;&gt;hugo&lt;/span&gt; &lt;span style=&#34;color: #fb660a&#34;&gt;-s=&lt;/span&gt;&lt;span style=&#34;color: #0086d2&#34;&gt;&amp;quot;~/path-to-blog-src&amp;quot;&lt;/span&gt;
-&lt;/pre&gt;&lt;/div&gt;
-&lt;/p&gt;
+
+
+alias blog-serve hugo -s=&#34;~/path-to-blog-src&#34; server
+alias blog-browse (browse-url &#34;http://localhost:1313&#34;)
+alias blog-publish hugo -s=&#34;~/path-to-blog-src&#34;
+
+
 
 &lt;p&gt;&lt;code&gt;blog-serve&lt;/code&gt; starts the server and makes the site available for browsing via the &lt;code&gt;blog-browse&lt;/code&gt; alias. &lt;code&gt;blog-publish&lt;/code&gt; is self-explanatory.&lt;/p&gt;
 
@@ -220,19 +227,19 @@ title = &amp;quot;&amp;quot;
 
 &lt;p&gt;I&amp;rsquo;ve decided to start writing blog posts again since I am learning new things and I&amp;rsquo;d like to document the things I am learning in an attempt to measure progress. With this, a few things have changed. My original blog engine was blogger (very neglected), but I have recently started using &lt;a href=&#34;http://emacsformacosx.com/&#34;&gt;Emacs&lt;/a&gt; and, really, I don&amp;rsquo;t want to leave Emacs. I know there are modes for posting to blogger, but since I am starting to hack Golang, I think using a &lt;a href=&#34;https://gohugo.io/&#34;&gt;static blogging engine written in Go&lt;/a&gt; is appropriate. I don&amp;rsquo;t know of any special functions or modes to make using Hugo easier for the Emacs user, so there is room for me to learn how to make these functions/modes myself. Benefits galore.&lt;/p&gt;
 
-&lt;h3 id=&#34;why:e8fb9c67eba912c72729806db31eaa1b&#34;&gt;Why?&lt;/h3&gt;
+&lt;h3 id=&#34;why&#34;&gt;Why?&lt;/h3&gt;
 
 &lt;p&gt;It&amp;rsquo;s a long story, but I am trying out Sacha C&amp;rsquo;s method of learning things. Along with her &lt;a href=&#34;http://pages.sachachua.com/sharing/blog.html#value-blogging&#34;&gt;articles on blogging for learning&lt;/a&gt;, I&amp;rsquo;ve read others who use the same technique for an efficient learning environment. I have many things that I am learning all at once and I need a way to organize and solidify my learning.&lt;/p&gt;
 
-&lt;h3 id=&#34;what-i-ll-post:e8fb9c67eba912c72729806db31eaa1b&#34;&gt;What I&amp;rsquo;ll Post&lt;/h3&gt;
+&lt;h3 id=&#34;what-i-ll-post&#34;&gt;What I&amp;rsquo;ll Post&lt;/h3&gt;
 
 &lt;p&gt;For now, the posts on this blog will mostly relate to programming &amp;ndash; ranging from slightly technical to overly technical. Overly technical posts will have little commentary and mostly code.&lt;/p&gt;
 
-&lt;h3 id=&#34;when-i-ll-post:e8fb9c67eba912c72729806db31eaa1b&#34;&gt;When I&amp;rsquo;ll Post&lt;/h3&gt;
+&lt;h3 id=&#34;when-i-ll-post&#34;&gt;When I&amp;rsquo;ll Post&lt;/h3&gt;
 
 &lt;p&gt;I have no intended schedule and I cannot promise that posts will happen on a regular basis. I will try one post a week. That seems reasonable.&lt;/p&gt;
 
-&lt;h3 id=&#34;goodbye-for-now:e8fb9c67eba912c72729806db31eaa1b&#34;&gt;Goodbye for now&lt;/h3&gt;
+&lt;h3 id=&#34;goodbye-for-now&#34;&gt;Goodbye for now&lt;/h3&gt;
 
 &lt;p&gt;Goodbye, until the next post.&lt;/p&gt;
 </description>

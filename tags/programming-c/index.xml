@@ -2,11 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Programming C on To The Triforce</title>
-    <link>http://wmanger.com/tags/programming-c/</link>
+    <link>http://wmanger.com/tags/programming-c/index.xml</link>
     <description>Recent content in Programming C on To The Triforce</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 03 Mar 2016 05:57:47 -0700</lastBuildDate>
     <atom:link href="http://wmanger.com/tags/programming-c/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
@@ -17,7 +16,7 @@
       <guid>http://wmanger.com/post/C_Quickly/</guid>
       <description>&lt;p&gt;I skimmed through most of the first 4 chapters of &lt;em&gt;C How To Program&lt;/em&gt; and then chapter 5 presents functions. I thought that I would continue skimming through, but then I got to the section on &lt;em&gt;Recursion&lt;/em&gt; and the classic introduction to it through implementing the factorial function.&lt;/p&gt;
 
-&lt;div class=&#34;highlight&#34; style=&#34;background: #111111&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span style=&#34;color: #ff0007; font-weight: bold; font-style: italic; background-color: #0f140f&#34;&gt;#include &amp;lt;stdio.h&amp;gt;&lt;/span&gt;
+&lt;div class=&#34;highlight&#34; style=&#34;background: #111111&#34;&gt;&lt;pre style=&#34;line-height: 125%&#34;&gt;&lt;span style=&#34;color: #ff0007; font-weight: bold; font-style: italic; background-color: #0f140f&#34;&gt;#include&lt;/span&gt; &lt;span style=&#34;color: #008800; font-style: italic; background-color: #0f140f&#34;&gt;&amp;lt;stdio.h&amp;gt;&lt;/span&gt;&lt;span style=&#34;color: #ff0007; font-weight: bold; font-style: italic; background-color: #0f140f&#34;&gt;&lt;/span&gt;
 
 &lt;span style=&#34;color: #cdcaa9; font-weight: bold&#34;&gt;long&lt;/span&gt; &lt;span style=&#34;color: #ff0086; font-weight: bold&#34;&gt;factorial&lt;/span&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color: #cdcaa9; font-weight: bold&#34;&gt;long&lt;/span&gt;&lt;span style=&#34;color: #ffffff&#34;&gt;);&lt;/span&gt;
 
@@ -54,15 +53,15 @@
 
 &lt;p&gt;I&amp;rsquo;ve been wanting to get back into C/C++ for a while now, but I was unsure how I would go about creating a learning environment. There are many tutorials available out there, but I tend to lean toward structured learning &amp;ndash; like the way you would learn in a classroom setting. I quickly searched on Reddit and some other outlets about the best books to buy, but after reviewing a few, I was left empty handed. As you can probably imagine, the book that gets recommended the most is K&amp;amp;R&amp;rsquo;s &lt;em&gt;The C Programming Language&lt;/em&gt;. I think that it is a great recommendation, but I read that book cover to cover a few years ago. I was looking for something different as most tech books of this nature get boring quickly and most definitely if you are re-reading it.&lt;/p&gt;
 
-&lt;h3 id=&#34;goodwill-ftw:881acfa8d42cd3861f49dfee4e7fd53d&#34;&gt;Goodwill FTW&lt;/h3&gt;
+&lt;h3 id=&#34;goodwill-ftw&#34;&gt;Goodwill FTW&lt;/h3&gt;
 
 &lt;p&gt;The other day I went to a near by &lt;em&gt;Goodwill&lt;/em&gt; just to see what kind of books would be available and sure enough, gathered among diet books and romantic novels was: &lt;a href=&#34;http://www.amazon.com/C-How-Program-2nd-Edition/dp/0132261197&#34;&gt;&lt;em&gt;C How To Program 2nd Edition&lt;/em&gt;&lt;/a&gt; by &lt;em&gt;Dietel &amp;amp; Dietel&lt;/em&gt;. This book is likely out of date with best practices for modern C, but what I was looking for was a thorough &lt;em&gt;introduction&lt;/em&gt; to C/C++. This looks like it is what I was looking for. It has pretty good reviews on &lt;em&gt;Amazon&lt;/em&gt; too. I plan on picking up some books on modern best practices after this introduction.&lt;/p&gt;
 
-&lt;h3 id=&#34;schedule:881acfa8d42cd3861f49dfee4e7fd53d&#34;&gt;Schedule&lt;/h3&gt;
+&lt;h3 id=&#34;schedule&#34;&gt;Schedule&lt;/h3&gt;
 
 &lt;p&gt;I don&amp;rsquo;t intend on spending too much time hammering through the entire book. Just a refresher for the first few chapters by skimming through and writing some of the more difficult programs for each chapter. Pointers are presented in Chapter 7, so that&amp;rsquo;s where I&amp;rsquo;ll likely slow down. I know pointers, but my working knowledge of them is lacking. My previous exposure to pointers and working experience in &lt;em&gt;Golang&lt;/em&gt; is useful in some ways, but &lt;em&gt;C/C++&lt;/em&gt; pointers are pretty different.&lt;/p&gt;
 
-&lt;h3 id=&#34;expectations:881acfa8d42cd3861f49dfee4e7fd53d&#34;&gt;Expectations&lt;/h3&gt;
+&lt;h3 id=&#34;expectations&#34;&gt;Expectations&lt;/h3&gt;
 
 &lt;p&gt;What I hope to do is get good enough with &lt;em&gt;C/C++&lt;/em&gt; so that it is easier to read source for things like the &lt;em&gt;Linux&lt;/em&gt; kernel and general &lt;em&gt;GNU&lt;/em&gt; utilities. Eventually, I&amp;rsquo;d like to contribute to these types of things. Hopefully this first step is a step in the right direction.&lt;/p&gt;
 </description>
