@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- 2017-08-16 Wed 10:53 -->
+<meta charset="utf-8">
+<title>How I came to Emacs</title>
+<meta name="generator" content="Org mode">
+<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'><link href='http://fonts.googleapis.com/css?family=Source+Code+Pro:400,700' rel='stylesheet' type='text/css'><link href='https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700' rel='text/css'><link href='https://fonts.googleapis.com/css?family=Open+Sans:600,700,700i' rel='text/css'><link href='../static/css/code.css' rel='stylesheet' type='text/css' /><meta name='viewport' content='width=device-width, initial-scale=1' />
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2013 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="preamble" class="status">
+<div id="topbar">
+  <div id="topbar-inner">
+    <div id="topbar-heading">
+      <img class="avatar" src="https://s.gravatar.com/avatar/289c08bda6657ec2f199b62abed52b43?s=80"/>
+      <div id="topbar-title">
+        <div>Walter Manger | To The Triforce</div>
+        <div id="topbar-tagline">Quests for Knowledge</div>
+      </div>
+    </div>
+    <ul id="topbar-nav">
+      <li><a href="../index.html">Home</a></li>
+      <li class="github"><a href="https://github.com/walter-manger" target="_blank"></a></li>
+      <li class="linkedin"><a href="https://www.linkedin.com/in/waltermanger/" target="_blank"></a></li>
+    </ul>
+  </div>
+</div>
+</div>
+<div id="content">
+<header>
+<h1 class="title">How I came to Emacs</h1>
+</header><ul class="org-ul">
+<li><a href="posts/2016-01-29.html">How I came to Emacs</a></li>
+<li><a href="posts/2016-01-29.html">How I came to Emacs</a></li>
+</ul>
+
+<div id="outline-container-org8e600b2" class="outline-2">
+<h2 id="org8e600b2">History</h2>
+<div class="outline-text-2" id="text-org8e600b2">
+<p>
+I spent a good chunk of my programming career, probably close to 9
+years, inside of the Visual Studio IDE. For the first 5 or so, I didn&rsquo;t
+understand why I would ever need to step outside of that environment.
+When I got to college is when I was faced with the hard fact that I
+could not count on my trusty tool for everything. At the university,
+they ran all the code on a Sun UNIX machine, which was using its version
+of GCC and that didn&rsquo;t match up with what VS supplied. I believe there
+were ways to make it work, but after being burned a few times for
+submitting uncompilable code, I had to find a different solution that
+was guaranteed to work every time. As you can probably guess, like
+anyone who had previously been exposed to a MS Operating System, the
+first tool on a UNIX box that I reached for was Nano. There was a nice
+menu that I could understand that had some parallels with notepad.
+</p>
+
+<p>
+Nano got me by for a month or so, but I needed something more powerful.
+One day I was talking with a master&rsquo;s student that was a TA for one of
+the courses I was taking and he was programming with what looked like a
+split terminal with Python&rsquo;s documentation in one pane, syntax
+highlighting of the Python code that he was working on in another, and
+some form of autocomplete in yet another. When I asked him what it was
+he answered proudly &ldquo;VIM&rdquo;. I was blown away with the things he showed me
+next. What he made happen with minimal keystrokes was impressive. I
+began playing with VIM in my downtime, and I started to grasp the
+basics, but when I left the university, it was back to working life and
+VS was the tool that I was most comfortable with in the end. It won.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org44b3fb5" class="outline-2">
+<h2 id="org44b3fb5">Hand Pain &amp; Emulators</h2>
+<div class="outline-text-2" id="text-org44b3fb5">
+<p>
+Not all people who use VS or GUI apps will have the same experience, but
+after using VS and GUI apps in general, I started to experience a slight
+pain in my hands. I attribute this mostly to reaching for the mouse a
+lot. Since I will probably be working as a programmer for the rest of my
+life, I thought that I&rsquo;d better address the issue now before it turns
+into something that disables me for any length of time. I remembered VIM
+and how the home row was king. I looked for some sort of emulator for
+Visual Studio and there were a couple. I chose VSVIM. It was great, but
+there was still something missing. I could then edit modally using VIM
+bindings, but navigating VS still required some movement away from the
+keyboard. What I wanted was complete control of the IDE without having
+to touch my mouse at all. I am sure there are ways to do this, but from
+what I found, it wasn&rsquo;t really easy to make happen. But, I was
+developing in VS under MS, so it was better for me at the time to stick
+with the standard way of doing things. My hands did feel better with
+using VIM bindings for editing code, in fact, it was like I had almost
+been completely cured. Almost.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org2aa34a9" class="outline-2">
+<h2 id="org2aa34a9">New Stack, New Editor Search</h2>
+<div class="outline-text-2" id="text-org2aa34a9">
+<p>
+In my latest position, I don&rsquo;t develop under MS, nor do I use VS. Our
+stack consists of GO, and JS mostly, so when I joined the team, I was
+back on the hunt for an editor. I had previously played with Sublime
+Text 2, and I can&rsquo;t say enough good things about it. The community was
+great, the plugins were great, and it was so light weight. It even had a
+&rsquo;vintage mode&rsquo;, which, would give you VIM bindings without having to
+install a plugin. The GO plugins were pretty solid. Everything seemed
+great about it. I started using it, but I was left wanting more. I
+noticed when I used an app outside of the terminal, I had to constantly
+context switch to get to the terminal and back. I knew VIM was available
+by terminal and there were ways to get better terminal interaction
+through a tool called TMUX. I started experimenting with VIM + TMUX and
+I got to the point where my configuration met my needs. I was happy
+until one day I watched a video about a long time VIM user moving on to
+Emacs. It is called: <a href="https://www.youtube.com/watch?v=JWD1Fpdd4Pc">Evil
+Mode: Or, How I Learned to Stop Worrying and Love Emacs</a>. It was that
+video, along with my desire to go through the course work for
+<a href="http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-001-structure-and-interpretation-of-computer-programs-spring-2005/">Structure
+and Interpretation of Computer Programs</a> that got me curious about
+Emacs. I started watching more videos and learning more about the power
+of Emacs.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org1037274" class="outline-2">
+<h2 id="org1037274">Rabbit Hole of Regret &amp; Pride</h2>
+<div class="outline-text-2" id="text-org1037274">
+<p>
+As an Emacs beginner, there were so many questions and getting the
+answers were difficult at first. Simply saving a document was completely
+different from most editors. Changing Emacs defaults to something sane
+was pretty difficult too. After all, Emacs configuration is done in
+Elisp, and that alone should drive away anyone wanting to try it. What I
+wanted Emacs to do was act like editors that I was used to, but give me
+Emacs power when I needed it. With Emacs, it&rsquo;s pretty easy to do.
+Everything Emacs does by default can be controlled in any way. I mean
+Everything. Also, getting Emacs to do something that it doesn&rsquo;t do by
+default isn&rsquo;t that difficult once you know a little Elisp. Emacs gives
+you the ability to create an editor that is not Emacs at all. Ask Linus
+Torvalds.
+</p>
+
+<p>
+I know what you&rsquo;re thinking: <i>If Emacs is so powerful, why do I have the
+word &rsquo;Regret&rsquo; in the heading above?</i> Because, Yak Shaving. Sometimes I
+just want my editor to do what some other editor does well. I don&rsquo;t want
+to have to search out some configuration to get Emacs to do something
+that I think should be default. Nor do I want to look at my Emacs
+configuration and get caught in a loop of cleaning up the configuration
+because now I&rsquo;ve seen some other well-organized configs or I know how to
+hack Elisp better. When you are a beginner, Emacs is a double-edged
+sword. It is both great and horrible at the same time. There are things
+that literally blow my mind every time I use it, but occasionally, there
+are quirks in a certain mode that burn me to the core. Actually, even
+the horrible parts of Emacs are good if you look at them in the right
+context. Example: nothing is stopping me from fixing a mode myself and
+get better at Elisp while helping the community.
+</p>
+
+<p>
+<i>What about &rsquo;Pride&rsquo;?</i> Well, once I do get something configured exactly
+the way I want it to be, I feel not only proud and accomplished, but
+also wizardly.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org3edd8f8" class="outline-2">
+<h2 id="org3edd8f8">Wood Working &amp; Programming Tools</h2>
+<div class="outline-text-2" id="text-org3edd8f8">
+<p>
+Some time last year I got an itch to start wood working. I still have
+not been able to fully commit to purchasing all of the tools that I need
+to really get started, but I have a few. My most complete project was a
+Shaker style bench, which is complete to the point of finishing. During
+this project, I got the pleasure of creating one of my own tools. It is
+called a poor man&rsquo;s router plane. It is basically a piece of 2x4 with a
+hole drilled in it enough to hold a chisel. It doesn&rsquo;t look like much,
+but it produces an accurate dado every time. <i>What does this have to do
+with Emacs?</i> you say. Well, Emacs provides the same experience. It
+allows you to tailor your editor to any situation. Any work done in
+Emacs configuration pays back tenfold. Wood workers have jigs and tools
+that help their tools be more efficient. Professional Emacs users have
+configurations that they&rsquo;ve refined over time that make Emacs more
+efficient for a particular task.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org330516c" class="outline-2">
+<h2 id="org330516c">But it still doesn&rsquo;t make sense to trash my current editor&#x2026;</h2>
+<div class="outline-text-2" id="text-org330516c">
+<p>
+Don&rsquo;t. The real reason I chose Emacs is: I spend a lot of time in a text
+editor and I want that time investment to pay off. Emacs allows this
+completely. If that doesn&rsquo;t sound like something you&rsquo;re interested in
+doing, you shouldn&rsquo;t.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgeaa8b29" class="outline-2">
+<h2 id="orgeaa8b29">One more thing</h2>
+<div class="outline-text-2" id="text-orgeaa8b29">
+<p>
+This whole post I have been referring to Emacs as a text editor. It
+really is not. It is an Operating System. Some Emacs users never leave
+Emacs. After all, it does/can have: A web browser, an email client, a
+twitter client, games, irc, a news reader, a git interface, and much
+more. Not a lot of editors can say the same thing. I must warn you that
+when you witness what Emacs can do, you&rsquo;ll want it to do everything. I
+find myself just wanting to stay in Emacs and get a little annoyed every
+time I have to leave.
+</p>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<div id="bottombar">
+  <div id="bottombar-inner">
+  </div>
+</div>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-39222739-1', 'auto');
+  ga('send', 'pageview');
+</script>
+</div>
+</body>
+</html>
