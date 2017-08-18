@@ -69,6 +69,26 @@ ol > li > ul {
   margin-bottom: 20px;
 }
 
+table {
+    border-collapse: collapse;
+    background-color: transparent;
+}
+
+table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #eceeef;
+}
+
+table td, table th {
+    padding: .75rem;
+    vertical-align: top;
+    border-top: 1px solid #eceeef;
+}
+
+th {
+    text-align: left;
+}
+
 #preamble.status {}
 
 #content {
@@ -95,11 +115,32 @@ ol > li > ul {
   height: 100px;
 }
 
-.org-src-container {
-  background-color: #f6f8fa;
+.org-src-container, .example {
   padding: 20px;
   margin: 20px 0;
   box-shadow: inset 0px 0px 5px 4px #eee;
+}
+
+.org-src-container {
+  background-color: #f6f8fa;
+}
+
+.example {
+  background-color: #eee;
+  position: relative;
+}
+
+.example::after {
+    content: "result";
+    display: block;
+    border-radius: 0 0 0 3px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #dcdbdb;
+    font-weight: bold;
+    padding: 4px;
+    color: white;
 }
 
 .linenr {
