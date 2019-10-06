@@ -2,7 +2,6 @@
 <html lang="en-US">
 
 <head>
-	<meta name="generator" content="Hugo 0.54.0" />
 <meta charset="utf-8">
 <meta name="HandheldFriendly" content="True">
 <meta name="MobileOptimized" content="320">
@@ -14,22 +13,22 @@
 <meta property="og:site_name" content="Walter Manger" />
 <meta property="og:locale" content="en-US" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://wmanger.com/" />
-<meta property="og:title" content="Walter Manger" />
-<meta property="twitter:title" content="Walter Manger">
+<meta property="og:url" content="https://wmanger.com/articles/embracing-the-cloud/" />
+<meta property="og:title" content="Embracing The Cloud" />
+<meta property="twitter:title" content="Embracing The Cloud">
 
     <meta property="twitter:card" content="summary">
 
-<meta property="og:description" content="Stories about software">
-<meta property="twitter:description" content="Stories about software">
+<meta property="og:description" content="">
+<meta property="twitter:description" content="">
 
 <title>
 
 
-    Walter Manger
+     Walter Manger - Embracing The Cloud 
 
 </title>
-<link rel="canonical" href="https://wmanger.com/">
+<link rel="canonical" href="https://wmanger.com/articles/embracing-the-cloud/">
 
 
 <style media="screen">
@@ -1088,8 +1087,6 @@ div.main .content .markdown pre, div.main .content .markdown pre code {
 
 
 
-  <link href="https://wmanger.com/index.xml" rel="alternate" type="application/rss+xml" title="Walter Manger" />
-
 
 </head>
 
@@ -1126,60 +1123,179 @@ div.main .content .markdown pre, div.main .content .markdown pre code {
     </div>
 </div>
 
-<div class="main column">
+
+
+
+
+<div class="main post non-narrow zero-top-spacing column">
     <div class="container">
         <div class="content">
-            
-                <div class="markdown" style="margin-bottom: 60px">
-                <p>Hello, I&rsquo;m Walter Manger.</p>
-
-<p>If you were coming here to read about my professional experience, you should consider visiting my <a href="https://www.linkedin.com/in/waltermanger" target="_blank" rel="noopener">linkedin</a> profile for that.
-This site features opinionated articles about the software industry, business in general, and mindset, with some form of technical focus.</p>
-
-<p>If you need help with <strong>Cloud Migration</strong>, <strong>Cloud Infrastructure</strong>, <strong>Serverless Applications</strong>, <strong>Software Roadmapping</strong>, <a href="mailto:walter.manger@gmail.com">email me</a>.</p>
-
-<p>You can get more information about the services that I offer on the <a href="https://wmanger.com/services">services</a> page.</p>
+            <div class="front-matter">
+                <div class="title-container">
+                    <div class="page-heading primary">
+    
+    
+    Embracing The Cloud
+    
+    
+</div>
 
                 </div>
-            
-
-            
-                <div class="posts">
-                
-                
-                    <div class="page-heading primary">Latest posts</div>
-                    <ul>
+                <div class="meta">
+                    <div class="date" title="Tue Oct 1 2019 00:00:00 MDT">Oct 1, 2019</div>
                     
-                        
-                            <li class="post-item">
-    
-    <a href="https://wmanger.com/articles/revisiting-the-pragmatic-programmer/"><span>Revisiting The Pragmatic Programmer 10 Years Later</span></a>
-    
-</li>
-
-                        
-                            <li class="post-item">
-    
-    <a href="https://wmanger.com/articles/embracing-the-cloud/"><span>Embracing The Cloud</span></a>
-    
-</li>
-
-                        
-                    
-                    </ul>
 
                     
-                
+                    
+                    
+                    <div class="author middot" title="no">
+                        
+                        Walter Manger
+                        
+                    </div>
+                    
+
+
+                    
+                    
+                    <div class="reading-time middot">3 minute read</div>
+                    
+                    
+                      <div class="tags">
+                    
+                        <ul>
+                          
+                            <li class="middot"><a href="https://wmanger.com/tags/aws">AWS</a> </li>
+                          
+                        </ul>
+                    </div>
+                    <div class="tags">
+                        <ul>
+                          
+                          
+                        </ul>
+                    </div>
                 </div>
-            
-
-            <div class="best-posts">
-            
-            
             </div>
+            <div class="markdown">
+                
+    
+    
+
+<figure>
+    <img src="https://wmanger.com/img/cloud-heading.jpg"/> 
+</figure>
+
+
+<p>Embrace the cloud with these tips.</p>
+
+<h2 id="trust-your-cloud-provider">Trust Your Cloud Provider</h2>
+
+<p>If you are going to be using the cloud, you need to trust that your provider&rsquo;s services are going to be operational.
+Writing code defensively or testing that a particular service is <em>working</em> is a waste of time.
+Let your services fail. As long as your monitoring strategy is strong, you&rsquo;ll know when an issue arises.</p>
+
+<h2 id="embrace-asynchronicity">Embrace Asynchronicity</h2>
+
+<p>AWS Lambda Functions are triggered by events &ndash; HTTP, SQS, Cron, SNS, Streams &ndash; to name a few.
+Being prepared to reason about your services/applications from an asynchronous perspective will help in the long run.
+Let this thinking permeate throughout the full software development life cycle.</p>
+
+<h2 id="use-real-infrastructure">Use Real Infrastructure</h2>
+
+<p>Don&rsquo;t make the mistake of &ldquo;creating&rdquo; a personal cloud.
+There are tools out there that help you do so, and it may seem attractive, but there is no substitute for a real cloud.
+If you&rsquo;ve fully embraced the cloud, which I hope you do, you&rsquo;re likely using things that cannot be <em>faked</em> reliably.
+Let <strong>real</strong> infrastructure influence the way you develop locally <strong>from the beginning</strong>.</p>
+
+<h2 id="write-tests">Write Tests</h2>
+
+<p>Do write tests, and write them against <strong>real</strong> infrastructure when integrating.</p>
+
+<p><a id="orgf4a8365"></a></p>
+
+<figure>
+    <img src="https://wmanger.com/img/test-pyramid.png"
+         alt="Figure 1: The Testing Pyramid"/> <figcaption>
+            <p>Figure 1: The Testing Pyramid</p>
+        </figcaption>
+</figure>
+
+
+<ol>
+<li>Many Unit Test</li>
+<li>Some Service Tests</li>
+<li>Few UI Tests (acceptance/regression)</li>
+</ol>
+
+<p>No one knows every edge of a language or framework.
+Testing is a good practice to increase quality, validate your assumptions, and avoid regression.</p>
+
+<h2 id="logging-and-monitoring">Logging &amp; Monitoring</h2>
+
+<p>A Lambda Function may trigger other services, which may trigger more Lambda Functions.
+This graph of events is hard to keep track of if your logging strategy and implementation are off.
+Write your functions in such a way that you get some helpful logging by default (think middleware).
+Pay attention to what you are logging and at what level (error, warning, debug, info) to reduce noise.</p>
+
+<p>Use a third party tool for monitoring to reduce the amount of <strong>things</strong> you have to maintain in the cloud.
+<a href="https://epsagon.com/" target="_blank" rel="noopener">Epsagon</a> has been a great choice so far.</p>
+
+<h2 id="measuring-performance">Measuring Performance</h2>
+
+<p>Think about how you will measure the performance of your services. Ask these questions:</p>
+
+<ul>
+<li>Is running your <strong>acceptance tests</strong> in parallel by some factor an acceptable coverage area?</li>
+<li>What is the baseline for response times?</li>
+<li>Should notifications be configured for long responses?</li>
+</ul>
+
+<h2 id="know-the-common-limits-and-pitfalls-of-your-tools">Know The Common Limits And Pitfalls Of Your Tools</h2>
+
+<p>Designing infrastructure? Script it with <a href="https://aws.amazon.com/cloudformation/" target="_blank" rel="noopener">CloudFormation</a> or <a href="https://www.terraform.io/">Terraform</a>.</p>
+
+<p>Know what happens when you change the properties of a cloud resource.
+Does it drop the resource and recreate it? How do you handle that destruction?
+Are you keeping backups of your data (DB, File Storage, etc.) on a regular basis?</p>
+
+<h2 id="design-a-deployment-policy-for-production">Design a Deployment Policy for Production</h2>
+
+<p>Developers should not be allowed to deploy (ship infrastructure) into production from their local environments.
+Make this so by using IAM or similar.
+Each developer should have their own account and unable to use service accounts that run in CI/CD.</p>
+
+<h2 id="use-elastic-search-for-searching-dynamodb">Use Elastic Search For Searching DynamoDB</h2>
+
+<p>Using Global Secondary Indices is nice for known searches, but having a robust way to search a DynamoDB table is preferred.
+Embrace the cloud&rsquo;s event based nature by using DynamoDB Streams to keep Elastic Search indices up-to-date.
+Write easy to use utilities, <span class="underline">that trigger events which use the same stream functions</span> for reindexing.</p>
+
+<h2 id="ship-frequently">Ship Frequently</h2>
+
+<p>Your service or application <strong>should</strong> be able to be shipped at any time (CI/CD).
+The more frequent you ship, the fewer chances for things to go wrong.
+Don&rsquo;t let HUGE features bog down your deployment cadence. Break them down to small, shippable parts.
+If your logging, monitoring, and testing are in order, you will know if something is broken before a user experiences it.</p>
+
+
+            </div>
+            
+            
+            
+
+            
+            
+
+            
+
+            
         </div>
     </div>
 </div>
+
+
+
 <div class="footer column">
     <div class="container">
 

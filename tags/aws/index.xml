@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Aws on Walter Manger</title>
+    <link>https://wmanger.com/tags/aws/</link>
+    <description>Recent content in Aws on Walter Manger</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Tue, 01 Oct 2019 00:00:00 -0600</lastBuildDate>
+    
+	<atom:link href="https://wmanger.com/tags/aws/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Embracing The Cloud</title>
+      <link>https://wmanger.com/articles/embracing-the-cloud/</link>
+      <pubDate>Tue, 01 Oct 2019 00:00:00 -0600</pubDate>
+      
+      <guid>https://wmanger.com/articles/embracing-the-cloud/</guid>
+      <description>Embrace the cloud with these tips.
+Trust Your Cloud Provider If you are going to be using the cloud, you need to trust that your provider&amp;rsquo;s services are going to be operational. Writing code defensively or testing that a particular service is working is a waste of time. Let your services fail. As long as your monitoring strategy is strong, you&amp;rsquo;ll know when an issue arises.
+Embrace Asynchronicity AWS Lambda Functions are triggered by events &amp;ndash; HTTP, SQS, Cron, SNS, Streams &amp;ndash; to name a few.</description>
+    </item>
+    
+  </channel>
+</rss>

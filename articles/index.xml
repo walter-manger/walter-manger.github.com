@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Articles on Walter Manger</title>
+    <link>https://wmanger.com/articles/</link>
+    <description>Recent content in Articles on Walter Manger</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Fri, 04 Oct 2019 23:39:00 -0600</lastBuildDate>
+    
+	<atom:link href="https://wmanger.com/articles/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Revisiting The Pragmatic Programmer 10 Years Later</title>
+      <link>https://wmanger.com/articles/revisiting-the-pragmatic-programmer/</link>
+      <pubDate>Fri, 04 Oct 2019 23:39:00 -0600</pubDate>
+      
+      <guid>https://wmanger.com/articles/revisiting-the-pragmatic-programmer/</guid>
+      <description>As with many non-fiction books, The Pragmatic Programmer can be distilled to about 1% of its page count. That&amp;rsquo;s not a hit on the authors or the publisher, that&amp;rsquo;s just how non-fiction books work in my opinion.
+This book gives you all the tips you need to become a master Code Craftsman, but it is missing something very important.
+Andrew and David don&amp;rsquo;t discuss a programmer&amp;rsquo;s well-being.
+Programmers need to take care of themselves - their physical and mental health, relationships, and finances.</description>
+    </item>
+    
+    <item>
+      <title>Embracing The Cloud</title>
+      <link>https://wmanger.com/articles/embracing-the-cloud/</link>
+      <pubDate>Tue, 01 Oct 2019 00:00:00 -0600</pubDate>
+      
+      <guid>https://wmanger.com/articles/embracing-the-cloud/</guid>
+      <description>Embrace the cloud with these tips.
+Trust Your Cloud Provider If you are going to be using the cloud, you need to trust that your provider&amp;rsquo;s services are going to be operational. Writing code defensively or testing that a particular service is working is a waste of time. Let your services fail. As long as your monitoring strategy is strong, you&amp;rsquo;ll know when an issue arises.
+Embrace Asynchronicity AWS Lambda Functions are triggered by events &amp;ndash; HTTP, SQS, Cron, SNS, Streams &amp;ndash; to name a few.</description>
+    </item>
+    
+  </channel>
+</rss>
