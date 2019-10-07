@@ -29,9 +29,9 @@ Programmers need to take care of themselves - their physical and mental health, 
       <pubDate>Tue, 01 Oct 2019 00:00:00 -0600</pubDate>
       
       <guid>https://wmanger.com/articles/embracing-the-cloud/</guid>
-      <description>Embrace the cloud with these tips.
-Trust Your Cloud Provider If you are going to be using the cloud, you need to trust that your provider&amp;rsquo;s services are going to be operational. Writing code defensively or testing that a particular service is working is a waste of time. Let your services fail. As long as your monitoring strategy is strong, you&amp;rsquo;ll know when an issue arises.
-Embrace Asynchronicity AWS Lambda Functions are triggered by events &amp;ndash; HTTP, SQS, Cron, SNS, Streams &amp;ndash; to name a few.</description>
+      <description>Cloud architecture is a great way to ship safe, cost effective, resilient, and scalable applications.
+Here are some tips from the trenches to help your team embrace the cloud.
+Trust Your Cloud Provider If you are going to be using the cloud, you need to trust that your provider&amp;rsquo;s services are going to be operational. Writing code defensively or testing that a particular service is working is a waste of time.</description>
     </item>
     
   </channel>
