@@ -8,22 +8,30 @@
   </url>
   
   <url>
+    <loc>https://wmanger.com/articles/</loc>
+    <lastmod>2019-10-04T23:39:00-06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://wmanger.com/categories/</loc>
+    <lastmod>2019-10-04T23:39:00-06:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://wmanger.com/articles/revisiting-the-pragmatic-programmer/</loc>
     <lastmod>2019-10-04T23:39:00-06:00</lastmod>
   </url>
   
   <url>
-    <loc>https://wmanger.com/articles/embracing-the-cloud/</loc>
-    <lastmod>2019-10-01T00:00:00-06:00</lastmod>
+    <loc>https://wmanger.com/categories/software-engineering/</loc>
+    <lastmod>2019-10-04T23:39:00-06:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://wmanger.com/home/</loc>
-    <lastmod>2019-03-29T17:00:00-06:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://wmanger.com/articles/</loc>
+    <loc>https://wmanger.com/</loc>
     <lastmod>2019-10-04T23:39:00-06:00</lastmod>
     <priority>0</priority>
   </url>
@@ -35,18 +43,8 @@
   </url>
   
   <url>
-    <loc>https://wmanger.com/categories/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://wmanger.com/services/</loc>
-  </url>
-  
-  <url>
-    <loc>https://wmanger.com/categories/software-engineering/</loc>
-    <lastmod>2019-10-04T23:39:00-06:00</lastmod>
-    <priority>0</priority>
+    <loc>https://wmanger.com/articles/embracing-the-cloud/</loc>
+    <lastmod>2019-10-01T00:00:00-06:00</lastmod>
   </url>
   
   <url>
@@ -56,9 +54,12 @@
   </url>
   
   <url>
-    <loc>https://wmanger.com/</loc>
+    <loc>https://wmanger.com/home/</loc>
     <lastmod>2019-03-29T17:00:00-06:00</lastmod>
-    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://wmanger.com/services/</loc>
   </url>
   
 </urlset>
