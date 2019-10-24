@@ -1214,7 +1214,7 @@ Let <strong>real</strong> infrastructure influence the way you develop locally <
 
 <p>Do write tests, and write them against <strong>real</strong> infrastructure when integrating.</p>
 
-<p><a id="org7075936"></a></p>
+<p><a id="org63098ba"></a></p>
 
 <figure>
     <img src="https://wmanger.com/img/test-pyramid.png"
@@ -1236,9 +1236,9 @@ Testing is a good practice to increase quality, validate your assumptions, and a
 <h2 id="logging-and-monitoring">Logging &amp; Monitoring</h2>
 
 <p>A Lambda Function may trigger other services, which may trigger more Lambda Functions.
-This graph of events is hard to keep track of if your logging strategy and implementation are off.
+This graph of events is hard to keep track of if your logging implementation is off.
 Write your functions in such a way that you get some helpful logging by default (think middleware).
-Pay attention to what you are logging and at what level (error, warning, debug, info) to reduce noise.</p>
+Pay attention to what you are logging and at what level (error, warning, debug, info) to reduce noise in a production environment.</p>
 
 <p>Use a third party tool for monitoring to reduce the amount of <strong>things</strong> you have to maintain in the cloud.
 <a href="https://epsagon.com/" target="_blank" rel="noopener">Epsagon</a> has been a great choice so far.</p>
@@ -1275,14 +1275,14 @@ Write easy to use utilities, <span class="underline">that trigger events which u
 
 <h2 id="ship-frequently">Ship Frequently</h2>
 
-<p>Your service or application <strong>should</strong> be able to be shipped at any time (CI/CD).
+<p>Your service or application <strong>should</strong> be able to be <a href="https://wmanger.com/articles/shipping-efficiently/">shipped at any time</a> (CI/CD).
 The more frequent you ship, the fewer chances for things to go wrong.
 Don&rsquo;t let HUGE features bog down your deployment cadence. Break them down to small, shippable parts.
 If your logging, monitoring, and testing are in order, you will know if something is broken before a user experiences it.</p>
 
 <h2 id="what-are-you-shipping">What are you shipping?</h2>
 
-<p>Are you shipping to the cloud architecture?
+<p>Are you shipping to the cloud?
 If you need help, <a href="mailto:walter.manger@gmail.com">drop me a line</a> or visit my <a href="https://wmanger.com/services">services</a> page for more information.</p>
 
 
