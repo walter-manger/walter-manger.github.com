@@ -6,10 +6,21 @@
     <description>Recent content in Software Engineering on Walter Manger</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Fri, 04 Oct 2019 23:39:00 -0600</lastBuildDate>
+    <lastBuildDate>Wed, 23 Oct 2019 23:03:00 -0600</lastBuildDate>
     
 	<atom:link href="https://wmanger.com/categories/software-engineering/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Shipping Efficiently</title>
+      <link>https://wmanger.com/articles/shipping-efficiently/</link>
+      <pubDate>Wed, 23 Oct 2019 23:03:00 -0600</pubDate>
+      
+      <guid>https://wmanger.com/articles/shipping-efficiently/</guid>
+      <description>If you find yourself writing a lot of code for a feature, stop and try to organize your changes into smaller, manageable chunks.
+Sure, it takes some discipline, but stopping to actually plan out your work before you do it is worth it because it gives you the headspace to put some genuine thought behind the feature.
+There&amp;rsquo;s one caveat &amp;ndash; your company has to appreciate this genuine thought.</description>
+    </item>
     
     <item>
       <title>Revisiting The Pragmatic Programmer 10 Years Later</title>
@@ -19,8 +30,7 @@
       <guid>https://wmanger.com/articles/revisiting-the-pragmatic-programmer/</guid>
       <description>As with many non-fiction books, The Pragmatic Programmer can be distilled to about 1% of its page count. That&amp;rsquo;s not a hit on the authors or the publisher, that&amp;rsquo;s just how non-fiction books work in my opinion.
 This book gives you all the tips you need to become a master Code Craftsman, but it is missing something very important.
-Andrew and David don&amp;rsquo;t discuss a programmer&amp;rsquo;s well-being.
-Programmers need to take care of themselves - their physical and mental health, relationships, and finances.</description>
+Andrew and David don&amp;rsquo;t discuss a programmer&amp;rsquo;s well-being.</description>
     </item>
     
     <item>

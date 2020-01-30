@@ -13,9 +13,9 @@
 <meta property="og:site_name" content="Walter Manger" />
 <meta property="og:locale" content="en-US" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://wmanger.com/home/" />
-<meta property="og:title" content="Home" />
-<meta property="twitter:title" content="Home">
+<meta property="og:url" content="https://wmanger.com/articles/shipping-efficiently/" />
+<meta property="og:title" content="Shipping Efficiently" />
+<meta property="twitter:title" content="Shipping Efficiently">
 
     <meta property="twitter:card" content="summary">
 
@@ -25,10 +25,10 @@
 <title>
 
 
-     Walter Manger - Home 
+     Walter Manger - Shipping Efficiently 
 
 </title>
-<link rel="canonical" href="https://wmanger.com/home/">
+<link rel="canonical" href="https://wmanger.com/articles/shipping-efficiently/">
 
 
 <style media="screen">
@@ -1125,31 +1125,127 @@ div.main .content .markdown pre, div.main .content .markdown pre code {
 
 
 
-<div class="main column">
+
+
+<div class="main post non-narrow zero-top-spacing column">
     <div class="container">
         <div class="content">
-            <div class="page-heading primary">
+            <div class="front-matter">
+                <div class="title-container">
+                    <div class="page-heading primary">
     
     
-    Home
+    Shipping Efficiently
     
     
 </div>
 
+                </div>
+                <div class="meta">
+                    <div class="date" title="Wed Oct 23 2019 23:03:00 MDT">Oct 23, 2019</div>
+                    
+
+                    
+                    
+                    
+                    <div class="author middot" title="no">
+                        
+                        Walter Manger
+                        
+                    </div>
+                    
+
+
+                    
+                    
+                    <div class="reading-time middot">2 minute read</div>
+                    
+                    
+                      <div class="tags">
+                    
+                        <ul>
+                          
+                            <li class="middot"><a href="https://wmanger.com/tags/culture">Culture</a> </li>
+                          
+                        </ul>
+                    </div>
+                    <div class="tags">
+                        <ul>
+                          
+                          
+                        </ul>
+                    </div>
+                </div>
+            </div>
             <div class="markdown">
                 
     
-    <p>Hello, I&rsquo;m Walter Manger.</p>
+    
 
-<p>If you were coming here to read about my professional experience, you should consider visiting my <a href="https://www.linkedin.com/in/waltermanger" target="_blank" rel="noopener">linkedin</a> profile for that.
-This site features opinionated articles about the software industry, business in general, and mindset, with some form of technical focus.</p>
+<figure>
+    <img src="https://wmanger.com/img/wood-chop.jpg"/> 
+</figure>
 
-<p>If you need help with <strong>Cloud Migration</strong>, <strong>Cloud Infrastructure</strong>, <strong>Serverless Applications</strong>, <strong>Software Roadmapping</strong>, <a href="mailto:walter.manger@gmail.com">email me</a>.</p>
 
-<p>You can get more information about the services that I offer on the <a href="https://wmanger.com/services">services</a> page.</p>
+<p>If you find yourself writing a lot of code for a feature, stop and try to organize your changes into smaller, manageable chunks.</p>
+
+<p>Sure, it takes some discipline, but stopping to actually plan out your work <em>before you do it</em> is worth it because it gives you the headspace to put some genuine thought behind the feature.</p>
+
+<p>There&rsquo;s one caveat &ndash; your company has to appreciate this genuine thought.</p>
+
+<p>I&rsquo;m not going to discuss the dopamine fix you get from completing tasks, I&rsquo;ll leave that to <a href="https://www.youtube.com/watch?v=BAJI%5FI9X57Y" target="_blank" rel="noopener">Mr. Sinek</a>.</p>
+
+<h2 id="always-think-low-code-dot">Always Think <em>Low Code</em>.</h2>
+
+<p>Suppose you are presented with this requirement</p>
+
+<blockquote>
+<p>Create a new screen to show users sorted by their last login time</p>
+</blockquote>
+
+<p>Attempting to be as stack-agnostic as I can here, I can break down this requirement into at least these tasks.</p>
+
+<ol>
+<li>Define the <code>Data Structure</code> of <code>User</code></li>
+<li>Create a table to house <code>Users</code></li>
+<li>Create a <code>getUsers()</code> function to pull Users from the DB (with tests)</li>
+<li>Create a <code>GET /users</code> endpoint that calls the <code>getUsers()</code> (with acceptance tests)</li>
+<li>Create a service <code>userService.getUsers()</code> that calls the new <code>GET /users</code> endpoint in the UI</li>
+<li>Create a screen that uses the new <code>userService.getUsers()</code> to populate a list</li>
+<li>Create a navigation item for the new users screen</li>
+</ol>
+
+<p>Each of these tasks could be shipped quickly without much worry.
+Also, notice that the customer isn&rsquo;t exposed to the feature until all the tasks are complete (coded, reviewed, tested, and shipped).</p>
+
+<p>Shipping this way increases quality, promotes productivity, reduces bugs, and fosters collaboration.</p>
+
+<blockquote>
+<p>Less code = less congitive load.</p>
+</blockquote>
+
+<p>But you have to have the culture to back it.</p>
+
+<p>Your team cannot be afraid to ship frequently.
+They must be open to honest conversation about their decisions.
+Your infrastructure needs to be resilient. Thinking has to be a priority.</p>
+
+<h2 id="how-do-you-ship">How do you ship?</h2>
+
+<p>Are you set up to ship anytime? <a href="https://wmanger.com/services">Find out how</a> I may be of help.</p>
 
 
             </div>
+            
+            
+            
+
+            
+            
+
+            
+
+            
         </div>
     </div>
 </div>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Culture on Walter Manger</title>
+    <link>https://wmanger.com/tags/culture/</link>
+    <description>Recent content in Culture on Walter Manger</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Wed, 23 Oct 2019 23:03:00 -0600</lastBuildDate>
+    
+	<atom:link href="https://wmanger.com/tags/culture/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Shipping Efficiently</title>
+      <link>https://wmanger.com/articles/shipping-efficiently/</link>
+      <pubDate>Wed, 23 Oct 2019 23:03:00 -0600</pubDate>
+      
+      <guid>https://wmanger.com/articles/shipping-efficiently/</guid>
+      <description>If you find yourself writing a lot of code for a feature, stop and try to organize your changes into smaller, manageable chunks.
+Sure, it takes some discipline, but stopping to actually plan out your work before you do it is worth it because it gives you the headspace to put some genuine thought behind the feature.
+There&amp;rsquo;s one caveat &amp;ndash; your company has to appreciate this genuine thought.</description>
+    </item>
+    
+  </channel>
+</rss>
