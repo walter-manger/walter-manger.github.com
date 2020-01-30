@@ -6,7 +6,7 @@
     <description>Recent content on Walter Manger</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Fri, 29 Mar 2019 17:00:00 -0600</lastBuildDate>
+    <lastBuildDate>Wed, 23 Oct 2019 23:03:00 -0600</lastBuildDate>
     
 	<atom:link href="https://wmanger.com/index.xml" rel="self" type="application/rss+xml" />
     
@@ -24,6 +24,7 @@ You can get more information about the services that I offer on the services pag
     </item>
     
     <item>
+<<<<<<< HEAD
       <title>Just Create.</title>
       <link>https://wmanger.com/articles/just-create/</link>
       <pubDate>Sun, 19 Jan 2020 00:00:00 -0700</pubDate>
@@ -35,6 +36,8 @@ In the episode, Rob shared his humble beginnings and where he is now. As I expec
     </item>
     
     <item>
+=======
+>>>>>>> f29b2b97d9268417f3b71ca7d2853f0c59e8befa
       <title>Shipping Efficiently</title>
       <link>https://wmanger.com/articles/shipping-efficiently/</link>
       <pubDate>Wed, 23 Oct 2019 23:03:00 -0600</pubDate>
