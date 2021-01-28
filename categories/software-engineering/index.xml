@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Software Engineering on Walter Manger</title>
@@ -6,11 +6,7 @@
     <description>Recent content in Software Engineering on Walter Manger</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Wed, 23 Oct 2019 23:03:00 -0600</lastBuildDate>
-    
-	<atom:link href="https://wmanger.com/categories/software-engineering/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 23 Oct 2019 23:03:00 -0600</lastBuildDate><atom:link href="https://wmanger.com/categories/software-engineering/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Shipping Efficiently</title>
       <link>https://wmanger.com/articles/shipping-efficiently/</link>
@@ -30,7 +26,8 @@ There&amp;rsquo;s one caveat &amp;ndash; your company has to appreciate this gen
       <guid>https://wmanger.com/articles/revisiting-the-pragmatic-programmer/</guid>
       <description>As with many non-fiction books, The Pragmatic Programmer can be distilled to about 1% of its page count. That&amp;rsquo;s not a hit on the authors or the publisher, that&amp;rsquo;s just how non-fiction books work in my opinion.
 This book gives you all the tips you need to become a master Code Craftsman, but it is missing something very important.
-Andrew and David don&amp;rsquo;t discuss a programmer&amp;rsquo;s well-being.</description>
+Andrew and David don&amp;rsquo;t discuss a programmer&amp;rsquo;s well-being.
+Programmers need to take care of themselves - their physical and mental health, relationships, and finances.</description>
     </item>
     
     <item>
