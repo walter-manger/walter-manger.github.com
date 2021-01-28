@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Articles on Walter Manger</title>
@@ -6,7 +6,22 @@
     <description>Recent content in Articles on Walter Manger</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Wed, 23 Oct 2019 23:03:00 -0600</lastBuildDate><atom:link href="https://wmanger.com/articles/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 19 Jan 2020 00:00:00 -0700</lastBuildDate>
+    
+	<atom:link href="https://wmanger.com/articles/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Just Create.</title>
+      <link>https://wmanger.com/articles/just-create/</link>
+      <pubDate>Sun, 19 Jan 2020 00:00:00 -0700</pubDate>
+      
+      <guid>https://wmanger.com/articles/just-create/</guid>
+      <description>I just listened to a very interesting episode of the IndieHackers Podcast that featured Rob Walling.
+You can listen to this episode here.
+In the episode, Rob shared his humble beginnings and where he is now. As I expected, it was a long road. It was refreshing to hear someone talk about this long road and not resort to &amp;ldquo;How I Lauched A Startup In 24 Hours&amp;rdquo;.</description>
+    </item>
+    
     <item>
       <title>Shipping Efficiently</title>
       <link>https://wmanger.com/articles/shipping-efficiently/</link>
@@ -26,8 +41,7 @@ There&amp;rsquo;s one caveat &amp;ndash; your company has to appreciate this gen
       <guid>https://wmanger.com/articles/revisiting-the-pragmatic-programmer/</guid>
       <description>As with many non-fiction books, The Pragmatic Programmer can be distilled to about 1% of its page count. That&amp;rsquo;s not a hit on the authors or the publisher, that&amp;rsquo;s just how non-fiction books work in my opinion.
 This book gives you all the tips you need to become a master Code Craftsman, but it is missing something very important.
-Andrew and David don&amp;rsquo;t discuss a programmer&amp;rsquo;s well-being.
-Programmers need to take care of themselves - their physical and mental health, relationships, and finances.</description>
+Andrew and David don&amp;rsquo;t discuss a programmer&amp;rsquo;s well-being.</description>
     </item>
     
     <item>
