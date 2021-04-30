@@ -7,28 +7,28 @@
 <meta name="MobileOptimized" content="320">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="description" content="">
+<meta name="description" content="On Becoming a Certified Kubernetes Application Developer. I&#39;ve just become a CKAD!">
 
 
 <meta property="og:site_name" content="Walter Manger" />
 <meta property="og:locale" content="en-US" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://wmanger.com/categories/" />
-<meta property="og:title" content="Categories" />
-<meta property="twitter:title" content="Categories">
+<meta property="og:url" content="https://wmanger.com/articles/on-becoming-a-ckad/" />
+<meta property="og:title" content="On becoming a Certified Kubernetes Application Developer" />
+<meta property="twitter:title" content="On becoming a Certified Kubernetes Application Developer">
 
     <meta property="twitter:card" content="summary">
 
-<meta property="og:description" content="">
-<meta property="twitter:description" content="">
+<meta property="og:description" content="On Becoming a Certified Kubernetes Application Developer. I&#39;ve just become a CKAD!">
+<meta property="twitter:description" content="On Becoming a Certified Kubernetes Application Developer. I&#39;ve just become a CKAD!">
 
 <title>
 
 
-     Categories 
+     On becoming a Certified Kubernetes Application Developer 
 
 </title>
-<link rel="canonical" href="https://wmanger.com/categories/">
+<link rel="canonical" href="https://wmanger.com/articles/on-becoming-a-ckad/">
 
 
 <style media="screen">
@@ -1087,8 +1087,6 @@ div.main .content .markdown pre, div.main .content .markdown pre code {
 
 
 
-  <link href="https://wmanger.com/categories/index.xml" rel="alternate" type="application/rss+xml" title="Walter Manger" />
-
 
 
 <link rel="icon" type="image/x-icon"
@@ -1132,32 +1130,127 @@ div.main .content .markdown pre, div.main .content .markdown pre code {
     </div>
 </div>
 
-<div class="main column">
+
+
+
+
+<div class="main post non-narrow zero-top-spacing column">
     <div class="container">
         <div class="content">
-            <div class="posts">
-                <div class="page-heading">Posts about Categories</div>
-                <ul>
+            <div class="front-matter">
+                <div class="title-container">
+                    <div class="page-heading primary">
+    
+    
+    On becoming a Certified Kubernetes Application Developer
+    
+    
+</div>
+
+                </div>
+                <div class="meta">
+                    <div class="date" title="Fri Feb 5 2021 00:00:00 MST">Feb 5, 2021</div>
                     
-                        <li class="post-item">
-    
-    <a href="https://wmanger.com/categories/software-engineering/"><span>Software Engineering</span></a>
-    
-</li>
 
                     
-                        <li class="post-item">
-    
-    <a href="https://wmanger.com/categories/mindset/"><span>Mindset</span></a>
-    
-</li>
+                    
+                    
+                    <div class="author middot" title="no">
+                        
+                        Walter Manger
+                        
+                    </div>
+                    
+
 
                     
-                </ul>
+                    
+                    <div class="reading-time middot">5 minute read</div>
+                    
+                    
+                      <div class="tags">
+                    
+                        <ul>
+                          
+                            <li class="middot"><a href="https://wmanger.com/tags/learning">Learning</a> </li>
+                          
+                        </ul>
+                    </div>
+                    <div class="tags">
+                        <ul>
+                          
+                          
+                        </ul>
+                    </div>
+                </div>
             </div>
+            <div class="markdown">
+                
+    
+    <figure>
+    <img src="https://wmanger.com/img/ckad.png"/> 
+</figure>
+
+<p>Over the past few months, I&rsquo;ve been head-down on learning more about Kubernetes. To help solidify this learning, I thought that it would be a good idea to add some icing on the cake and attempt the CKAD exam.</p>
+<p>I am glad to report that as of today, I am a <strong><strong>Certified Kubernetes Application Developer</strong></strong>.</p>
+<p>My study strategy wasn&rsquo;t really unique, but I&rsquo;ll describe it below.</p>
+<h2 id="don-t-waste-time">Don&rsquo;t Waste Time</h2>
+<p>Don&rsquo;t waste time wondering how long it takes or how much effort it takes to be ready for the exam. If you have a routine, none of that matters. Just show up and you will be prepared before you know it.</p>
+<h2 id="establish-a-routine">Establish a Routine</h2>
+<p>My goal was to at least spend 1 hour a day most days studying Kubernetes and preparing for the exam. Of course, in the beginning it required more time because the concepts were new to me. I highly suggest using something like the pomodoro technique to force your focus on studying for at least 2 pomodoros a day. That&rsquo;s 50 minutes total per day. If at the end of the 2 pomodoros you still have questions, dedicate another for discovery/research. I would be strict with the maximum amount of pomodoros per day you want to dedicate to study.</p>
+<p>Find out more about the Pomodoro Technique <a href="https://francescocirillo.com/pages/pomodoro-technique" target="_blank" rel="noopener">here</a>.</p>
+<h2 id="get-good-with-docker">Get Good With Docker</h2>
+<p>In order to understand how to manage containerized workloads, you&rsquo;ll want to know what a container is and why it is useful. Containers have been taking the software development industry by storm. Any learning you do here will transfer directly to any software engineering role.</p>
+<p><strong><strong>Suggestion</strong></strong></p>
+<p>First, understand the basics of Docker by taking the <a href="https://www.docker.com/101-tutorial" target="_blank" rel="noopener">Docker 101 course</a>.</p>
+<p>Then, try to &ldquo;Dockerize&rdquo; an app that you&rsquo;ve created. You&rsquo;ll be creating your own <code>Dockerfile</code>. It will be best if the app was non-trivial. The app should rely on things like <strong><strong>Environment Variables</strong></strong>, <strong><strong>Command Arguments</strong></strong>, and make use of a <code>.dockerignore</code> file to reduce the size of the image created. Be sure to install specific operating system packages needed for the app to run. For example, if you&rsquo;re going to be running a node app, ensure the correct version of node is installed.</p>
+<p>After you get comfortable with what a <code>Dockerfile</code> is, create a <a href="https://hub.docker.com/" target="_blank" rel="noopener">Dockerhub</a> account and learn how to tag and store your docker images.</p>
+<p>Finally, learn about how <a href="https://docs.docker.com/develop/develop-images/multistage-build/" target="_blank" rel="noopener">multi-stage builds</a> can help reduce the size of a docker image and implement it into your own <code>Dockerfile</code>.</p>
+<h2 id="learn-what-kubernetes-is-for">Learn What Kubernetes Is For</h2>
+<p>I admit, this is cringy, but <a href="https://www.youtube.com/watch?v=O1pv70lPlNc" target="_blank" rel="noopener">this video</a> did help me understand what Kubernetes was for. If you want to go really deep and have a solid foundation, I hightly suggest <a href="https://azure.microsoft.com/en-us/resources/kubernetes-learning-path/">Microsoft&rsquo;s 50 days from zero to hero with Kubernetes</a>. I didn&rsquo;t make it all the way to day 50, but the first 20 days allow you to go pretty deep, and I like how it is all bite-sized information, often times not taking more than an hour each day.</p>
+<h2 id="enroll-in-kubernetes-certified-application-developer--ckad--with-tests">Enroll in Kubernetes Certified Application Developer (CKAD) with Tests</h2>
+<p>Mumshad Mannambeth&rsquo;s <a href="https://www.udemy.com/course/certified-kubernetes-application-developer/" target="_blank" rel="noopener">CKAD</a> course was the reason I passed my exam (97% to be specific). That course was so well put together and it gave you many opportunities to apply what you were learning along the way. Most importantly, it didn&rsquo;t require that you install anything on your computer &ndash; everything was done in their KodeKloud environment, which felt <strong><strong>almost exactly like the exam</strong></strong>.</p>
+<p>You should be comfortable taking and passing ALL of the practice exams in the alloted time.</p>
+<p><strong><strong>Suggestion</strong></strong></p>
+<p>Learn a bit of VIM to help with text editing. You can start by using VIM bindings in your current text editor if it is not already VIM.</p>
+<p>Using VS Code? <a href="https://marketplace.visualstudio.com/items?itemName=vscodevim.vim" target="_blank" rel="noopener">Install Here</a></p>
+<p>Next, start using VIM in the practice exams and build up speed.</p>
+<h2 id="finally-enroll-in-ckad">Finally, Enroll in CKAD</h2>
+<p>With your enrollment, you get to schedule your exam on the day you&rsquo;d like. You also get 2 tries. On exam day, you&rsquo;ll need a webcam, a specific chrome extension installed, and maintain a quiet, clear working environment while taking the test. The exam is given through the browser and you are allowed to have one other tab open to browse the Kubernetes documentation.</p>
+<p>All of this is communicated well in advance.</p>
+<p><strong><strong>DO THIS</strong></strong></p>
+<p>Save all of the yaml manifests for each resource type to your bookmarks. This will reduce the need to search the Kubernetes documentation. Every second counts.</p>
+<figure>
+    <img src="https://wmanger.com/img/bookmarks.png"/> 
+</figure>
+
+<p><strong><strong>What it feels like</strong></strong></p>
+<p>It feels almost exactly the same as the practice tests you take in the CKAD course. You only get 2 hours to complete the exam. You will feel rushed, but that&rsquo;s ok.</p>
+<p>Each question has a weight, which means if you see a question requiring multiple steps to complete, move on to a <em>heavier</em> question and answer that one first. You can come back to questions you flag. You will also get partial credit for answering portions of a question.</p>
+<p><strong><strong>Your Score</strong></strong></p>
+<p>You will get your grade 36 hours later. Yea, waiting for that score is not fun. You will feel like you didn&rsquo;t do well, but you probably did just fine!</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>Hopfully this helps you in some way to become a <strong><strong>Certified Kubernetes Application Developer</strong></strong>. I can&rsquo;t praise Mannambeth&rsquo;s CKAD course enough. It took me about 3 months of study to feel confident taking the exam. Your mileage will vary.</p>
+<p>Good Luck.</p>
+
+
+            </div>
+            
+            
+            
+
+            
+            
+
+            
+
+            
         </div>
     </div>
 </div>
+
+
+
 <div class="footer column">
     <div class="container">
 

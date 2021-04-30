@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Mindset on Walter Manger</title>
@@ -6,11 +6,7 @@
     <description>Recent content in Mindset on Walter Manger</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Sun, 19 Jan 2020 00:00:00 -0700</lastBuildDate>
-    
-	<atom:link href="https://wmanger.com/categories/mindset/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sun, 19 Jan 2020 00:00:00 -0700</lastBuildDate><atom:link href="https://wmanger.com/categories/mindset/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Just Create.</title>
       <link>https://wmanger.com/articles/just-create/</link>
@@ -19,7 +15,8 @@
       <guid>https://wmanger.com/articles/just-create/</guid>
       <description>I just listened to a very interesting episode of the IndieHackers Podcast that featured Rob Walling.
 You can listen to this episode here.
-In the episode, Rob shared his humble beginnings and where he is now. As I expected, it was a long road. It was refreshing to hear someone talk about this long road and not resort to &amp;ldquo;How I Lauched A Startup In 24 Hours&amp;rdquo;.</description>
+In the episode, Rob shared his humble beginnings and where he is now. As I expected, it was a long road. It was refreshing to hear someone talk about this long road and not resort to &amp;ldquo;How I Lauched A Startup In 24 Hours&amp;rdquo;.
+It is all so fascinating and inspirational.</description>
     </item>
     
   </channel>
