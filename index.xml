@@ -49,9 +49,8 @@ Don&amp;rsquo;t Waste Time Don&amp;rsquo;t waste time wondering how long it take
       
       <guid>https://wmanger.com/articles/supporting-multiple-github-accounts/</guid>
       <description>Photo by Marcin Szmigiel from Pexels
-  Many times, especially when working as a freelance developer, you&amp;rsquo;ll need access to multiple Github repositories. To do this, you&amp;rsquo;ll need to configure your ~/.ssh/config and ~/.gitconfig accordingly.
-I won&amp;rsquo;t go into great detail in this post, as there already is really good documentation here on how to configure ssh for Github.
-After generating the needed ssh keys, I setup my ~/.</description>
+  Many times, especially when working as a freelance developer, you&amp;rsquo;ll need access to multiple Github repositories. Most likely, you will be using different Github accounts, so you&amp;rsquo;ll need to tell git which account to use. To do this, you&amp;rsquo;ll need to configure your ~/.ssh/config and ~/.gitconfig accordingly.
+I won&amp;rsquo;t go into great detail in this post, as there already is really good documentation here on how to configure ssh for Github.</description>
     </item>
     
     <item>
