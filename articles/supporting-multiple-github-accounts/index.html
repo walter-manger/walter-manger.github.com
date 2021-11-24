@@ -13,9 +13,9 @@
 <meta property="og:site_name" content="Walter Manger" />
 <meta property="og:locale" content="en-US" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://wmanger.com/categories/software-engineering/" />
-<meta property="og:title" content="Software Engineering" />
-<meta property="twitter:title" content="Software Engineering">
+<meta property="og:url" content="https://wmanger.com/articles/supporting-multiple-github-accounts/" />
+<meta property="og:title" content="Supporting Multiple Git/Github Accounts" />
+<meta property="twitter:title" content="Supporting Multiple Git/Github Accounts">
 
     <meta property="twitter:card" content="summary">
 
@@ -25,10 +25,10 @@
 <title>
 
 
-     Software Engineering 
+     Supporting Multiple Git/Github Accounts 
 
 </title>
-<link rel="canonical" href="https://wmanger.com/categories/software-engineering/">
+<link rel="canonical" href="https://wmanger.com/articles/supporting-multiple-github-accounts/">
 
 
 <style media="screen">
@@ -1143,8 +1143,6 @@ div.main .content .markdown pre, div.main .content .markdown pre code {
 
 
 
-  <link href="https://wmanger.com/categories/software-engineering/index.xml" rel="alternate" type="application/rss+xml" title="Walter Manger" />
-
 
 
 <link rel="icon" type="image/x-icon"
@@ -1196,60 +1194,114 @@ div.main .content .markdown pre, div.main .content .markdown pre code {
     </div>
 </div>
 
-<div class="main column">
+
+
+
+
+<div class="main post non-narrow zero-top-spacing column">
     <div class="container">
         <div class="content">
-            <div class="posts">
-                <div class="page-heading">Posts about Software Engineering</div>
-                <ul>
+            <div class="front-matter">
+                <div class="title-container">
+                    <h1 class="page-heading primary">
+    
+    
+    Supporting Multiple Git/Github Accounts
+    
+    
+</h1>
+
+                </div>
+                <div class="meta">
+                    <div class="date" title="Sun May 3 2020 00:00:00 -0700">May 3, 2020</div>
                     
-                        <li class="post-item">
-    
-    <a href="https://wmanger.com/articles/embracing-the-cloud/"><span>Embracing The Cloud</span></a>
-    
-</li>
 
                     
-                        <li class="post-item">
-    
-    <a href="https://wmanger.com/book-notes/revisiting-the-pragmatic-programmer/"><span>The Pragmatic Programmer</span></a>
-    
-</li>
+                    
+                    
+                    <div class="author middot" title="no">
+                        
+                        Walter Manger
+                        
+                    </div>
+                    
+
 
                     
-                        <li class="post-item">
-    
-    <a href="https://wmanger.com/articles/shipping-efficiently/"><span>Shipping Efficiently</span></a>
-    
-</li>
-
                     
-                        <li class="post-item">
-    
-    <a href="https://wmanger.com/articles/supporting-multiple-github-accounts/"><span>Supporting Multiple Git/Github Accounts</span></a>
-    
-</li>
-
+                    <div class="reading-time middot">1 minute read</div>
                     
-                        <li class="post-item">
-    
-    <a href="https://wmanger.com/articles/on-becoming-a-ckad/"><span>On becoming a Certified Kubernetes Application Developer</span></a>
-    
-</li>
-
                     
-                        <li class="post-item">
-    
-    <a href="https://wmanger.com/articles/go-on-doom-emacs/"><span>Golang on Doom Emacs</span></a>
-    
-</li>
-
+                      <div class="tags">
                     
-                </ul>
+                        <ul>
+                          
+                        </ul>
+                    </div>
+                    <div class="tags">
+                        <ul>
+                          
+                          
+                        </ul>
+                    </div>
+                </div>
             </div>
+            <div class="markdown">
+                
+    
+    <figure><img src="https://wmanger.com/img/keys.jpg"
+         alt="Photo by Marcin Szmigiel from Pexels"/><figcaption>
+            <p>Photo by Marcin Szmigiel from Pexels</p>
+        </figcaption>
+</figure>
+
+<p>Many times, especially when working as a freelance developer, you&rsquo;ll need access to multiple <strong>Github</strong> repositories. To do this, you&rsquo;ll need to configure your <code>~/.ssh/config</code> and <code>~/.gitconfig</code> accordingly.</p>
+<p>I won&rsquo;t go into great detail in this post, as there already is really good documentation <a href="https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent">here</a> on how to configure <code>ssh</code> for <strong>Github</strong>.</p>
+<p>After generating the needed <code>ssh</code> keys, I setup my <code>~/.ssh/config</code> like so:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Host personal
+   HostName github.com
+   User git
+   AddKeysToAgent yes
+   IdentitiesOnly yes
+   IdentityFile ~/.ssh/id_rsa_not_work
+
+Host work
+   HostName github.com
+   User git
+   AddKeysToAgent yes
+   IdentitiesOnly yes
+   IdentityFile ~/.ssh/id_rsa_work
+</code></pre></div><p>In my <code>~/.gitconfig</code>, I do something like:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">[includeIf &#34;gitdir:~/repos/work/&#34;]
+  path = .gitconfig-work
+[includeIf &#34;gitdir:~/repos/personal/&#34;]
+  path = .gitconfig-personal
+</code></pre></div><p>Then, in each config, I do something like this:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">[user]
+   name = Walter Manger
+   email = {some-email}@{some-domain}.com
+</code></pre></div><p>So, when I want to clone a <strong>Github</strong> repository, I can do something like:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">git clone git@<span style="color:#f92672">{</span>work or personal<span style="color:#f92672">}</span>:<span style="color:#f92672">{</span>some organization<span style="color:#f92672">}</span>/<span style="color:#f92672">{</span>some repo<span style="color:#f92672">}</span>.git
+</code></pre></div><p>Now, If I am in <code>~/repos/work</code>, <strong>git</strong> will use the user settings defined in <code>~/.gitconfig-work</code>.</p>
+
+
+            </div>
+            
+            
+            
+
+            
+            
+
+            
+
+            
         </div>
     </div>
 </div>
+
+
+
 <div class="footer column">
     <div class="container">
 

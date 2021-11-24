@@ -31,6 +31,26 @@ time, mark, audio, video {
   font: inherit;
   vertical-align: baseline;
 }
+
+body {
+    width: 87.5%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 12.5%;
+    font-family: et-book, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+    background-color: #fffff8;
+    color: #111;
+    max-width: 1400px;
+    counter-reset: sidenote-counter;
+}
+
+/* @media (prefers-color-scheme: dark) { */
+/*     body { */
+/*         background-color: #151515; */
+/*         color: #ddd; */
+/*     } */
+/* } */
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section, div.column {
@@ -92,7 +112,7 @@ body {
   min-height: 100%;
   font-weight: 400;
   font-family: 'Helvetica Neue', 'Arial', sans-serif;
-  color: #111111;
+  /* color: #111111; */
   line-height: 1.6;
   text-rendering: optimizeLegibility !important;
 }
@@ -181,7 +201,7 @@ div.header .name {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
-  color: #333333;
+  /* color: #333333; */
 }
 div.header nav {
   margin-bottom: 16px;
@@ -208,7 +228,7 @@ div.header nav ul li:last-child {
   border-right: none;
 }
 div.header nav ul a {
-  color: #555555;
+  /* color: #555555; */
   font-weight: 400;
   font-size: 14px;
   text-transform: uppercase;
@@ -219,7 +239,7 @@ div.header nav ul a {
   -o-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
 }
 div.header nav ul a:hover, div.header nav ul a.active {
-    color: #45bcfb;
+    /* color: #45bcfb; */
 }
 div.footer .container {
   -webkit-align-items: center;
@@ -260,7 +280,7 @@ div.footer .container a .icon {
 div.footer .container .copyright {
   flex-grow: 0.5;
   text-align: start;
-  color: #c3c3c3;
+  /* color: #c3c3c3; */
 }
 div.footer .container .icons {
   flex-grow: 0.5;
@@ -277,7 +297,7 @@ div.main .container {
   justify-content: flex-start;
 }
 div.main .content {
-  color: #111111;
+  /* color: #111111; */
   font-size: 16px;
 }
 div.main .content .title-container {
@@ -305,7 +325,7 @@ div.main .content .page-heading {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
-  color: #333333;
+  /* color: #333333; */
   margin-bottom: 16px;
 }
 div.main .content .front-matter .page-heading {
@@ -313,7 +333,7 @@ div.main .content .front-matter .page-heading {
 }
 div.main .content .front-matter .meta {
   font-size: 14px;
-  color: #666666;
+  /* color: #666666; */
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flexbox;
@@ -359,7 +379,7 @@ div.main .content .front-matter .tags ul li:hover {
   opacity: 0.7;
 }
 div.main .content .front-matter .tags ul li a {
-  color: #666666;
+  /* color: #666666; */
 }
 
 div.main .container.f04 {
@@ -425,19 +445,44 @@ div.main .container .content .post-item {
 }
 div.main .container .content .post-item .meta {
   font-size: 14px;
-  color: #666666;
+  /* color: #666666; */
   display: none;
   min-width: 100px;
 }
+
+div.main .container .content .book-item {
+  /* -webkit-align-items: center; */
+  /* -moz-align-items: center; */
+  /* -ms-align-items: center; */
+  /* align-items: center; */
+  display: list-item !important;
+  list-style: none;
+  border-left: 4px solid #45bcfb;
+  margin-bottom: 30px;
+  padding-left: 8px !important;
+}
+
+div.main .container .content .book-item a {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+div.main .container .content .book-item .meta {
+  font-size: 14px;
+  /* color: #666666; */
+  display: none;
+  min-width: 100px;
+}
+
 div.main .container .content .see-more {
   font-style: italic;
   float: right;
   font-size: 0.9em;
   margin-top: 2em;
-  color: #313537;
+  /* color: #313537; */
 }
 div.main .container .content .see-more:hover {
-  color: #666;
+  /* color: #666; */
 }
 section {
   padding: 0 16px;
@@ -482,7 +527,7 @@ div.main .content {
 div.main .content .markdown {
   font-size: 1.1em;
   line-height: 1.75em;
-  color: #313537;
+  /* color: #313537; */
   font-family: serif;
   font-weight: 300;
 }
@@ -499,7 +544,7 @@ div.main .content .markdown h6 {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
-  color: #333333;
+  /* color: #333333; */
   text-transform: none;
   margin-top: 1.75rem;
 }
@@ -526,12 +571,14 @@ div.main .content .markdown code,
 div.main .content .markdown pre {
   font-family: 'Menlo', monospace;
   font-size: 0.98rem;
-  background-color: #f7f7f7;
+  color: #87a5d2;
+  background-color: #282a36 !important;
+  /* background-color: #f7f7f7; */
 }
 div.main .content .markdown code {
   /* enclosed by single backtick (`) */
   padding: .15em .5em;
-  border-radius: 2px;
+  border-radius: 3px;
 }
 div.main .content .markdown pre {
   /* Hugo specific: consider using the 'highlight' shortcode */
@@ -543,14 +590,23 @@ div.main .content .markdown pre {
   white-space: pre;
   word-break: break-all;
   word-wrap: break-word;
+  border-radius: 3px;
+  /* background-color: #282a36 !important; */
 }
+
+@media (prefers-color-scheme: dark) {
+    div.main .content .markdown pre {
+        background-color: #282a36 !important;
+    }
+}
+
 div.main .content .markdown pre code {
   /* enclosed by 4 backticks (````) */
   padding: 0;
   font-size: 0.9rem;
 }
 div.main .content .markdown a code {
-  color: #428bca !important;
+  /* color: #428bca !important; */
 }
 div.main .content .markdown a code:hover {
   text-decoration: underline;
@@ -607,7 +663,7 @@ div.main .content .markdown hr {
 div.main .content .markdown abbr {
   font-size: 0.85rem;
   font-weight: bold;
-  color: #666666;
+  /* color: #666666; */
   text-transform: uppercase;
 }
 div.main .content .markdown abbr[title] {
@@ -617,7 +673,7 @@ div.main .content .markdown abbr[title] {
 div.main .content .markdown blockquote {
   padding: .5rem 1rem;
   margin: .8rem 0;
-  color: #7a7a7a;
+  /* color: #7a7a7a; */
   border-left: .25rem solid #e5e5e5;
 }
 div.main .content .markdown blockquote p:last-child {
@@ -625,7 +681,7 @@ div.main .content .markdown blockquote p:last-child {
 }
 div.main .content .markdown figure {
   width: 100%;
-  background: #fff;
+  /* background: #fff; */
   margin-bottom: 1em;
 }
 div.main .content .markdown figure figcaption p{
@@ -739,7 +795,7 @@ kbd {
   font-size: 11px;
   font-family: Arial,Helvetica,sans-serif;
   background-color: #f7f7f7;
-  color: #333;
+  /* color: #333; */
   -moz-box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2),0 0 0 2px #ffffff inset;
   -webkit-box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2),0 0 0 2px #ffffff inset;
   box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2),0 0 0 2px #ffffff inset;
@@ -990,7 +1046,7 @@ a:hover {
 }
 
 div.main .content .markdown, div.header .name, div.header nav ul a:hover {
-    color: #181d2a;
+    color: <no value>;
 }
 
 div.header nav ul a {
@@ -998,7 +1054,7 @@ div.header nav ul a {
 }
 
 div.main .content .markdown code {
-    background-color: #f9f9f9;
+    background-color: #282a36;
     color: #527fc1f;
 }
 

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Learning on Walter Manger</title>
+    <link>https://wmanger.com/tags/learning/</link>
+    <description>Recent content in Learning on Walter Manger</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <lastBuildDate>Fri, 05 Feb 2021 00:00:00 -0700</lastBuildDate><atom:link href="https://wmanger.com/tags/learning/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>On becoming a Certified Kubernetes Application Developer</title>
+      <link>https://wmanger.com/articles/on-becoming-a-ckad/</link>
+      <pubDate>Fri, 05 Feb 2021 00:00:00 -0700</pubDate>
+      
+      <guid>https://wmanger.com/articles/on-becoming-a-ckad/</guid>
+      <description>Over the past few months, I&amp;rsquo;ve been head-down on learning more about Kubernetes. To help solidify this learning, I thought that it would be a good idea to add some icing on the cake and attempt the CKAD exam.
+I am glad to report that as of today, I am a Certified Kubernetes Application Developer.
+My study strategy wasn&amp;rsquo;t really unique, but I&amp;rsquo;ll describe it below.
+Don&amp;rsquo;t Waste Time Don&amp;rsquo;t waste time wondering how long it takes or how much effort it takes to be ready for the exam.</description>
+    </item>
+    
+  </channel>
+</rss>

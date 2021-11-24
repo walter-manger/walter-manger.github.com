@@ -7,28 +7,28 @@
 <meta name="MobileOptimized" content="320">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="description" content="">
+<meta name="description" content="A short summary of the tools I use for computing and music.">
 
 
 <meta property="og:site_name" content="Walter Manger" />
 <meta property="og:locale" content="en-US" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://wmanger.com/categories/software-engineering/" />
-<meta property="og:title" content="Software Engineering" />
-<meta property="twitter:title" content="Software Engineering">
+<meta property="og:url" content="https://wmanger.com/my-tools/" />
+<meta property="og:title" content="Tools" />
+<meta property="twitter:title" content="Tools">
 
     <meta property="twitter:card" content="summary">
 
-<meta property="og:description" content="">
-<meta property="twitter:description" content="">
+<meta property="og:description" content="A short summary of the tools I use for computing and music.">
+<meta property="twitter:description" content="A short summary of the tools I use for computing and music.">
 
 <title>
 
 
-     Software Engineering 
+     Tools 
 
 </title>
-<link rel="canonical" href="https://wmanger.com/categories/software-engineering/">
+<link rel="canonical" href="https://wmanger.com/my-tools/">
 
 
 <style media="screen">
@@ -1143,8 +1143,6 @@ div.main .content .markdown pre, div.main .content .markdown pre code {
 
 
 
-  <link href="https://wmanger.com/categories/software-engineering/index.xml" rel="alternate" type="application/rss+xml" title="Walter Manger" />
-
 
 
 <link rel="icon" type="image/x-icon"
@@ -1183,7 +1181,7 @@ div.main .content .markdown pre, div.main .content .markdown pre code {
                     </li>
                     
                     <li>
-                        <a class="menu-nav-item" href="https://wmanger.com/my-tools/" title="Tools">Tools</a>
+                        <a class="menu-nav-item active" href="https://wmanger.com/my-tools/" title="Tools">Tools</a>
                     </li>
                     
                     <li>
@@ -1196,60 +1194,50 @@ div.main .content .markdown pre, div.main .content .markdown pre code {
     </div>
 </div>
 
+
+
 <div class="main column">
     <div class="container">
         <div class="content">
-            <div class="posts">
-                <div class="page-heading">Posts about Software Engineering</div>
-                <ul>
-                    
-                        <li class="post-item">
+            <h1 class="page-heading primary">
     
-    <a href="https://wmanger.com/articles/embracing-the-cloud/"><span>Embracing The Cloud</span></a>
     
-</li>
+    Tools
+    
+    
+</h1>
 
-                    
-                        <li class="post-item">
+            <div class="markdown">
+                
     
-    <a href="https://wmanger.com/book-notes/revisiting-the-pragmatic-programmer/"><span>The Pragmatic Programmer</span></a>
-    
-</li>
+    <p>I decided instead of just a raw, bulleted list, I&rsquo;d mimic the format of <a href="https://usesthis.com">usesthis.com</a> to describe the tools that I use frequently.</p>
+<h2 id="what-hardware-do-i-use">What hardware do i use?</h2>
+<p>I use a MacBook Pro (Retina, 15-inch, Mid 2015) - 2.2 Quad Core Processor, 16GB memory, 250GB SSD.</p>
+<p>My <strong>2015 G&amp;L Legacy Special</strong> guitar is my daily driver these days. I play it through a <strong>Marshall Origin 20</strong>, but lately I&rsquo;ve been experimenting with using only a <strong>HX Stomp</strong>. I plug the stomp directly into a pair of <strong>iLoud Micro Monitors</strong>. When I want to record things, I go through a <strong>Scarlett Solo</strong> interface.</p>
+<h2 id="what-software-do-i-use">What software do I use?</h2>
+<p>Since I am on a Mac, I use <strong>Homebrew</strong> as much as I can to install software, that way I can let <strong>Homebrew</strong> handle updating and removing. I use <strong>Doom Emacs</strong> for text editing. <strong>Emacs</strong> has a few terminal emulators, but I still find myself going back to <strong>iTerm2</strong> for most terminal interaction. To keep track of the changes in my projects, I use <strong>git</strong> and <strong>Github</strong>. I use <strong>Slack</strong>, <strong>Discord</strong>, and <strong>Gmail</strong> (for now) for communication.</p>
+<p>Speaking of <strong>git</strong> and <strong>Github</strong>, when I am on a system that is not my own, and I need to access things in my private repositories, it is good to use a proper <code>.gitconfig</code> that would support multiple accounts. More on this <a href="https://wmanger.com/articles/supporting-multiple-github-accounts">here</a></p>
+<p>I keep all of the software that I install via <strong>Homebrew</strong> in a <code>Brewfile</code> in <strong>Github</strong>, so it is easy for me to just run this command on new systems.</p>
+<pre tabindex="0"><code>brew bundle --file=~/.path/to/Brewfile
+</code></pre><p>My <code>Brewfile</code> is a bit too lengthy to post here, so you can see it <a href="https://github.com/walter-manger/.dotfiles/blob/master/Brewfile">here</a></p>
+<p>I few highlights from my <code>Brewfile</code> are:</p>
+<pre tabindex="0"><code>cask &quot;spectacle&quot;  # Get my windows in order via hotkeys
+cask &quot;flux&quot;       # Don't burn my eyes at night
+cask &quot;macpass&quot;    # Keep my passwords safe
+brew &quot;ripgrep&quot;    # a really fast search written in Rust
+</code></pre><p>I use <strong>Dropbox</strong> for keeping things I need synced immediately between other systems (other computers, phones, etc).</p>
+<p>For recording music, my current DAW of choice is <strong>Logic Pro X</strong> (you can&rsquo;t beat that $200 price tag).</p>
+<h2 id="what-would-be-my-dream-setup">What would be my dream setup?</h2>
+<p>To have only one &ldquo;thing&rdquo; that handles everything. I don&rsquo;t like having to switch between a work computer and a personal computer. And I don&rsquo;t like all the cables needed to create a KVM experience. So, one fast thing for computing, one dock, everything plugs into that.</p>
 
-                    
-                        <li class="post-item">
-    
-    <a href="https://wmanger.com/articles/shipping-efficiently/"><span>Shipping Efficiently</span></a>
-    
-</li>
 
-                    
-                        <li class="post-item">
-    
-    <a href="https://wmanger.com/articles/supporting-multiple-github-accounts/"><span>Supporting Multiple Git/Github Accounts</span></a>
-    
-</li>
-
-                    
-                        <li class="post-item">
-    
-    <a href="https://wmanger.com/articles/on-becoming-a-ckad/"><span>On becoming a Certified Kubernetes Application Developer</span></a>
-    
-</li>
-
-                    
-                        <li class="post-item">
-    
-    <a href="https://wmanger.com/articles/go-on-doom-emacs/"><span>Golang on Doom Emacs</span></a>
-    
-</li>
-
-                    
-                </ul>
             </div>
         </div>
     </div>
 </div>
+
+
+
 <div class="footer column">
     <div class="container">
 

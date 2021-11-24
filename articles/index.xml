@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Articles on Walter Manger</title>
@@ -6,10 +6,41 @@
     <description>Recent content in Articles on Walter Manger</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <lastBuildDate>Sun, 19 Jan 2020 00:00:00 -0700</lastBuildDate>
+    <lastBuildDate>Sun, 21 Nov 2021 00:00:00 -0700</lastBuildDate><atom:link href="https://wmanger.com/articles/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Golang on Doom Emacs</title>
+      <link>https://wmanger.com/articles/go-on-doom-emacs/</link>
+      <pubDate>Sun, 21 Nov 2021 00:00:00 -0700</pubDate>
+      
+      <guid>https://wmanger.com/articles/go-on-doom-emacs/</guid>
+      <description>Photo by Patrice Schoefolt from Pexels
+  It&amp;rsquo;s been a while since I&amp;rsquo;ve contributed to any Golang, but I got the itch this weekend to setup my Doom Emacs to do so.
+Most of the time I don&amp;rsquo;t want a full-blown IDE experience as having all the bells and whistles of that type of environment can be distracting. Instead, I&amp;rsquo;d like to turn on features as I need them.</description>
+    </item>
     
-	<atom:link href="https://wmanger.com/articles/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>On becoming a Certified Kubernetes Application Developer</title>
+      <link>https://wmanger.com/articles/on-becoming-a-ckad/</link>
+      <pubDate>Fri, 05 Feb 2021 00:00:00 -0700</pubDate>
+      
+      <guid>https://wmanger.com/articles/on-becoming-a-ckad/</guid>
+      <description>Over the past few months, I&amp;rsquo;ve been head-down on learning more about Kubernetes. To help solidify this learning, I thought that it would be a good idea to add some icing on the cake and attempt the CKAD exam.
+I am glad to report that as of today, I am a Certified Kubernetes Application Developer.
+My study strategy wasn&amp;rsquo;t really unique, but I&amp;rsquo;ll describe it below.
+Don&amp;rsquo;t Waste Time Don&amp;rsquo;t waste time wondering how long it takes or how much effort it takes to be ready for the exam.</description>
+    </item>
     
+    <item>
+      <title>Supporting Multiple Git/Github Accounts</title>
+      <link>https://wmanger.com/articles/supporting-multiple-github-accounts/</link>
+      <pubDate>Sun, 03 May 2020 00:00:00 -0700</pubDate>
+      
+      <guid>https://wmanger.com/articles/supporting-multiple-github-accounts/</guid>
+      <description>Photo by Marcin Szmigiel from Pexels
+  Many times, especially when working as a freelance developer, you&amp;rsquo;ll need access to multiple Github repositories. To do this, you&amp;rsquo;ll need to configure your ~/.ssh/config and ~/.gitconfig accordingly.
+I won&amp;rsquo;t go into great detail in this post, as there already is really good documentation here on how to configure ssh for Github.
+After generating the needed ssh keys, I setup my ~/.</description>
+    </item>
     
     <item>
       <title>Just Create.</title>
@@ -19,7 +50,8 @@
       <guid>https://wmanger.com/articles/just-create/</guid>
       <description>I just listened to a very interesting episode of the IndieHackers Podcast that featured Rob Walling.
 You can listen to this episode here.
-In the episode, Rob shared his humble beginnings and where he is now. As I expected, it was a long road. It was refreshing to hear someone talk about this long road and not resort to &amp;ldquo;How I Lauched A Startup In 24 Hours&amp;rdquo;.</description>
+In the episode, Rob shared his humble beginnings and where he is now. As I expected, it was a long road. It was refreshing to hear someone talk about this long road and not resort to &amp;ldquo;How I Lauched A Startup In 24 Hours&amp;rdquo;.
+It is all so fascinating and inspirational.</description>
     </item>
     
     <item>
@@ -31,17 +63,6 @@ In the episode, Rob shared his humble beginnings and where he is now. As I expec
       <description>If you find yourself writing a lot of code for a feature, stop and try to organize your changes into smaller, manageable chunks.
 Sure, it takes some discipline, but stopping to actually plan out your work before you do it is worth it because it gives you the headspace to put some genuine thought behind the feature.
 There&amp;rsquo;s one caveat &amp;ndash; your company has to appreciate this genuine thought.</description>
-    </item>
-    
-    <item>
-      <title>Revisiting The Pragmatic Programmer 10 Years Later</title>
-      <link>https://wmanger.com/articles/revisiting-the-pragmatic-programmer/</link>
-      <pubDate>Fri, 04 Oct 2019 23:39:00 -0600</pubDate>
-      
-      <guid>https://wmanger.com/articles/revisiting-the-pragmatic-programmer/</guid>
-      <description>As with many non-fiction books, The Pragmatic Programmer can be distilled to about 1% of its page count. That&amp;rsquo;s not a hit on the authors or the publisher, that&amp;rsquo;s just how non-fiction books work in my opinion.
-This book gives you all the tips you need to become a master Code Craftsman, but it is missing something very important.
-Andrew and David don&amp;rsquo;t discuss a programmer&amp;rsquo;s well-being.</description>
     </item>
     
     <item>

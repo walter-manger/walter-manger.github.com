@@ -57,6 +57,26 @@ time, mark, audio, video {
   font: inherit;
   vertical-align: baseline;
 }
+
+body {
+    width: 87.5%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 12.5%;
+    font-family: et-book, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+    background-color: #fffff8;
+    color: #111;
+    max-width: 1400px;
+    counter-reset: sidenote-counter;
+}
+
+/* @media (prefers-color-scheme: dark) { */
+/*     body { */
+/*         background-color: #151515; */
+/*         color: #ddd; */
+/*     } */
+/* } */
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section, div.column {
@@ -118,7 +138,7 @@ body {
   min-height: 100%;
   font-weight: 400;
   font-family: 'Helvetica Neue', 'Arial', sans-serif;
-  color: #111111;
+  /* color: #111111; */
   line-height: 1.6;
   text-rendering: optimizeLegibility !important;
 }
@@ -207,7 +227,7 @@ div.header .name {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
-  color: #333333;
+  /* color: #333333; */
 }
 div.header nav {
   margin-bottom: 16px;
@@ -234,7 +254,7 @@ div.header nav ul li:last-child {
   border-right: none;
 }
 div.header nav ul a {
-  color: #555555;
+  /* color: #555555; */
   font-weight: 400;
   font-size: 14px;
   text-transform: uppercase;
@@ -245,7 +265,7 @@ div.header nav ul a {
   -o-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
 }
 div.header nav ul a:hover, div.header nav ul a.active {
-    color: #45bcfb;
+    /* color: #45bcfb; */
 }
 div.footer .container {
   -webkit-align-items: center;
@@ -286,7 +306,7 @@ div.footer .container a .icon {
 div.footer .container .copyright {
   flex-grow: 0.5;
   text-align: start;
-  color: #c3c3c3;
+  /* color: #c3c3c3; */
 }
 div.footer .container .icons {
   flex-grow: 0.5;
@@ -303,7 +323,7 @@ div.main .container {
   justify-content: flex-start;
 }
 div.main .content {
-  color: #111111;
+  /* color: #111111; */
   font-size: 16px;
 }
 div.main .content .title-container {
@@ -331,7 +351,7 @@ div.main .content .page-heading {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
-  color: #333333;
+  /* color: #333333; */
   margin-bottom: 16px;
 }
 div.main .content .front-matter .page-heading {
@@ -339,7 +359,7 @@ div.main .content .front-matter .page-heading {
 }
 div.main .content .front-matter .meta {
   font-size: 14px;
-  color: #666666;
+  /* color: #666666; */
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flexbox;
@@ -385,7 +405,7 @@ div.main .content .front-matter .tags ul li:hover {
   opacity: 0.7;
 }
 div.main .content .front-matter .tags ul li a {
-  color: #666666;
+  /* color: #666666; */
 }
 
 div.main .container.f04 {
@@ -451,19 +471,44 @@ div.main .container .content .post-item {
 }
 div.main .container .content .post-item .meta {
   font-size: 14px;
-  color: #666666;
+  /* color: #666666; */
   display: none;
   min-width: 100px;
 }
+
+div.main .container .content .book-item {
+  /* -webkit-align-items: center; */
+  /* -moz-align-items: center; */
+  /* -ms-align-items: center; */
+  /* align-items: center; */
+  display: list-item !important;
+  list-style: none;
+  border-left: 4px solid #45bcfb;
+  margin-bottom: 30px;
+  padding-left: 8px !important;
+}
+
+div.main .container .content .book-item a {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+div.main .container .content .book-item .meta {
+  font-size: 14px;
+  /* color: #666666; */
+  display: none;
+  min-width: 100px;
+}
+
 div.main .container .content .see-more {
   font-style: italic;
   float: right;
   font-size: 0.9em;
   margin-top: 2em;
-  color: #313537;
+  /* color: #313537; */
 }
 div.main .container .content .see-more:hover {
-  color: #666;
+  /* color: #666; */
 }
 section {
   padding: 0 16px;
@@ -508,7 +553,7 @@ div.main .content {
 div.main .content .markdown {
   font-size: 1.1em;
   line-height: 1.75em;
-  color: #313537;
+  /* color: #313537; */
   font-family: serif;
   font-weight: 300;
 }
@@ -525,7 +570,7 @@ div.main .content .markdown h6 {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
-  color: #333333;
+  /* color: #333333; */
   text-transform: none;
   margin-top: 1.75rem;
 }
@@ -552,12 +597,14 @@ div.main .content .markdown code,
 div.main .content .markdown pre {
   font-family: 'Menlo', monospace;
   font-size: 0.98rem;
-  background-color: #f7f7f7;
+  color: #87a5d2;
+  background-color: #282a36 !important;
+  /* background-color: #f7f7f7; */
 }
 div.main .content .markdown code {
   /* enclosed by single backtick (`) */
   padding: .15em .5em;
-  border-radius: 2px;
+  border-radius: 3px;
 }
 div.main .content .markdown pre {
   /* Hugo specific: consider using the 'highlight' shortcode */
@@ -569,14 +616,23 @@ div.main .content .markdown pre {
   white-space: pre;
   word-break: break-all;
   word-wrap: break-word;
+  border-radius: 3px;
+  /* background-color: #282a36 !important; */
 }
+
+@media (prefers-color-scheme: dark) {
+    div.main .content .markdown pre {
+        background-color: #282a36 !important;
+    }
+}
+
 div.main .content .markdown pre code {
   /* enclosed by 4 backticks (````) */
   padding: 0;
   font-size: 0.9rem;
 }
 div.main .content .markdown a code {
-  color: #428bca !important;
+  /* color: #428bca !important; */
 }
 div.main .content .markdown a code:hover {
   text-decoration: underline;
@@ -633,7 +689,7 @@ div.main .content .markdown hr {
 div.main .content .markdown abbr {
   font-size: 0.85rem;
   font-weight: bold;
-  color: #666666;
+  /* color: #666666; */
   text-transform: uppercase;
 }
 div.main .content .markdown abbr[title] {
@@ -643,7 +699,7 @@ div.main .content .markdown abbr[title] {
 div.main .content .markdown blockquote {
   padding: .5rem 1rem;
   margin: .8rem 0;
-  color: #7a7a7a;
+  /* color: #7a7a7a; */
   border-left: .25rem solid #e5e5e5;
 }
 div.main .content .markdown blockquote p:last-child {
@@ -651,7 +707,7 @@ div.main .content .markdown blockquote p:last-child {
 }
 div.main .content .markdown figure {
   width: 100%;
-  background: #fff;
+  /* background: #fff; */
   margin-bottom: 1em;
 }
 div.main .content .markdown figure figcaption p{
@@ -765,7 +821,7 @@ kbd {
   font-size: 11px;
   font-family: Arial,Helvetica,sans-serif;
   background-color: #f7f7f7;
-  color: #333;
+  /* color: #333; */
   -moz-box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2),0 0 0 2px #ffffff inset;
   -webkit-box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2),0 0 0 2px #ffffff inset;
   box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2),0 0 0 2px #ffffff inset;
@@ -1016,7 +1072,7 @@ a:hover {
 }
 
 div.main .content .markdown, div.header .name, div.header nav ul a:hover {
-    color: #181d2a;
+    color: <no value>;
 }
 
 div.header nav ul a {
@@ -1024,7 +1080,7 @@ div.header nav ul a {
 }
 
 div.main .content .markdown code {
-    background-color: #f9f9f9;
+    background-color: #282a36;
     color: #527fc1f;
 }
 
@@ -1106,7 +1162,7 @@ div.main .content .markdown pre, div.main .content .markdown pre code {
         
         <a href="https://wmanger.com/"><img class="logo" src="https://wmanger.com/img/logo.png" alt="logo"></a>
         
-        <div class="content">
+        <div class="content" style="padding-left: 20px;">
             <a href="https://wmanger.com/"><div class="name"><h2>Walter <span class="primary">Manger</span></h2></div></a>
             <nav>
                 <ul>
@@ -1117,7 +1173,15 @@ div.main .content .markdown pre, div.main .content .markdown pre code {
                     </li>
                     
                     <li>
+                        <a class="menu-nav-item" href="https://wmanger.com/book-notes/" title="Book Notes">Book Notes</a>
+                    </li>
+                    
+                    <li>
                         <a class="menu-nav-item" href="https://wmanger.com/services/" title="Services">Services</a>
+                    </li>
+                    
+                    <li>
+                        <a class="menu-nav-item" href="https://wmanger.com/my-tools/" title="Tools">Tools</a>
                     </li>
                     
                     <li>
@@ -1185,79 +1249,50 @@ div.main .content .markdown pre, div.main .content .markdown pre code {
             <div class="markdown">
                 
     
-    
-
-<figure>
-    <img src="https://wmanger.com/img/build.jpg"/> 
+    <figure><img src="https://wmanger.com/img/build.jpg"/>
 </figure>
 
-
 <p>I just listened to a very interesting episode of the IndieHackers Podcast that featured Rob Walling.</p>
-
 <p>You can listen to this episode <a href="https://www.indiehackers.com/podcast/082-rob-walling-of-drip-and-tinyseed" target="_blank" rel="noopener">here</a>.</p>
-
 <p>In the episode, Rob shared his humble beginnings and where he is now.
 As I expected, it was a long road. It was refreshing to hear someone talk about this long road and not
 resort to &ldquo;How I Lauched A Startup In 24 Hours&rdquo;.</p>
-
 <p>It is all so fascinating and inspirational. But&hellip;</p>
-
 <p>These podcasts are dangerous, because one could easily get sucked in to a <em>consuming funnel</em>, where, you&rsquo;re in a perpetual state of consumption.
-It is so easy to feel like you&rsquo;re being productive by listening to others&rsquo; success stories.</p>
-
+It is so easy to feel like you&rsquo;re being productive by listening to others' success stories.</p>
 <p>You&rsquo;re not. Be careful.</p>
-
 <p>I think the most important thing you could do after listening to this type of content is to reflect on it.
 Before consuming another episode, ask yourself what you&rsquo;ve gained by spending your precious time consuming.</p>
-
 <p>Try something and see where you end up.</p>
-
 <p>Maybe a podcast episode will enlighten you at this point, but, by far, the most effective things you
 could at this point is reach out to others. That&rsquo;s what is so great about IndieHackers &ndash; the community.</p>
-
 <p>If you are interested in creating products, I highly recommend joining the <a href="https://www.indiehackers.com/sign-up" target="_blank" rel="noopener">IndieHackers Community</a>.</p>
-
 <p>I&rsquo;ve listened to many podcasts. Too many. The most valuable thing I&rsquo;ve learned from any of them is:</p>
-
 <p><strong>Time is better spent creating.</strong></p>
-
 <p>So, in the spirit of creation, I&rsquo;ll distill this episode for you with my top takeaways.</p>
-
 <h2 id="sometimes-flipping-a-profitable-digital-thing-is-better-than-creating-your-own">Sometimes flipping a profitable <em>digital thing</em> is better than creating your own</h2>
-
 <p>Rob discusses his experience purchasing a profitable software product.
 It was long ago and now there are sites to make such transactions, but he talked directly to the (very small) company about aquisition.
 No middle man, no hype, just some software that he thought was useful, so he bought it and made it profitable.
 This was one of the things that allowed him to start the journey to become who he is now.</p>
-
 <p><a href="https://news.ycombinator.com/item?id=9588901%0A" target="_blank" rel="noopener">This</a> thread on HackerNews is filled with information on how to buy software companies.</p>
-
 <h2 id="when-creating-your-own-digital-things--that-you-want-to-sell--make-sure-that-customers-are-driving-the-development-of-your-digital-thing">When creating your own <em>digital things</em> (that you want to sell), make sure that customers are driving the development of your digital thing</h2>
-
 <p>If you want to sell something, make sure someone wants to buy it.
 If there is a feature you think would be useful to add, get customers to confirm its usefulness.
 You know, The Lean Startup approach.</p>
-
 <p>In my 12+ years developing software, I can say that most of the companies that I&rsquo;ve worked for were good at this.
 Of course, there were many times where a feature would be developed over many months only to find that no one would use it.
 These are mistakes that everyone learns from.</p>
-
 <h2 id="treat-your-customers-as-you-like-to-be-treated-as-a-customer">Treat your customers as you like to be treated as a customer</h2>
-
 <p>As with any digital product, and especially software, maintenance is <strong>REQUIRED</strong>.
 Whether you&rsquo;re doing it or hiring someone else to do it, consideration of this fact is pretty important.
 If you&rsquo;re going to buy something that currently has paying customers, there is a certain level of support that is expected.
 As with anything, support takes time, time is money, etc.</p>
-
 <h2 id="conclusion">Conclusion</h2>
-
 <p>There are more gems in this podcast, but these are the most memorable for me.</p>
-
 <p>I have much more to learn about the business of buying and selling software, but hearing how Rob flipped a few products to profitability was eye opening.</p>
-
 <p>As Software Engineers, we tend to lean towards coding as it is fun for us,
 but adjusting our mindset to thinking more about the <em>business</em> of software and only viewing code as a means to and end is valuable.</p>
-
 <p>Not only for our own businesses, but the businesses that we may work for.</p>
 
 

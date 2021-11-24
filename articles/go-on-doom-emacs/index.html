@@ -7,28 +7,28 @@
 <meta name="MobileOptimized" content="320">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="description" content="">
+<meta name="description" content="Setting up Doom Emacs as a Golang Editor.">
 
 
 <meta property="og:site_name" content="Walter Manger" />
 <meta property="og:locale" content="en-US" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://wmanger.com/categories/software-engineering/" />
-<meta property="og:title" content="Software Engineering" />
-<meta property="twitter:title" content="Software Engineering">
+<meta property="og:url" content="https://wmanger.com/articles/go-on-doom-emacs/" />
+<meta property="og:title" content="Golang on Doom Emacs" />
+<meta property="twitter:title" content="Golang on Doom Emacs">
 
     <meta property="twitter:card" content="summary">
 
-<meta property="og:description" content="">
-<meta property="twitter:description" content="">
+<meta property="og:description" content="Setting up Doom Emacs as a Golang Editor.">
+<meta property="twitter:description" content="Setting up Doom Emacs as a Golang Editor.">
 
 <title>
 
 
-     Software Engineering 
+     Golang on Doom Emacs 
 
 </title>
-<link rel="canonical" href="https://wmanger.com/categories/software-engineering/">
+<link rel="canonical" href="https://wmanger.com/articles/go-on-doom-emacs/">
 
 
 <style media="screen">
@@ -1143,8 +1143,6 @@ div.main .content .markdown pre, div.main .content .markdown pre code {
 
 
 
-  <link href="https://wmanger.com/categories/software-engineering/index.xml" rel="alternate" type="application/rss+xml" title="Walter Manger" />
-
 
 
 <link rel="icon" type="image/x-icon"
@@ -1196,60 +1194,149 @@ div.main .content .markdown pre, div.main .content .markdown pre code {
     </div>
 </div>
 
-<div class="main column">
+
+
+
+
+<div class="main post non-narrow zero-top-spacing column">
     <div class="container">
         <div class="content">
-            <div class="posts">
-                <div class="page-heading">Posts about Software Engineering</div>
-                <ul>
+            <div class="front-matter">
+                <div class="title-container">
+                    <h1 class="page-heading primary">
+    
+    
+    Golang on Doom Emacs
+    
+    
+</h1>
+
+                </div>
+                <div class="meta">
+                    <div class="date" title="Sun Nov 21 2021 00:00:00 MST">Nov 21, 2021</div>
                     
-                        <li class="post-item">
-    
-    <a href="https://wmanger.com/articles/embracing-the-cloud/"><span>Embracing The Cloud</span></a>
-    
-</li>
 
                     
-                        <li class="post-item">
-    
-    <a href="https://wmanger.com/book-notes/revisiting-the-pragmatic-programmer/"><span>The Pragmatic Programmer</span></a>
-    
-</li>
+                    
+                    
+                    <div class="author middot" title="no">
+                        
+                        Walter Manger
+                        
+                    </div>
+                    
+
 
                     
-                        <li class="post-item">
-    
-    <a href="https://wmanger.com/articles/shipping-efficiently/"><span>Shipping Efficiently</span></a>
-    
-</li>
-
                     
-                        <li class="post-item">
-    
-    <a href="https://wmanger.com/articles/supporting-multiple-github-accounts/"><span>Supporting Multiple Git/Github Accounts</span></a>
-    
-</li>
-
+                    <div class="reading-time middot">2 minute read</div>
                     
-                        <li class="post-item">
-    
-    <a href="https://wmanger.com/articles/on-becoming-a-ckad/"><span>On becoming a Certified Kubernetes Application Developer</span></a>
-    
-</li>
-
                     
-                        <li class="post-item">
-    
-    <a href="https://wmanger.com/articles/go-on-doom-emacs/"><span>Golang on Doom Emacs</span></a>
-    
-</li>
-
+                      <div class="tags">
                     
-                </ul>
+                        <ul>
+                          
+                        </ul>
+                    </div>
+                    <div class="tags">
+                        <ul>
+                          
+                          
+                        </ul>
+                    </div>
+                </div>
             </div>
+            <div class="markdown">
+                
+    
+    <figure><img src="https://wmanger.com/img/gopher.jpg"
+         alt="Photo by Patrice Schoefolt from Pexels"/><figcaption>
+            <p>Photo by Patrice Schoefolt from Pexels</p>
+        </figcaption>
+</figure>
+
+<p>It&rsquo;s been a while since I&rsquo;ve contributed to any <a href="https://go.dev/" target="_blank">Golang</a>, but I got the itch this weekend to setup my <a href="https://github.com/hlissner/doom-emacs" target="_blank">Doom Emacs</a> to do so.</p>
+<p>Most of the time I don&rsquo;t want a full-blown IDE experience as having all the bells and whistles of that type of environment can be distracting. Instead, I&rsquo;d like to turn on features as I need them.</p>
+<p>Here are the things I&rsquo;d like to have in a Golang editor:</p>
+<ol>
+<li>The ability to navigate through code</li>
+<li>The ability to see documentation</li>
+<li>Syntax checking</li>
+<li>The ability to generate and test code</li>
+</ol>
+<p>The first thing I need is Golang.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">brew install go
+</code></pre></div><p>Using brew will ensure that <code>go</code> is in my path, but I&rsquo;ll need actual Go packages in my path too.</p>
+<p>For this, I&rsquo;ll add <code>GOPATH</code> to my <code>PATH</code>.</p>
+<p>In <code>~/.zshrc</code> &hellip;</p>
+<pre tabindex="0"><code class="language-conf" data-lang="conf">export GOPATH=&quot;$(go env GOPATH)&quot;
+export PATH=&quot;${PATH}:${GOPATH}/bin&quot;
+</code></pre><p>You may have to tell Emacs about the changes you made to your path.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">~/.emacs.d/bin/doom env <span style="color:#75715e"># generates a new env in ~/.emacs.d/.local/env</span>
+</code></pre></div><p>Now, that <code>go</code> and any tools installed via <code>go install</code> are available in my path, I&rsquo;ll configure Emacs for Go.</p>
+<p>In <code>~/.doom.d/init.el</code></p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-elisp" data-lang="elisp">(doom! 
+  :tools
+  lsp
+  :lang
+  (go +lsp))
+</code></pre></div><p>Finally, I can install all the tools that Doom&rsquo;s default Go configuration needs.</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#75715e"># REPL!</span>
+go install github.com/x-motemen/gore/cmd/gore@latest
+
+<span style="color:#75715e"># Autocompletion</span>
+go install github.com/stamblerre/gocode@latest
+
+<span style="color:#75715e"># Documentation</span>
+go install golang.org/x/tools/cmd/godoc@latest
+
+<span style="color:#75715e"># Add/Removed Necessary Imports</span>
+go install golang.org/x/tools/cmd/goimports@latest
+
+<span style="color:#75715e"># Type-Safe Renaming of Go identifiers</span>
+go install golang.org/x/tools/cmd/gorename@latest
+
+<span style="color:#75715e"># Asks questions about your Gocode</span>
+go install golang.org/x/tools/cmd/guru@latest
+
+<span style="color:#75715e"># Generate tests based off of the func you&#39;re on</span>
+go install github.com/cweill/gotests/gotests@latest
+
+<span style="color:#75715e"># Add `json` or `bson` to structs easily</span>
+go install github.com/fatih/gomodifytags@latest
+</code></pre></div><p>With this configuration I now have:</p>
+<ol>
+<li>The ability to navigate through code by using <code>g d</code> on a particular identifier</li>
+<li>The ability to see documentation by simply hovering over an identifier</li>
+<li>Syntax checking on every save</li>
+<li>The ability to generate and test code by:
+<ul>
+<li><code>SPC m t g</code> while in the body of a func to generate test code</li>
+<li><code>SPC m t s</code> while in the body of a test func for running that one test</li>
+<li><code>SPC m t a</code> to run all tests</li>
+</ul>
+</li>
+</ol>
+<p>These tools and packages give me way more than what is listed here, but these were the nice-to-haves to get started.</p>
+
+
+            </div>
+            
+            
+            
+
+            
+            
+
+            
+
+            
         </div>
     </div>
 </div>
+
+
+
 <div class="footer column">
     <div class="container">
 

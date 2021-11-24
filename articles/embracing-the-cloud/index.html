@@ -57,6 +57,26 @@ time, mark, audio, video {
   font: inherit;
   vertical-align: baseline;
 }
+
+body {
+    width: 87.5%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 12.5%;
+    font-family: et-book, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+    background-color: #fffff8;
+    color: #111;
+    max-width: 1400px;
+    counter-reset: sidenote-counter;
+}
+
+/* @media (prefers-color-scheme: dark) { */
+/*     body { */
+/*         background-color: #151515; */
+/*         color: #ddd; */
+/*     } */
+/* } */
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section, div.column {
@@ -118,7 +138,7 @@ body {
   min-height: 100%;
   font-weight: 400;
   font-family: 'Helvetica Neue', 'Arial', sans-serif;
-  color: #111111;
+  /* color: #111111; */
   line-height: 1.6;
   text-rendering: optimizeLegibility !important;
 }
@@ -207,7 +227,7 @@ div.header .name {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
-  color: #333333;
+  /* color: #333333; */
 }
 div.header nav {
   margin-bottom: 16px;
@@ -234,7 +254,7 @@ div.header nav ul li:last-child {
   border-right: none;
 }
 div.header nav ul a {
-  color: #555555;
+  /* color: #555555; */
   font-weight: 400;
   font-size: 14px;
   text-transform: uppercase;
@@ -245,7 +265,7 @@ div.header nav ul a {
   -o-transition: color 0.1s cubic-bezier(0.47, 0, 0.75, 0.72);
 }
 div.header nav ul a:hover, div.header nav ul a.active {
-    color: #45bcfb;
+    /* color: #45bcfb; */
 }
 div.footer .container {
   -webkit-align-items: center;
@@ -286,7 +306,7 @@ div.footer .container a .icon {
 div.footer .container .copyright {
   flex-grow: 0.5;
   text-align: start;
-  color: #c3c3c3;
+  /* color: #c3c3c3; */
 }
 div.footer .container .icons {
   flex-grow: 0.5;
@@ -303,7 +323,7 @@ div.main .container {
   justify-content: flex-start;
 }
 div.main .content {
-  color: #111111;
+  /* color: #111111; */
   font-size: 16px;
 }
 div.main .content .title-container {
@@ -331,7 +351,7 @@ div.main .content .page-heading {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
-  color: #333333;
+  /* color: #333333; */
   margin-bottom: 16px;
 }
 div.main .content .front-matter .page-heading {
@@ -339,7 +359,7 @@ div.main .content .front-matter .page-heading {
 }
 div.main .content .front-matter .meta {
   font-size: 14px;
-  color: #666666;
+  /* color: #666666; */
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flexbox;
@@ -385,7 +405,7 @@ div.main .content .front-matter .tags ul li:hover {
   opacity: 0.7;
 }
 div.main .content .front-matter .tags ul li a {
-  color: #666666;
+  /* color: #666666; */
 }
 
 div.main .container.f04 {
@@ -451,19 +471,44 @@ div.main .container .content .post-item {
 }
 div.main .container .content .post-item .meta {
   font-size: 14px;
-  color: #666666;
+  /* color: #666666; */
   display: none;
   min-width: 100px;
 }
+
+div.main .container .content .book-item {
+  /* -webkit-align-items: center; */
+  /* -moz-align-items: center; */
+  /* -ms-align-items: center; */
+  /* align-items: center; */
+  display: list-item !important;
+  list-style: none;
+  border-left: 4px solid #45bcfb;
+  margin-bottom: 30px;
+  padding-left: 8px !important;
+}
+
+div.main .container .content .book-item a {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+div.main .container .content .book-item .meta {
+  font-size: 14px;
+  /* color: #666666; */
+  display: none;
+  min-width: 100px;
+}
+
 div.main .container .content .see-more {
   font-style: italic;
   float: right;
   font-size: 0.9em;
   margin-top: 2em;
-  color: #313537;
+  /* color: #313537; */
 }
 div.main .container .content .see-more:hover {
-  color: #666;
+  /* color: #666; */
 }
 section {
   padding: 0 16px;
@@ -508,7 +553,7 @@ div.main .content {
 div.main .content .markdown {
   font-size: 1.1em;
   line-height: 1.75em;
-  color: #313537;
+  /* color: #313537; */
   font-family: serif;
   font-weight: 300;
 }
@@ -525,7 +570,7 @@ div.main .content .markdown h6 {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   font-smoothing: antialiased;
-  color: #333333;
+  /* color: #333333; */
   text-transform: none;
   margin-top: 1.75rem;
 }
@@ -552,12 +597,14 @@ div.main .content .markdown code,
 div.main .content .markdown pre {
   font-family: 'Menlo', monospace;
   font-size: 0.98rem;
-  background-color: #f7f7f7;
+  color: #87a5d2;
+  background-color: #282a36 !important;
+  /* background-color: #f7f7f7; */
 }
 div.main .content .markdown code {
   /* enclosed by single backtick (`) */
   padding: .15em .5em;
-  border-radius: 2px;
+  border-radius: 3px;
 }
 div.main .content .markdown pre {
   /* Hugo specific: consider using the 'highlight' shortcode */
@@ -569,14 +616,23 @@ div.main .content .markdown pre {
   white-space: pre;
   word-break: break-all;
   word-wrap: break-word;
+  border-radius: 3px;
+  /* background-color: #282a36 !important; */
 }
+
+@media (prefers-color-scheme: dark) {
+    div.main .content .markdown pre {
+        background-color: #282a36 !important;
+    }
+}
+
 div.main .content .markdown pre code {
   /* enclosed by 4 backticks (````) */
   padding: 0;
   font-size: 0.9rem;
 }
 div.main .content .markdown a code {
-  color: #428bca !important;
+  /* color: #428bca !important; */
 }
 div.main .content .markdown a code:hover {
   text-decoration: underline;
@@ -633,7 +689,7 @@ div.main .content .markdown hr {
 div.main .content .markdown abbr {
   font-size: 0.85rem;
   font-weight: bold;
-  color: #666666;
+  /* color: #666666; */
   text-transform: uppercase;
 }
 div.main .content .markdown abbr[title] {
@@ -643,7 +699,7 @@ div.main .content .markdown abbr[title] {
 div.main .content .markdown blockquote {
   padding: .5rem 1rem;
   margin: .8rem 0;
-  color: #7a7a7a;
+  /* color: #7a7a7a; */
   border-left: .25rem solid #e5e5e5;
 }
 div.main .content .markdown blockquote p:last-child {
@@ -651,7 +707,7 @@ div.main .content .markdown blockquote p:last-child {
 }
 div.main .content .markdown figure {
   width: 100%;
-  background: #fff;
+  /* background: #fff; */
   margin-bottom: 1em;
 }
 div.main .content .markdown figure figcaption p{
@@ -765,7 +821,7 @@ kbd {
   font-size: 11px;
   font-family: Arial,Helvetica,sans-serif;
   background-color: #f7f7f7;
-  color: #333;
+  /* color: #333; */
   -moz-box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2),0 0 0 2px #ffffff inset;
   -webkit-box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2),0 0 0 2px #ffffff inset;
   box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2),0 0 0 2px #ffffff inset;
@@ -1016,7 +1072,7 @@ a:hover {
 }
 
 div.main .content .markdown, div.header .name, div.header nav ul a:hover {
-    color: #181d2a;
+    color: <no value>;
 }
 
 div.header nav ul a {
@@ -1024,7 +1080,7 @@ div.header nav ul a {
 }
 
 div.main .content .markdown code {
-    background-color: #f9f9f9;
+    background-color: #282a36;
     color: #527fc1f;
 }
 
@@ -1106,7 +1162,7 @@ div.main .content .markdown pre, div.main .content .markdown pre code {
         
         <a href="https://wmanger.com/"><img class="logo" src="https://wmanger.com/img/logo.png" alt="logo"></a>
         
-        <div class="content">
+        <div class="content" style="padding-left: 20px;">
             <a href="https://wmanger.com/"><div class="name"><h2>Walter <span class="primary">Manger</span></h2></div></a>
             <nav>
                 <ul>
@@ -1117,7 +1173,15 @@ div.main .content .markdown pre, div.main .content .markdown pre code {
                     </li>
                     
                     <li>
+                        <a class="menu-nav-item" href="https://wmanger.com/book-notes/" title="Book Notes">Book Notes</a>
+                    </li>
+                    
+                    <li>
                         <a class="menu-nav-item" href="https://wmanger.com/services/" title="Services">Services</a>
+                    </li>
+                    
+                    <li>
+                        <a class="menu-nav-item" href="https://wmanger.com/my-tools/" title="Tools">Tools</a>
                     </li>
                     
                     <li>
@@ -1187,108 +1251,73 @@ div.main .content .markdown pre, div.main .content .markdown pre code {
             <div class="markdown">
                 
     
-    
-
-<figure>
-    <img src="https://wmanger.com/img/cloud-heading.jpg"/> 
+    <figure><img src="https://wmanger.com/img/cloud-heading.jpg"/>
 </figure>
 
-
 <p>Cloud architecture is a great way to ship safe, cost effective, resilient, and scalable applications.</p>
-
 <p>Here are some tips from the trenches to help your team embrace the cloud.</p>
-
 <h2 id="trust-your-cloud-provider">Trust Your Cloud Provider</h2>
-
 <p>If you are going to be using the cloud, you need to trust that your provider&rsquo;s services are going to be operational.
 Writing code defensively or testing that a particular service is <em>working</em> is a waste of time.
 Let your services fail. As long as your monitoring strategy is strong, you&rsquo;ll know when an issue arises.</p>
-
 <h2 id="embrace-asynchronicity">Embrace Asynchronicity</h2>
-
 <p>AWS Lambda Functions are triggered by events &ndash; HTTP, SQS, Cron, SNS, Streams &ndash; to name a few.
 Being prepared to reason about your services/applications from an asynchronous perspective will help in the long run.
 Let this thinking permeate throughout the full software development life cycle.</p>
-
 <h2 id="use-real-infrastructure">Use Real Infrastructure</h2>
-
 <p>Don&rsquo;t make the mistake of &ldquo;creating&rdquo; a personal cloud.
 There are tools out there that help you do so, and it may seem attractive, but there is no substitute for a real cloud.
 If you&rsquo;ve fully embraced the cloud, which I hope you do, you&rsquo;re likely using things that cannot be <em>faked</em> reliably.
 Let <strong>real</strong> infrastructure influence the way you develop locally <strong>from the beginning</strong>.</p>
-
 <h2 id="write-tests">Write Tests</h2>
-
 <p>Do write tests, and write them against <strong>real</strong> infrastructure when integrating.</p>
-
 <p><a id="orgaa916e4"></a></p>
-
-<figure>
-    <img src="https://wmanger.com/img/test-pyramid.png"
-         alt="Figure 1: The Testing Pyramid"/> <figcaption>
+<figure><img src="https://wmanger.com/img/test-pyramid.png"
+         alt="Figure 1: The Testing Pyramid"/><figcaption>
             <p>Figure 1: The Testing Pyramid</p>
         </figcaption>
 </figure>
-
 
 <ol>
 <li>Many Unit Test</li>
 <li>Some Service Tests</li>
 <li>Few UI Tests (acceptance/regression)</li>
 </ol>
-
 <p>No one knows every edge of a language or framework.
 Testing is a good practice to increase quality, validate your assumptions, and avoid regression.</p>
-
 <h2 id="logging-and-monitoring">Logging &amp; Monitoring</h2>
-
 <p>A Lambda Function may trigger other services, which may trigger more Lambda Functions.
 This graph of events is hard to keep track of if your logging implementation is off.
 Write your functions in such a way that you get some helpful logging by default (think middleware).
 Pay attention to what you are logging and at what level (error, warning, debug, info) to reduce noise in a production environment.</p>
-
 <p>Use a third party tool for monitoring to reduce the amount of <strong>things</strong> you have to maintain in the cloud.
 <a href="https://epsagon.com/" target="_blank" rel="noopener">Epsagon</a> has been a great choice so far.</p>
-
 <h2 id="measuring-performance">Measuring Performance</h2>
-
 <p>Think about how you will measure the performance of your services. Ask these questions:</p>
-
 <ul>
 <li>Is running your <strong>acceptance tests</strong> in parallel by some factor an acceptable coverage area?</li>
 <li>What is the baseline for response times?</li>
 <li>Should notifications be configured for long responses?</li>
 </ul>
-
 <h2 id="know-the-common-limits-and-pitfalls-of-your-tools">Know The Common Limits And Pitfalls Of Your Tools</h2>
-
 <p>Designing infrastructure? Script it with <a href="https://aws.amazon.com/cloudformation/" target="_blank" rel="noopener">CloudFormation</a> or <a href="https://www.terraform.io/">Terraform</a>.</p>
-
 <p>Know what happens when you change the properties of a cloud resource.
 Does it drop the resource and recreate it? How do you handle that destruction?
 Are you keeping backups of your data (DB, File Storage, etc.) on a regular basis?</p>
-
 <h2 id="design-a-deployment-policy-for-production">Design a Deployment Policy for Production</h2>
-
 <p>Developers should not be allowed to deploy (ship infrastructure) into production from their local environments.
 Make this so by using IAM or similar.
 Each developer should have their own account and unable to use service accounts that run in CI/CD.</p>
-
 <h2 id="use-elastic-search-for-searching-dynamodb">Use Elastic Search For Searching DynamoDB</h2>
-
 <p>Using Global Secondary Indices is nice for known searches, but having a robust way to search a DynamoDB table is preferred.
 Embrace the cloud&rsquo;s event based nature by using DynamoDB Streams to keep Elastic Search indices up-to-date.
 Write easy to use utilities, <span class="underline">that trigger events which use the same stream functions</span> for reindexing.</p>
-
 <h2 id="ship-frequently">Ship Frequently</h2>
-
 <p>Your service or application <strong>should</strong> be able to be <a href="https://wmanger.com/articles/shipping-efficiently/">shipped at any time</a> (CI/CD).
 The more frequent you ship, the fewer chances for things to go wrong.
 Don&rsquo;t let HUGE features bog down your deployment cadence. Break them down to small, shippable parts.
 If your logging, monitoring, and testing are in order, you will know if something is broken before a user experiences it.</p>
-
 <h2 id="what-are-you-shipping">What are you shipping?</h2>
-
 <p>Are you shipping to the cloud?
 If you need help, <a href="mailto:walter.manger@gmail.com">drop me a line</a> or visit my <a href="https://wmanger.com/services">services</a> page for more information.</p>
 
