@@ -190,6 +190,7 @@ div.header .container .logo {
   
   margin-left: -2em;
 }
+
 div.header .name {
   padding-top: 20px;
   font-size: 28px;
@@ -203,6 +204,10 @@ div.header .name {
   font-smoothing: antialiased;
   /* color: #333333; */
 }
+
+
+
+
 div.header nav {
   margin-bottom: 16px;
 }
@@ -241,6 +246,30 @@ div.header nav ul a {
 div.header nav ul a:hover, div.header nav ul a.active {
     /* color: #45bcfb; */
 }
+
+.header-logo-link {
+  padding-right: 20px;
+}
+
+@media only screen
+and (max-width: 570px) {
+  div.header .container .logo {
+    display: none;
+  }
+
+  .header-logo-link {
+    padding-right: 0px;
+  }
+
+  div.header .name {
+    font-size: 22px;
+  }
+
+  div.header nav ul a {
+    font-size: 12px;
+  }
+}
+
 div.footer .container {
   -webkit-align-items: center;
   -moz-align-items: center;

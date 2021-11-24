@@ -216,6 +216,7 @@ div.header .container .logo {
   
   margin-left: -2em;
 }
+
 div.header .name {
   padding-top: 20px;
   font-size: 28px;
@@ -229,6 +230,10 @@ div.header .name {
   font-smoothing: antialiased;
   /* color: #333333; */
 }
+
+
+
+
 div.header nav {
   margin-bottom: 16px;
 }
@@ -267,6 +272,30 @@ div.header nav ul a {
 div.header nav ul a:hover, div.header nav ul a.active {
     /* color: #45bcfb; */
 }
+
+.header-logo-link {
+  padding-right: 20px;
+}
+
+@media only screen
+and (max-width: 570px) {
+  div.header .container .logo {
+    display: none;
+  }
+
+  .header-logo-link {
+    padding-right: 0px;
+  }
+
+  div.header .name {
+    font-size: 22px;
+  }
+
+  div.header nav ul a {
+    font-size: 12px;
+  }
+}
+
 div.footer .container {
   -webkit-align-items: center;
   -moz-align-items: center;
@@ -1160,9 +1189,9 @@ div.main .content .markdown pre, div.main .content .markdown pre code {
 
     <div class="container">
         
-        <a href="https://wmanger.com/"><img class="logo" src="https://wmanger.com/img/logo.png" alt="logo"></a>
+        <a class="header-logo-link" href="https://wmanger.com/"><img class="logo" src="https://wmanger.com/img/logo.png" alt="logo"></a>
         
-        <div class="content" style="padding-left: 20px;">
+        <div class="content nav-logo">
             <a href="https://wmanger.com/"><div class="name"><h2>Walter <span class="primary">Manger</span></h2></div></a>
             <nav>
                 <ul>
