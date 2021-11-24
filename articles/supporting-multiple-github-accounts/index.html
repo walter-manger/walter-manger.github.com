@@ -1258,7 +1258,7 @@ div.main .content .markdown pre, div.main .content .markdown pre code {
 <p>Many times, especially when working as a freelance developer, you&rsquo;ll need access to multiple <strong>Github</strong> repositories. To do this, you&rsquo;ll need to configure your <code>~/.ssh/config</code> and <code>~/.gitconfig</code> accordingly.</p>
 <p>I won&rsquo;t go into great detail in this post, as there already is really good documentation <a href="https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent">here</a> on how to configure <code>ssh</code> for <strong>Github</strong>.</p>
 <p>After generating the needed <code>ssh</code> keys, I setup my <code>~/.ssh/config</code> like so:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Host personal
+<pre tabindex="0"><code>Host personal
    HostName github.com
    User git
    AddKeysToAgent yes
@@ -1271,16 +1271,16 @@ Host work
    AddKeysToAgent yes
    IdentitiesOnly yes
    IdentityFile ~/.ssh/id_rsa_work
-</code></pre></div><p>In my <code>~/.gitconfig</code>, I do something like:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">[includeIf &#34;gitdir:~/repos/work/&#34;]
+</code></pre><p>In my <code>~/.gitconfig</code>, I do something like:</p>
+<pre tabindex="0"><code>[includeIf &quot;gitdir:~/repos/work/&quot;]
   path = .gitconfig-work
-[includeIf &#34;gitdir:~/repos/personal/&#34;]
+[includeIf &quot;gitdir:~/repos/personal/&quot;]
   path = .gitconfig-personal
-</code></pre></div><p>Then, in each config, I do something like this:</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">[user]
+</code></pre><p>Then, in each config, I do something like this:</p>
+<pre tabindex="0"><code>[user]
    name = Walter Manger
    email = {some-email}@{some-domain}.com
-</code></pre></div><p>So, when I want to clone a <strong>Github</strong> repository, I can do something like:</p>
+</code></pre><p>So, when I want to clone a <strong>Github</strong> repository, I can do something like:</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">git clone git@<span style="color:#f92672">{</span>work or personal<span style="color:#f92672">}</span>:<span style="color:#f92672">{</span>some organization<span style="color:#f92672">}</span>/<span style="color:#f92672">{</span>some repo<span style="color:#f92672">}</span>.git
 </code></pre></div><p>Now, If I am in <code>~/repos/work</code>, <strong>git</strong> will use the user settings defined in <code>~/.gitconfig-work</code>.</p>
 

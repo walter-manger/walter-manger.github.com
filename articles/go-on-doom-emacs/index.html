@@ -1275,11 +1275,11 @@ export PATH=&quot;${PATH}:${GOPATH}/bin&quot;
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">~/.emacs.d/bin/doom env <span style="color:#75715e"># generates a new env in ~/.emacs.d/.local/env</span>
 </code></pre></div><p>Now, that <code>go</code> and any tools installed via <code>go install</code> are available in my path, I&rsquo;ll configure Emacs for Go.</p>
 <p>In <code>~/.doom.d/init.el</code></p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-elisp" data-lang="elisp">(doom! 
-  :tools
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-lisp" data-lang="lisp">(doom! 
+  <span style="color:#e6db74">:tools</span>
   lsp
-  :lang
-  (go +lsp))
+  <span style="color:#e6db74">:lang</span>
+  (<span style="color:#66d9ef">go</span> +lsp))
 </code></pre></div><p>Finally, I can install all the tools that Doom&rsquo;s default Go configuration needs.</p>
 <div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#75715e"># REPL!</span>
 go install github.com/x-motemen/gore/cmd/gore@latest
