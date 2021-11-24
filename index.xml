@@ -6,11 +6,7 @@
     <description>Recent content on Walter Manger</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-<<<<<<< HEAD
     <lastBuildDate>Sun, 21 Nov 2021 00:00:00 -0700</lastBuildDate><atom:link href="https://wmanger.com/index.xml" rel="self" type="application/rss+xml" />
-=======
-    <lastBuildDate>Fri, 05 Feb 2021 00:00:00 -0700</lastBuildDate><atom:link href="https://wmanger.com/index.xml" rel="self" type="application/rss+xml" />
->>>>>>> 85a8ecbe5968610e478a2f38838ebca19b0ad6af
     <item>
       <title>About</title>
       <link>https://wmanger.com/about/</link>
@@ -24,7 +20,6 @@ You can get more information about the services that I offer on the services pag
     </item>
     
     <item>
-<<<<<<< HEAD
       <title>Golang on Doom Emacs</title>
       <link>https://wmanger.com/articles/go-on-doom-emacs/</link>
       <pubDate>Sun, 21 Nov 2021 00:00:00 -0700</pubDate>
@@ -36,8 +31,6 @@ Most of the time I don&amp;rsquo;t want a full-blown IDE experience as having al
     </item>
     
     <item>
-=======
->>>>>>> 85a8ecbe5968610e478a2f38838ebca19b0ad6af
       <title>On becoming a Certified Kubernetes Application Developer</title>
       <link>https://wmanger.com/articles/on-becoming-a-ckad/</link>
       <pubDate>Fri, 05 Feb 2021 00:00:00 -0700</pubDate>
@@ -50,7 +43,6 @@ Don&amp;rsquo;t Waste Time Don&amp;rsquo;t waste time wondering how long it take
     </item>
     
     <item>
-<<<<<<< HEAD
       <title>Supporting Multiple Git/Github Accounts</title>
       <link>https://wmanger.com/articles/supporting-multiple-github-accounts/</link>
       <pubDate>Sun, 03 May 2020 00:00:00 -0700</pubDate>
@@ -63,8 +55,6 @@ After generating the needed ssh keys, I setup my ~/.</description>
     </item>
     
     <item>
-=======
->>>>>>> 85a8ecbe5968610e478a2f38838ebca19b0ad6af
       <title>Just Create.</title>
       <link>https://wmanger.com/articles/just-create/</link>
       <pubDate>Sun, 19 Jan 2020 00:00:00 -0700</pubDate>
@@ -92,19 +82,11 @@ There&amp;rsquo;s one caveat &amp;ndash; your company has to appreciate this gen
       <link>https://wmanger.com/book-notes/revisiting-the-pragmatic-programmer/</link>
       <pubDate>Fri, 04 Oct 2019 23:39:00 -0600</pubDate>
       
-<<<<<<< HEAD
       <guid>https://wmanger.com/book-notes/revisiting-the-pragmatic-programmer/</guid>
       <description>&lt;p&gt;This is probably one of the most classic programming books that is frequently recommended to programmers by programmers.
 I catagorize this type of book as &lt;em&gt;Programmer&amp;rsquo;s Self-Help&lt;/em&gt;.
 Some will find it helpful, others look for more actionable advice.
 I read this when I was about 2 years into my software engineering career.&lt;/p&gt;</description>
-=======
-      <guid>https://wmanger.com/articles/revisiting-the-pragmatic-programmer/</guid>
-      <description>As with many non-fiction books, The Pragmatic Programmer can be distilled to about 1% of its page count. That&amp;rsquo;s not a hit on the authors or the publisher, that&amp;rsquo;s just how non-fiction books work in my opinion.
-This book gives you all the tips you need to become a master Code Craftsman, but it is missing something very important.
-Andrew and David don&amp;rsquo;t discuss a programmer&amp;rsquo;s well-being.
-Programmers need to take care of themselves - their physical and mental health, relationships, and finances.</description>
->>>>>>> 85a8ecbe5968610e478a2f38838ebca19b0ad6af
     </item>
     
     <item>
