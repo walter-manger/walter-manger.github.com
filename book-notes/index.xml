@@ -1,23 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Book Notes on Walter Manger</title>
-    <link>https://wmanger.com/book-notes/</link>
-    <description>Recent content in Book Notes on Walter Manger</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-US</language>
-    <lastBuildDate>Wed, 01 Apr 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://wmanger.com/book-notes/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>The Pragmatic Programmer</title>
-      <link>https://wmanger.com/book-notes/revisiting-the-pragmatic-programmer/</link>
-      <pubDate>Fri, 04 Oct 2019 23:39:00 -0600</pubDate>
-      
-      <guid>https://wmanger.com/book-notes/revisiting-the-pragmatic-programmer/</guid>
-      <description>&lt;p&gt;This is probably one of the most classic programming books that is frequently recommended to programmers by programmers.
-I catagorize this type of book as &lt;em&gt;Programmer&amp;rsquo;s Self-Help&lt;/em&gt;.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Book Notes on Walter Manger</title><link>https://wmanger.com/book-notes/</link><description>Recent content in Book Notes on Walter Manger</description><generator>Hugo -- gohugo.io</generator><language>en-US</language><lastBuildDate>Wed, 01 Apr 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://wmanger.com/book-notes/index.xml" rel="self" type="application/rss+xml"/><item><title>The Pragmatic Programmer</title><link>https://wmanger.com/book-notes/revisiting-the-pragmatic-programmer/</link><pubDate>Fri, 04 Oct 2019 23:39:00 -0600</pubDate><guid>https://wmanger.com/book-notes/revisiting-the-pragmatic-programmer/</guid><description>&lt;p>This is probably one of the most classic programming books that is frequently recommended to programmers by programmers.
+I catagorize this type of book as &lt;em>Programmer&amp;rsquo;s Self-Help&lt;/em>.
 Some will find it helpful, others look for more actionable advice.
-I read this when I was about 2 years into my software engineering career.&lt;/p&gt;</description>
-    </item>
-    
-  </channel>
-</rss>
+I read this when I was about 2 years into my software engineering career.&lt;/p></description></item></channel></rss>

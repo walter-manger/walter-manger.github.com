@@ -1,137 +1,28 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Walter Manger</title>
-    <link>https://wmanger.com/</link>
-    <description>Recent content on Walter Manger</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-US</language>
-    <lastBuildDate>Sun, 21 Nov 2021 00:00:00 -0700</lastBuildDate><atom:link href="https://wmanger.com/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>About</title>
-      <link>https://wmanger.com/about/</link>
-      <pubDate>Fri, 29 Mar 2019 17:00:00 -0600</pubDate>
-      
-      <guid>https://wmanger.com/about/</guid>
-      <description>Hello, I&amp;rsquo;m Walter Manger.
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Walter Manger</title><link>https://wmanger.com/</link><description>Recent content on Walter Manger</description><generator>Hugo -- gohugo.io</generator><language>en-US</language><lastBuildDate>Sun, 21 Nov 2021 00:00:00 -0700</lastBuildDate><atom:link href="https://wmanger.com/index.xml" rel="self" type="application/rss+xml"/><item><title>About</title><link>https://wmanger.com/about/</link><pubDate>Fri, 29 Mar 2019 17:00:00 -0600</pubDate><guid>https://wmanger.com/about/</guid><description>Hello, I&amp;rsquo;m Walter Manger.
 If you were coming here to read about my professional experience, you should consider visiting my linkedin profile for that. This site features opinionated articles about the software industry, business in general, and mindset, with some form of technical focus.
 If you need help with Cloud Migration, Cloud Infrastructure, Serverless Applications, Software Roadmapping, email me.
-You can get more information about the services that I offer on the services page.</description>
-    </item>
-    
-    <item>
-      <title>Golang on Doom Emacs</title>
-      <link>https://wmanger.com/articles/go-on-doom-emacs/</link>
-      <pubDate>Sun, 21 Nov 2021 00:00:00 -0700</pubDate>
-      
-      <guid>https://wmanger.com/articles/go-on-doom-emacs/</guid>
-      <description>Photo by Patrice Schoefolt from Pexels
-  It&amp;rsquo;s been a while since I&amp;rsquo;ve contributed to any Golang, but I got the itch this weekend to setup my Doom Emacs to do so.
-Most of the time I don&amp;rsquo;t want a full-blown IDE experience as having all the bells and whistles of that type of environment can be distracting. Instead, I&amp;rsquo;d like to turn on features as I need them.</description>
-    </item>
-    
-    <item>
-      <title>On becoming a Certified Kubernetes Application Developer</title>
-      <link>https://wmanger.com/articles/on-becoming-a-ckad/</link>
-      <pubDate>Fri, 05 Feb 2021 00:00:00 -0700</pubDate>
-      
-      <guid>https://wmanger.com/articles/on-becoming-a-ckad/</guid>
-      <description>Over the past few months, I&amp;rsquo;ve been head-down on learning more about Kubernetes. To help solidify this learning, I thought that it would be a good idea to add some icing on the cake and attempt the CKAD exam.
+You can get more information about the services that I offer on the services page.</description></item><item><title>Golang on Doom Emacs</title><link>https://wmanger.com/articles/go-on-doom-emacs/</link><pubDate>Sun, 21 Nov 2021 00:00:00 -0700</pubDate><guid>https://wmanger.com/articles/go-on-doom-emacs/</guid><description>Photo by Patrice Schoefolt from Pexels
+It&amp;rsquo;s been a while since I&amp;rsquo;ve contributed to any Golang, but I got the itch this weekend to setup my Doom Emacs to do so.
+Most of the time I don&amp;rsquo;t want a full-blown IDE experience as having all the bells and whistles of that type of environment can be distracting. Instead, I&amp;rsquo;d like to turn on features as I need them.</description></item><item><title>On becoming a Certified Kubernetes Application Developer</title><link>https://wmanger.com/articles/on-becoming-a-ckad/</link><pubDate>Fri, 05 Feb 2021 00:00:00 -0700</pubDate><guid>https://wmanger.com/articles/on-becoming-a-ckad/</guid><description>Over the past few months, I&amp;rsquo;ve been head-down on learning more about Kubernetes. To help solidify this learning, I thought that it would be a good idea to add some icing on the cake and attempt the CKAD exam.
 I am glad to report that as of today, I am a Certified Kubernetes Application Developer.
 My study strategy wasn&amp;rsquo;t really unique, but I&amp;rsquo;ll describe it below.
-Don&amp;rsquo;t Waste Time Don&amp;rsquo;t waste time wondering how long it takes or how much effort it takes to be ready for the exam.</description>
-    </item>
-    
-    <item>
-      <title>Supporting Multiple Git/Github Accounts</title>
-      <link>https://wmanger.com/articles/supporting-multiple-github-accounts/</link>
-      <pubDate>Sun, 03 May 2020 00:00:00 -0700</pubDate>
-      
-      <guid>https://wmanger.com/articles/supporting-multiple-github-accounts/</guid>
-      <description>Photo by Marcin Szmigiel from Pexels
-  Many times, especially when working as a freelance developer, you&amp;rsquo;ll need access to multiple Github repositories. Most likely, you will be using different Github accounts, so you&amp;rsquo;ll need to tell git which account to use. To do this, you&amp;rsquo;ll need to configure your ~/.ssh/config and ~/.gitconfig accordingly.
-I won&amp;rsquo;t go into great detail in this post, as there already is really good documentation here on how to configure ssh for Github.</description>
-    </item>
-    
-    <item>
-      <title>Just Create.</title>
-      <link>https://wmanger.com/articles/just-create/</link>
-      <pubDate>Sun, 19 Jan 2020 00:00:00 -0700</pubDate>
-      
-      <guid>https://wmanger.com/articles/just-create/</guid>
-      <description>I just listened to a very interesting episode of the IndieHackers Podcast that featured Rob Walling.
+Don&amp;rsquo;t Waste Time Don&amp;rsquo;t waste time wondering how long it takes or how much effort it takes to be ready for the exam.</description></item><item><title>Supporting Multiple Git/Github Accounts</title><link>https://wmanger.com/articles/supporting-multiple-github-accounts/</link><pubDate>Sun, 03 May 2020 00:00:00 -0700</pubDate><guid>https://wmanger.com/articles/supporting-multiple-github-accounts/</guid><description>Photo by Marcin Szmigiel from Pexels
+Many times, especially when working as a freelance developer, you&amp;rsquo;ll need access to multiple Github repositories. Most likely, you will be using different Github accounts, so you&amp;rsquo;ll need to tell git which account to use. To do this, you&amp;rsquo;ll need to configure your ~/.ssh/config and ~/.gitconfig accordingly.
+I won&amp;rsquo;t go into great detail in this post, as there already is really good documentation here on how to configure ssh for Github.</description></item><item><title>Just Create.</title><link>https://wmanger.com/articles/just-create/</link><pubDate>Sun, 19 Jan 2020 00:00:00 -0700</pubDate><guid>https://wmanger.com/articles/just-create/</guid><description>I just listened to a very interesting episode of the IndieHackers Podcast that featured Rob Walling.
 You can listen to this episode here.
 In the episode, Rob shared his humble beginnings and where he is now. As I expected, it was a long road. It was refreshing to hear someone talk about this long road and not resort to &amp;ldquo;How I Lauched A Startup In 24 Hours&amp;rdquo;.
-It is all so fascinating and inspirational.</description>
-    </item>
-    
-    <item>
-      <title>Shipping Efficiently</title>
-      <link>https://wmanger.com/articles/shipping-efficiently/</link>
-      <pubDate>Wed, 23 Oct 2019 23:03:00 -0600</pubDate>
-      
-      <guid>https://wmanger.com/articles/shipping-efficiently/</guid>
-      <description>If you find yourself writing a lot of code for a feature, stop and try to organize your changes into smaller, manageable chunks.
+It is all so fascinating and inspirational.</description></item><item><title>Shipping Efficiently</title><link>https://wmanger.com/articles/shipping-efficiently/</link><pubDate>Wed, 23 Oct 2019 23:03:00 -0600</pubDate><guid>https://wmanger.com/articles/shipping-efficiently/</guid><description>If you find yourself writing a lot of code for a feature, stop and try to organize your changes into smaller, manageable chunks.
 Sure, it takes some discipline, but stopping to actually plan out your work before you do it is worth it because it gives you the headspace to put some genuine thought behind the feature.
-There&amp;rsquo;s one caveat &amp;ndash; your company has to appreciate this genuine thought.</description>
-    </item>
-    
-    <item>
-      <title>The Pragmatic Programmer</title>
-      <link>https://wmanger.com/book-notes/revisiting-the-pragmatic-programmer/</link>
-      <pubDate>Fri, 04 Oct 2019 23:39:00 -0600</pubDate>
-      
-      <guid>https://wmanger.com/book-notes/revisiting-the-pragmatic-programmer/</guid>
-      <description>&lt;p&gt;This is probably one of the most classic programming books that is frequently recommended to programmers by programmers.
-I catagorize this type of book as &lt;em&gt;Programmer&amp;rsquo;s Self-Help&lt;/em&gt;.
+There&amp;rsquo;s one caveat &amp;ndash; your company has to appreciate this genuine thought.</description></item><item><title>The Pragmatic Programmer</title><link>https://wmanger.com/book-notes/revisiting-the-pragmatic-programmer/</link><pubDate>Fri, 04 Oct 2019 23:39:00 -0600</pubDate><guid>https://wmanger.com/book-notes/revisiting-the-pragmatic-programmer/</guid><description>&lt;p>This is probably one of the most classic programming books that is frequently recommended to programmers by programmers.
+I catagorize this type of book as &lt;em>Programmer&amp;rsquo;s Self-Help&lt;/em>.
 Some will find it helpful, others look for more actionable advice.
-I read this when I was about 2 years into my software engineering career.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Embracing The Cloud</title>
-      <link>https://wmanger.com/articles/embracing-the-cloud/</link>
-      <pubDate>Tue, 01 Oct 2019 00:00:00 -0600</pubDate>
-      
-      <guid>https://wmanger.com/articles/embracing-the-cloud/</guid>
-      <description>Cloud architecture is a great way to ship safe, cost effective, resilient, and scalable applications.
+I read this when I was about 2 years into my software engineering career.&lt;/p></description></item><item><title>Embracing The Cloud</title><link>https://wmanger.com/articles/embracing-the-cloud/</link><pubDate>Tue, 01 Oct 2019 00:00:00 -0600</pubDate><guid>https://wmanger.com/articles/embracing-the-cloud/</guid><description>Cloud architecture is a great way to ship safe, cost effective, resilient, and scalable applications.
 Here are some tips from the trenches to help your team embrace the cloud.
-Trust Your Cloud Provider If you are going to be using the cloud, you need to trust that your provider&amp;rsquo;s services are going to be operational. Writing code defensively or testing that a particular service is working is a waste of time.</description>
-    </item>
-    
-    <item>
-      <title>Home</title>
-      <link>https://wmanger.com/home/</link>
-      <pubDate>Fri, 29 Mar 2019 17:00:00 -0600</pubDate>
-      
-      <guid>https://wmanger.com/home/</guid>
-      <description>Hello, I&amp;rsquo;m Walter Manger.
+Trust Your Cloud Provider If you are going to be using the cloud, you need to trust that your provider&amp;rsquo;s services are going to be operational. Writing code defensively or testing that a particular service is working is a waste of time.</description></item><item><title>Home</title><link>https://wmanger.com/home/</link><pubDate>Fri, 29 Mar 2019 17:00:00 -0600</pubDate><guid>https://wmanger.com/home/</guid><description>Hello, I&amp;rsquo;m Walter Manger.
 If you were coming here to read about my professional experience, you should consider visiting my linkedin profile for that. This site features opinionated articles about the software industry, business in general, and mindset, with some form of technical focus.
 If you need help with Cloud Migration, Cloud Infrastructure, Serverless Applications, Software Roadmapping, email me.
-You can get more information about the services that I offer on the services page.</description>
-    </item>
-    
-    <item>
-      <title>Services</title>
-      <link>https://wmanger.com/services/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://wmanger.com/services/</guid>
-      <description>Services to help your business harness the cloud confidently.
+You can get more information about the services that I offer on the services page.</description></item><item><title>Services</title><link>https://wmanger.com/services/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://wmanger.com/services/</guid><description>Services to help your business harness the cloud confidently.
 One Hour Cloud Strategy Call Making sure that Cloud Infrastructure is right for your project and organization is key.
-Do you have questions about how Serverless technologies can reduce costs and increase resilience? Need suggestions about how your CI/CD pipeline could serve you better? Are you in the cloud, but making a decision between using a managed service or hosting one?</description>
-    </item>
-    
-    <item>
-      <title>Tools</title>
-      <link>https://wmanger.com/my-tools/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://wmanger.com/my-tools/</guid>
-      <description>I decided instead of just a raw, bulleted list, I&amp;rsquo;d mimic the format of usesthis.com to describe the tools that I use frequently.
+Do you have questions about how Serverless technologies can reduce costs and increase resilience? Need suggestions about how your CI/CD pipeline could serve you better? Are you in the cloud, but making a decision between using a managed service or hosting one?</description></item><item><title>Tools</title><link>https://wmanger.com/my-tools/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://wmanger.com/my-tools/</guid><description>I decided instead of just a raw, bulleted list, I&amp;rsquo;d mimic the format of usesthis.com to describe the tools that I use frequently.
 What hardware do i use? I use a MacBook Pro (Retina, 15-inch, Mid 2015) - 2.2 Quad Core Processor, 16GB memory, 250GB SSD.
-My 2015 G&amp;amp;L Legacy Special guitar is my daily driver these days. I play it through a Marshall Origin 20, but lately I&amp;rsquo;ve been experimenting with using only a HX Stomp.</description>
-    </item>
-    
-  </channel>
-</rss>
+My 2015 G&amp;amp;L Legacy Special guitar is my daily driver these days. I play it through a Marshall Origin 20, but lately I&amp;rsquo;ve been experimenting with using only a HX Stomp.</description></item></channel></rss>
